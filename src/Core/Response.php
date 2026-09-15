@@ -5,11 +5,23 @@ namespace NovaEsperanca\Core;
 
 class Response
 {
+    private const DEFAULT_SECURITY_HEADERS = [
+        'X-Content-Type-Options' => 'nosniff',
+        'X-Frame-Options' => 'SAMEORIGIN',
+        'Referrer-Policy' => 'strict-origin-when-cross-origin',
+        'Permissions-Policy' => 'camera=(), microphone=(), geolocation=()',
+        'X-XSS-Protection' => '1; mode=block'
+    ];
+
+    private readonly array $headers;
+
     public function __construct(
         private readonly string $body,
         private readonly int $statusCode = 200,
-        private readonly array $headers = []
-    ) {}
+        array $headers = []
+    ) {
+        $this->headers = array_merge(self::DEFAULT_SECURITY_HEADERS, $headers);
+    }
 
     public function getBody(): string
     {

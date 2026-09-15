@@ -1,0 +1,28 @@
+# ----------------------------------------------------------------------
+# Configuração Apache / LiteSpeed - Raiz do Projeto Social Escola
+# Otimizado para Hospedagem Hostinger
+# ----------------------------------------------------------------------
+
+# Desativa a listagem de diretórios
+Options -Indexes
+
+# Bloqueia acesso a arquivos ocultos (.git, .env, etc)
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # 1. Bloqueio estrito de acesso direto a diretórios sensíveis da aplicação
+    RewriteRule ^(\.git|src|templates|data|storage|schemas|scripts|docs) - [F,L,NC]
+    
+    # 2. Bloqueio de arquivos de configuração na raiz
+    RewriteRule ^(composer\.(json|lock)|design-tokens\.json|\.gitignore)$ - [F,L,NC]
+
+    # 3. Encaminha todas as requisições para a pasta public/
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteRule ^(.*)$ public/$1 [L,QSA]
+</IfModule>

@@ -1,0 +1,47 @@
+name: CI & Quality Gate - Projeto Social Escola
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate-and-test:
+    name: Validação SDD & Testes Automatizados (Fases 1 a 7)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do Repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Ambiente PHP 8.2
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          extensions: mbstring, json, curl, zip
+          coverage: none
+
+      - name: Validar Fase 1 - Demanda & Schemas
+        run: php scripts/validate-demanda-schema.php
+
+      - name: Validar Fase 2 - Planejamento & Arquitetura
+        run: php scripts/validate-fase-2-planejamento.php
+
+      - name: Validar Fase 3 - Design Tokens & Componentes Stitch
+        run: php scripts/validate-fase-3-design.php
+
+      - name: Validar Fase 4 - Conteúdo, Salvaguarda Infantil & Dados
+        run: php scripts/validate-fase-4-conteudo-dados.php
+
+      - name: Validar Fase 5 - Aplicação PHP & Templates Modulares
+        run: php scripts/validate-fase-5-desenvolvimento.php
+
+      - name: Validar Fase 6 - Testes Anti-Spam, Acessibilidade WCAG AA & TTFB
+        run: php scripts/validate-fase-6-testes-qa.php
+
+      - name: Validar Fase 7 - Roteamento Hostinger, Headers de Segurança & Backups
+        run: php scripts/validate-fase-7-deploy-lancamento.php
+
+      - name: Sucesso no Quality Gate
+        run: echo "Todos os critérios das Fases 1 a 7 do WDLC foram aprovados com 100% de sucesso!"
