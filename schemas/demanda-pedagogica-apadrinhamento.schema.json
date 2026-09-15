@@ -1,0 +1,156 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DemandaPedagogicaApadrinhamento",
+  "description": "Contrato formal de dados da Escola Nova Esperança (Kifangondo, Luanda) - WDLC Fase 1",
+  "type": "object",
+  "required": [
+    "instituicao",
+    "cenario_operacional",
+    "turmas_ativas",
+    "grade_rotina",
+    "cardapio_merenda",
+    "equipe_operacional",
+    "metas_expansao",
+    "programa_apadrinhamento",
+    "canais_contribuicao"
+  ],
+  "properties": {
+    "instituicao": {
+      "type": "object",
+      "required": ["nome", "sigla", "mantenedora", "localizacao"],
+      "properties": {
+        "nome": { "type": "string" },
+        "sigla": { "type": "string" },
+        "mantenedora": { "type": "string" },
+        "localizacao": {
+          "type": "object",
+          "required": ["pais", "provincia", "municipio", "bairro"],
+          "properties": {
+            "pais": { "type": "string" },
+            "provincia": { "type": "string" },
+            "municipio": { "type": "string" },
+            "bairro": { "type": "string" },
+            "referencia": { "type": "string" }
+          }
+        }
+      }
+    },
+    "cenario_operacional": {
+      "type": "object",
+      "required": ["alunos_matriculados", "salas_em_uso", "regime_turnos"],
+      "properties": {
+        "alunos_matriculados": { "type": "integer", "minimum": 1 },
+        "salas_em_uso": { "type": "integer", "minimum": 1 },
+        "regime_turnos": {
+          "type": "object",
+          "required": ["turno_atual", "ano_letivo_inicio_mes", "historico_turnos", "justificativa_transicao"],
+          "properties": {
+            "turno_atual": { "type": "string" },
+            "ano_letivo_inicio_mes": { "type": "string" },
+            "historico_turnos": { "type": "object" },
+            "justificativa_transicao": { "type": "string" }
+          }
+        }
+      }
+    },
+    "turmas_ativas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "nome", "sala_numero", "faixa_etaria_media", "total_alunos"],
+        "properties": {
+          "id": { "type": "string" },
+          "nome": { "type": "string" },
+          "sala_numero": { "type": "integer" },
+          "faixa_etaria_media": { "type": "string" },
+          "total_alunos": { "type": "integer", "minimum": 1 }
+        }
+      }
+    },
+    "grade_rotina": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["inicio", "fim", "atividade", "publico", "descricao"],
+        "properties": {
+          "inicio": { "type": "string", "pattern": "^[0-9]{2}:[0-9]{2}$" },
+          "fim": { "type": "string", "pattern": "^[0-9]{2}:[0-9]{2}$" },
+          "atividade": { "type": "string" },
+          "publico": { "type": "string" },
+          "descricao": { "type": "string" }
+        }
+      }
+    },
+    "cardapio_merenda": {
+      "type": "object",
+      "required": ["itens", "horario_distribuicao", "objetivo_nutricional"],
+      "properties": {
+        "itens": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "horario_distribuicao": { "type": "string" },
+        "objetivo_nutricional": { "type": "string" }
+      }
+    },
+    "equipe_operacional": {
+      "type": "object",
+      "required": [
+        "coordenador",
+        "subdiretor_pedagogico",
+        "educadoras",
+        "merendeira",
+        "limpeza_e_apoio",
+        "total_colaboradores"
+      ],
+      "properties": {
+        "coordenador": { "type": "integer", "minimum": 1 },
+        "subdiretor_pedagogico": { "type": "integer", "minimum": 1 },
+        "educadoras": { "type": "integer", "minimum": 1 },
+        "merendeira": { "type": "integer", "minimum": 1 },
+        "limpeza_e_apoio": { "type": "integer", "minimum": 1 },
+        "total_colaboradores": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "metas_expansao": {
+      "type": "object",
+      "required": ["ciclos", "ampliacao_salas_meta", "previsao_retomada_turnos"],
+      "properties": {
+        "ciclos": { "type": "object" },
+        "ampliacao_salas_meta": { "type": "object" },
+        "previsao_retomada_turnos": { "type": "string" }
+      }
+    },
+    "programa_apadrinhamento": {
+      "type": "object",
+      "required": ["cotas", "diretrizes_transparencia"],
+      "properties": {
+        "cotas": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "nome", "tipo", "valor_sugerido_aoa", "descricao"],
+            "properties": {
+              "id": { "type": "string" },
+              "nome": { "type": "string" },
+              "tipo": { "type": "string" },
+              "valor_sugerido_aoa": { "type": "number", "minimum": 0 },
+              "equivalente_estimado_usd": { "type": "number" },
+              "descricao": { "type": "string" },
+              "itens_cobertos": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        },
+        "diretrizes_transparencia": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "canais_contribuicao": {
+      "type": "object",
+      "required": ["nacionais", "internacionais"],
+      "properties": {
+        "nacionais": { "type": "array" },
+        "internacionais": { "type": "array" }
+      }
+    }
+  }
+}

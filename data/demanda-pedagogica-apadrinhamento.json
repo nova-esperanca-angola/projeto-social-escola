@@ -1,0 +1,245 @@
+{
+  "instituicao": {
+    "nome": "Escola Nova Esperança",
+    "sigla": "ENE",
+    "mantenedora": "Igreja Missionária Nova Esperança (IMNE)",
+    "ano_fundacao": 2018,
+    "localizacao": {
+      "pais": "Angola",
+      "provincia": "Luanda",
+      "municipio": "Ícolo e Bengo",
+      "bairro": "Kifangondo",
+      "referencia": "Comunidade de Kifangondo, adjacente à sede da Igreja Missionária Nova Esperança"
+    }
+  },
+  "cenario_operacional": {
+    "alunos_matriculados": 93,
+    "salas_em_uso": 5,
+    "regime_turnos": {
+      "turno_atual": "matutino_temporario",
+      "horario_geral": "07:30 às 12:00",
+      "ano_letivo_inicio_mes": "Setembro",
+      "historico_turnos": {
+        "regime_anterior": "dois_turnos",
+        "periodo_manha": {
+          "turmas": ["Creche", "1ª Classe", "2ª Classe", "3ª Classe"],
+          "horario": "07:30 às 12:00"
+        },
+        "periodo_tarde": {
+          "turmas": ["4ª Classe", "5ª Classe", "6ª Classe", "7ª Classe"],
+          "horario": "12:30 às 18:00"
+        }
+      },
+      "justificativa_transicao": "Como o ano letivo em Angola inicia em setembro e a escola necessita de reformas e ampliação de salas de aula, operou-se temporariamente a unificação no turno da manhã com 5 turmas (Iniciação à 4ª classe), até que novas salas de aula sejam viabilizadas para a retomada dos dois turnos e acolhimento das classes subsequentes."
+    }
+  },
+  "turmas_ativas": [
+    {
+      "id": "turma-iniciacao",
+      "nome": "Iniciação (Pré-escolar)",
+      "sala_numero": 1,
+      "faixa_etaria_media": "4 a 5 anos",
+      "total_alunos": 20,
+      "horario_saida": "11:30"
+    },
+    {
+      "id": "turma-1-classe",
+      "nome": "1ª Classe",
+      "sala_numero": 2,
+      "faixa_etaria_media": "6 anos",
+      "total_alunos": 22,
+      "horario_saida": "12:00"
+    },
+    {
+      "id": "turma-2-classe",
+      "nome": "2ª Classe",
+      "sala_numero": 3,
+      "faixa_etaria_media": "7 anos",
+      "total_alunos": 19,
+      "horario_saida": "12:00"
+    },
+    {
+      "id": "turma-3-classe",
+      "nome": "3ª Classe",
+      "sala_numero": 4,
+      "faixa_etaria_media": "8 anos",
+      "total_alunos": 17,
+      "horario_saida": "12:00"
+    },
+    {
+      "id": "turma-4-classe",
+      "nome": "4ª Classe",
+      "sala_numero": 5,
+      "faixa_etaria_media": "9 a 10 anos",
+      "total_alunos": 15,
+      "horario_saida": "12:00"
+    }
+  ],
+  "grade_rotina": [
+    {
+      "inicio": "07:30",
+      "fim": "08:00",
+      "atividade": "Parada Comunitária",
+      "publico": "Todos os alunos e educadores",
+      "descricao": "Momento solene devocional com hinos de louvor, oração coletiva e reflexão pastoral da Palavra de Deus."
+    },
+    {
+      "inicio": "08:00",
+      "fim": "09:30",
+      "atividade": "Bloco Pedagógico 1",
+      "publico": "Todas as turmas (Salas 1 a 5)",
+      "descricao": "Entrada em sala de aula, chamada, aulas de alfabetização, língua portuguesa, matemática e disciplinas curriculares."
+    },
+    {
+      "inicio": "09:30",
+      "fim": "10:00",
+      "atividade": "Merenda Escolar & Recreio",
+      "publico": "Todos os 93 alunos",
+      "descricao": "Intervalo para alimentação coletiva balanceada e recreação supervisionada no pátio escolar."
+    },
+    {
+      "inicio": "10:00",
+      "fim": "11:30",
+      "atividade": "Bloco Pedagógico 2 - Pré-escolar / Creche",
+      "publico": "Iniciação (Sala 1)",
+      "descricao": "Atividades lúdicas, coordenação motora, artes e preparação para a saída dos alunos da Iniciação/Creche às 11:30."
+    },
+    {
+      "inicio": "10:00",
+      "fim": "12:00",
+      "atividade": "Bloco Pedagógico 2 - Ensino Primário",
+      "publico": "1ª à 4ª Classe (Salas 2 a 5)",
+      "descricao": "Continuidade das atividades curriculares, estudos sociais, ciências e encerramento das aulas do Ensino Primário às 12:00."
+    }
+  ],
+  "cardapio_merenda": {
+    "horario_distribuicao": "09:30 às 10:00",
+    "itens": [
+      "Café com leite ou chá com pão e manteiga",
+      "Sopa nutritiva de legumes e tubérculos locais",
+      "Arroz com feijão e caldo substancioso"
+    ],
+    "objetivo_nutricional": "Garantir aporte calórico e vitamínico diário para crianças em fase de desenvolvimento cognitivo e físico, combatendo o déficit nutricional na comunidade de Kifangondo."
+  },
+  "equipe_operacional": {
+    "coordenador": 1,
+    "subdiretor_pedagogico": 1,
+    "educadoras": 5,
+    "merendeira": 1,
+    "limpeza_e_apoio": 2,
+    "total_colaboradores": 10,
+    "detalhes": {
+      "coordenador": "Supervisão geral, relacionamento comunitário, gestão institucional e prestação de contas.",
+      "subdiretor_pedagogico": "Acompanhamento da grade curricular angolana, avaliação formativa e suporte aos planos de aula.",
+      "educadoras": "05 professoras dedicadas (1 educadora titular por sala de aula ativa).",
+      "merendeira": "01 colaboradora responsável pelo preparo higiênico e distribuição da merenda diária.",
+      "limpeza_e_apoio": "02 funcionárias dedicadas à assepsia contínua das salas, banheiros e suporte no pátio."
+    }
+  },
+  "metas_expansao": {
+    "ciclos": {
+      "creche": {
+        "etapa": "Creche (Berçário e Maternal)",
+        "faixa_etaria": "1 a 3 anos",
+        "meta_curto_prazo": "Reativação de espaço acolhedor dedicado com berços, tapetes pedagógicos e estimulação sensorial precoce."
+      },
+      "ensino_primario": {
+        "etapa": "Ensino Primário Completo",
+        "faixa_etaria": "6 a 12 anos",
+        "classes": "1ª à 6ª classe",
+        "meta_medio_prazo": "Ampliação para contemplar as classes terminais do primário (5ª e 6ª classe), assegurando o certificado primário nacional."
+      },
+      "primeiro_ciclo_secundario": {
+        "etapa": "I Ciclo do Ensino Secundário (Ensino Fundamental II)",
+        "faixa_etaria": "12 a 15 anos",
+        "classes": "7ª à 9ª classe",
+        "meta_medio_prazo": "Implantação gradativa para continuidade escolar na própria comunidade, reduzindo a evasão de adolescentes."
+      },
+      "segundo_ciclo_secundario": {
+        "etapa": "II Ciclo do Ensino Secundário (Ensino Médio)",
+        "faixa_etaria": "15 a 18 anos",
+        "classes": "10ª à 12ª/13ª classe",
+        "meta_longo_prazo": "Oferta de formação pré-universitária e técnica para capacitação de jovens rumo ao mercado de trabalho."
+      }
+    },
+    "ampliacao_salas_meta": {
+      "salas_atuais": 5,
+      "novas_salas_necessarias": 6,
+      "total_salas_alvo": 11,
+      "descricao": "Construção de bloco anexo com novas salas de aula e sanitários adequados para destravar o retorno dos 2 turnos e os novos ciclos de ensino."
+    },
+    "previsao_retomada_turnos": "Assim que viabilizada a estrutura física de novas salas, retoma-se o turno vespertino (12:30 às 18:00) acolhendo até à 7ª classe e subsequentes."
+  },
+  "programa_apadrinhamento": {
+    "cotas": [
+      {
+        "id": "cota-nutricional",
+        "nome": "Apadrinhamento Nutricional (Merenda Diária)",
+        "tipo": "recorrente_mensal",
+        "valor_sugerido_aoa": 12500,
+        "equivalente_estimado_usd": 15,
+        "descricao": "Custeia a merenda diária balanceada (pão com manteiga, sopa enriquecida, arroz com feijão) para 1 criança durante o mês letivo.",
+        "itens_cobertos": ["Café matinal", "Pão e manteiga", "Ingredientes de sopa", "Arroz e feijão", "Gás de cozinha"]
+      },
+      {
+        "id": "cota-didatica",
+        "nome": "Apadrinhamento Didático & Uniforme",
+        "tipo": "recorrente_mensal",
+        "valor_sugerido_aoa": 8500,
+        "equivalente_estimado_usd": 10,
+        "descricao": "Garante cadernos pedagógicos, lápis, estojo, bata/uniforme escolar e material de apoio às atividades de sala.",
+        "itens_cobertos": ["Cadernos pautados e de desenho", "Lápis e borracha", "Uniforme/bata escolar", "Papelaria coletiva"]
+      },
+      {
+        "id": "cota-educador",
+        "nome": "Apoio ao Educador & Equipe Comunitária",
+        "tipo": "recorrente_mensal",
+        "valor_sugerido_aoa": 25000,
+        "equivalente_estimado_usd": 30,
+        "descricao": "Contribui para a ajuda de custo e capacitação continuada das educadoras, merendeira e equipe de apoio operacional.",
+        "itens_cobertos": ["Ajuda de custo das 5 educadoras", "Capacitação pedagógica", "Apoio operacional à equipe de apoio"]
+      },
+      {
+        "id": "cota-integral",
+        "nome": "Apadrinhamento Integral da Criança",
+        "tipo": "recorrente_mensal",
+        "valor_sugerido_aoa": 40000,
+        "equivalente_estimado_usd": 50,
+        "descricao": "Cobertura 360º para 1 aluno: alimentação completa, materiais de estudo, acompanhamento pedagógico e assistência pastoral familiar.",
+        "itens_cobertos": ["Alimentação diária", "Kit escolar e uniforme", "Custeio pedagógico", "Acompanhamento social e saúde"]
+      },
+      {
+        "id": "fundo-obras-salas",
+        "nome": "Fundo de Ampliação Predial (Novas Salas de Aula)",
+        "tipo": "pontual_ou_recorrente",
+        "valor_sugerido_aoa": 50000,
+        "equivalente_estimado_usd": 60,
+        "descricao": "Doação destinada à compra de cimento, blocos, coberturas e carteiras escolares para erguer novas salas e retomar o turno da tarde.",
+        "itens_cobertos": ["Materiais de construção civil", "Carteiras e lousas escolares", "Instalações elétricas e janelas"]
+      }
+    ],
+    "diretrizes_transparencia": [
+      "Publicação semestral de relatórios de receitas e despesas com comprovação bancária.",
+      "Registro fotográfico e cartas de agradecimento das turmas aos padrinhos sem expor crianças a riscos de imagem.",
+      "Fundo de reserva técnica de 10% para assegurar a continuidade da merenda em períodos de instabilidade orçamentária."
+    ]
+  },
+  "canais_contribuicao": {
+    "nacionais": [
+      {
+        "metodo": "Transferência Bancária / Multicaixa (Angola)",
+        "banco": "Banco Angolano de Investimentos (BAI) / BFA",
+        "titular": "Igreja Missionária Nova Esperança - Ação Social",
+        "moeda": "AOA (Kwanza)",
+        "instrucoes": "Enviar comprovativo de transferência ou talão do Multicaixa Express para o WhatsApp institucional."
+      }
+    ],
+    "internacionais": [
+      {
+        "metodo": "Transferência Bancária Internacional (SWIFT / IBAN)",
+        "moedas_aceitas": ["USD", "EUR", "BRL"],
+        "instrucoes": "Disponibilizado mediante solicitação para emissão de dados bancários internacionais com código SWIFT correspondente."
+      }
+    ]
+  }
+}
