@@ -7,17 +7,31 @@ use NovaEsperanca\Core\Request;
 use NovaEsperanca\Core\Response;
 use NovaEsperanca\Repositories\DonationRepositoryInterface;
 use NovaEsperanca\Services\NotificationServiceInterface;
+use NovaEsperanca\Services\AntiSpamServiceInterface;
 
 class DonationController
 {
     public function __construct(
         private readonly DonationRepositoryInterface $repository,
-        private readonly NotificationServiceInterface $notificationService
+        private readonly NotificationServiceInterface $notificationService,
+        private readonly ?AntiSpamServiceInterface $antiSpamService = null
     ) {}
 
     public function apadrinhar(Request $request): Response
     {
         $params = $request->getParams();
+
+        // 1. Verificação Anti-Spam (se o serviço estiver ativo)
+        if ($this->antiSpamService !== null) {
+            $spamCheck = $this->antiSpamService->validate($params);
+            if (!$spamCheck['passed']) {
+                return Response::json([
+                    'success' => false,
+                    'mensagem' => $spamCheck['message'],
+                    'error_code' => $spamCheck['error_code']
+                ], 422);
+            }
+        }
 
         $errors = [];
 
@@ -68,10 +82,10 @@ class DonationController
             'data_registro' => date('c')
         ];
 
-        // 1. Salvar no repositório
+        // 2. Salvar no repositório com bloqueio atômico
         $this->repository->save($donationRecord);
 
-        // 2. Disparar notificação aos coordenadores
+        // 3. Disparar notificação aos coordenadores
         $this->notificationService->notifyNewDonation($donationRecord);
 
         return Response::json([

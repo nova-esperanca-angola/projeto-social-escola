@@ -1,0 +1,14 @@
+# Storage e Logs
+storage/logs/*.log
+storage/cache/*.json
+storage/app/*.json
+!storage/app/.gitkeep
+!storage/logs/.gitkeep
+!storage/cache/.gitkeep
+
+# IDE e Sistema Operacional
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+.DS_Store

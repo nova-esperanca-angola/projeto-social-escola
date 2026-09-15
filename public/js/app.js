@@ -1,6 +1,6 @@
 /**
  * Aplicação Client-side Escola Nova Esperança (Kifangondo, Luanda)
- * Gerencia o fluxo do modal de apadrinhamento em 2 etapas e integração WhatsApp
+ * Gerencia o modal de apadrinhamento, proteção Anti-Spam (Time-Trap/Honeypot) e acessibilidade (Escape key)
  */
 
 let cotaAtual = {
@@ -10,11 +10,20 @@ let cotaAtual = {
   frequencia: 'mensal'
 };
 
+let modalSessionStartTime = 0;
+
 function abrirModalApadrinhamento(tipo, valor, nome, freq = 'mensal') {
   cotaAtual.tipo = tipo;
   cotaAtual.valor = valor;
   cotaAtual.nome = nome;
   cotaAtual.frequencia = freq;
+
+  // Marcação do timestamp para validação do time-trap anti-spam (em segundos)
+  modalSessionStartTime = Math.floor(Date.now() / 1000);
+  const timeTrapEl = document.getElementById('form_start_time');
+  if (timeTrapEl) {
+    timeTrapEl.value = modalSessionStartTime;
+  }
 
   const modal = document.getElementById('modal-apadrinhar');
   const nomeEl = document.getElementById('cota-nome');
@@ -28,6 +37,10 @@ function abrirModalApadrinhamento(tipo, valor, nome, freq = 'mensal') {
   if (valorInputEl) valorInputEl.value = valor;
   if (freqInputEl) freqInputEl.value = freq;
   if (freqDisplayEl) freqDisplayEl.textContent = freq === 'pontual' ? 'cota única' : '/ ' + freq;
+
+  // Limpar campo honeypot
+  const hpField = document.getElementById('hp_confirm_field');
+  if (hpField) hpField.value = '';
 
   // Restaurar etapa 1
   document.getElementById('etapa-1')?.classList.remove('hidden');
@@ -45,6 +58,13 @@ function fecharModalApadrinhamento() {
     modal.classList.add('hidden');
   }
 }
+
+// Acessibilidade: Fechar modal ao pressionar a tecla Escape
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape' || event.keyCode === 27) {
+    fecharModalApadrinhamento();
+  }
+});
 
 function avancarParaEtapa2() {
   const inputValor = document.getElementById('input-valor');
@@ -66,9 +86,14 @@ function voltarParaEtapa1() {
 async function submeterApadrinhamento(event) {
   event.preventDefault();
   const btnSubmit = document.getElementById('btn-submit-doacao');
+  const textoOriginal = btnSubmit ? btnSubmit.innerHTML : 'Confirmar Apadrinhamento';
+
   if (btnSubmit) {
     btnSubmit.disabled = true;
-    btnSubmit.textContent = 'Processando...';
+    btnSubmit.innerHTML = `
+      <span class="inline-block animate-spin mr-1">⌛</span>
+      Processando apadrinhamento...
+    `;
   }
 
   const payload = {
@@ -79,19 +104,26 @@ async function submeterApadrinhamento(event) {
     contato: document.getElementById('input-contato')?.value || '',
     email: document.getElementById('input-email')?.value || '',
     anonimo: document.getElementById('input-anonimo')?.checked || false,
-    mensagem: document.getElementById('input-mensagem')?.value || ''
+    mensagem: document.getElementById('input-mensagem')?.value || '',
+    hp_confirm_field: document.getElementById('hp_confirm_field')?.value || '',
+    form_start_time: modalSessionStartTime || Math.floor(Date.now() / 1000)
   };
 
   try {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 12000); // 12s timeout para redes 3G lentas
+
     const response = await fetch('/api/apadrinhar', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
       },
-      body: JSON.stringify(payload)
+      body: JSON.stringify(payload),
+      signal: controller.signal
     });
 
+    clearTimeout(timeoutId);
     const data = await response.json();
 
     if (response.ok && data.success) {
@@ -100,12 +132,15 @@ async function submeterApadrinhamento(event) {
       alert(data.mensagem || 'Ocorreu um erro ao registrar a intenção. Verifique os dados e tente novamente.');
     }
   } catch (err) {
-    // Fallback de envio direto caso a API fetch falhe
-    alert('Erro de conexão. Por favor, tente novamente ou contacte diretamente o WhatsApp da coordenação.');
+    if (err.name === 'AbortError') {
+      alert('A conexão demorou mais que o esperado devido à lentidão da rede móvel. Por favor, tente novamente ou envie o comprovativo direto pelo WhatsApp.');
+    } else {
+      alert('Erro de conexão. Por favor, tente novamente ou contacte diretamente o WhatsApp da coordenação.');
+    }
   } finally {
     if (btnSubmit) {
       btnSubmit.disabled = false;
-      btnSubmit.textContent = 'Confirmar Apadrinhamento';
+      btnSubmit.innerHTML = textoOriginal;
     }
   }
 }

@@ -20,6 +20,9 @@ require_once $rootDir . '/src/Repositories/JsonDonationRepository.php';
 require_once $rootDir . '/src/Services/NotificationServiceInterface.php';
 require_once $rootDir . '/src/Services/EmailNotificationService.php';
 
+require_once $rootDir . '/src/Services/AntiSpamServiceInterface.php';
+require_once $rootDir . '/src/Services/AntiSpamService.php';
+
 require_once $rootDir . '/src/Controllers/HomeController.php';
 require_once $rootDir . '/src/Controllers/PageController.php';
 require_once $rootDir . '/src/Controllers/DonationController.php';
@@ -33,10 +36,11 @@ $logFile = $rootDir . '/storage/logs/notifications.log';
 
 $donationRepo = new \NovaEsperanca\Repositories\JsonDonationRepository($donationFile);
 $notificationService = new \NovaEsperanca\Services\EmailNotificationService($logFile);
+$antiSpamService = new \NovaEsperanca\Services\AntiSpamService();
 
 // Roteamento
 $router = new \NovaEsperanca\Core\Router();
-\NovaEsperanca\Core\Router::registerRoutes($router, $donationRepo, $notificationService);
+\NovaEsperanca\Core\Router::registerRoutes($router, $donationRepo, $notificationService, $antiSpamService);
 
 // Processar Requisição
 $request = \NovaEsperanca\Core\Request::createFromGlobals();

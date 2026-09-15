@@ -8,6 +8,7 @@ use NovaEsperanca\Controllers\PageController;
 use NovaEsperanca\Controllers\DonationController;
 use NovaEsperanca\Repositories\DonationRepositoryInterface;
 use NovaEsperanca\Services\NotificationServiceInterface;
+use NovaEsperanca\Services\AntiSpamServiceInterface;
 
 class Router
 {
@@ -54,11 +55,12 @@ class Router
     public static function registerRoutes(
         Router $router,
         DonationRepositoryInterface $donationRepo,
-        NotificationServiceInterface $notifService
+        NotificationServiceInterface $notifService,
+        ?AntiSpamServiceInterface $antiSpamService = null
     ): void {
         $homeController = new HomeController();
         $pageController = new PageController();
-        $donationController = new DonationController($donationRepo, $notifService);
+        $donationController = new DonationController($donationRepo, $notifService, $antiSpamService);
 
         // Rotas Públicas Principais
         $router->add('GET', '/', [$homeController, 'index']);
