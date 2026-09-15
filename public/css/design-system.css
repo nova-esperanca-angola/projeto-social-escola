@@ -1,0 +1,360 @@
+/* ==========================================================================
+   Design System: Esperança Solar (Escola Nova Esperança - Kifangondo)
+   Gerado e validado via StitchMCP (Projeto: 5162131248924929494)
+   Compatível com Tailwind CSS v3 / v4
+   ========================================================================== */
+
+:root {
+  /* Cores Principais do Projeto */
+  --color-primary: #1d4ed8;
+  --color-primary-dark: #1e3a8a;
+  --color-primary-light: #3b82f6;
+  --color-primary-surface: #eff6ff;
+
+  --color-hope-amber: #f59e0b;
+  --color-hope-amber-dark: #d97706;
+  --color-hope-amber-light: #fbbf24;
+  --color-hope-amber-surface: #fef3c7;
+
+  --color-kifangondo-terra: #c2410c;
+  --color-kifangondo-terra-dark: #9a3412;
+  --color-kifangondo-terra-light: #ea580c;
+  --color-kifangondo-terra-surface: #ffedd5;
+
+  --color-nutrition-green: #16a34a;
+  --color-nutrition-green-dark: #15803d;
+  --color-nutrition-green-light: #22c55e;
+  --color-nutrition-green-surface: #dcfce7;
+
+  /* Superfícies e Neutros */
+  --color-bg: #f8fafc;
+  --color-surface: #ffffff;
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #475569;
+  --color-border: #e2e8f0;
+  --color-border-strong: #cbd5e1;
+
+  /* Tipografia */
+  --font-sans: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Arredondamento */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-card: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* Acessibilidade Mobile */
+  --touch-target-min: 48px;
+}
+
+/* Reset & Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Utilitários de Alvo de Toque Mobile (Acessibilidade WCAG) */
+.btn-touch,
+button,
+a.btn-action {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  border-radius: var(--radius-lg);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 150ms ease, background-color 150ms ease, box-shadow 150ms ease;
+  user-select: none;
+}
+
+button:active,
+a.btn-action:active {
+  transform: scale(0.98);
+}
+
+/* Botões com Paleta do Projeto */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(29, 78, 216, 0.2);
+}
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.btn-secondary {
+  background-color: var(--color-kifangondo-terra);
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(194, 65, 12, 0.2);
+}
+.btn-secondary:hover {
+  background-color: var(--color-kifangondo-terra-dark);
+}
+
+.btn-amber {
+  background-color: var(--color-hope-amber);
+  color: #0f172a;
+  font-weight: 700;
+  box-shadow: 0 2px 4px rgba(245, 158, 11, 0.2);
+}
+.btn-amber:hover {
+  background-color: var(--color-hope-amber-dark);
+  color: #ffffff;
+}
+
+/* 1. COMPONENTE: Grid de Indicadores de Impacto Social */
+.impact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+@media (min-width: 640px) {
+  .impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .impact-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.impact-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.impact-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+
+.impact-card.card-primary::before { background-color: var(--color-primary); }
+.impact-card.card-amber::before { background-color: var(--color-hope-amber); }
+.impact-card.card-terra::before { background-color: var(--color-kifangondo-terra); }
+.impact-card.card-green::before { background-color: var(--color-nutrition-green); }
+
+.impact-number {
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--color-text-primary);
+  margin-bottom: 0.25rem;
+  font-feature-settings: "tnum";
+}
+
+.impact-label {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.impact-desc {
+  font-size: 0.8125rem;
+  color: var(--color-text-secondary);
+}
+
+/* 2. COMPONENTE: Termômetro do Fundo de Novas Salas */
+.progress-termometro {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04);
+}
+
+.termometro-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.termometro-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.progress-track {
+  width: 100%;
+  height: 12px;
+  background-color: var(--color-border);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  margin: 0.75rem 0;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-hope-amber) 0%, var(--color-kifangondo-terra) 100%);
+  border-radius: var(--radius-full);
+  transition: width 800ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.termometro-meta-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.termometro-meta-info strong {
+  color: var(--color-text-primary);
+}
+
+/* 3. COMPONENTE: Cards de Apadrinhamento Comunitário */
+.cards-apadrinhamento-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .cards-apadrinhamento-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .cards-apadrinhamento-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card-apadrinhamento {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+  box-shadow: 0 2px 4px rgba(15, 23, 42, 0.04);
+  position: relative;
+}
+
+.card-apadrinhamento:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(15, 23, 42, 0.08);
+  border-color: var(--color-primary-light);
+}
+
+.card-apadrinhamento.featured {
+  border: 2px solid var(--color-hope-amber);
+  background: linear-gradient(180deg, #ffffff 0%, var(--color-hope-amber-surface) 100%);
+}
+
+.card-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.625rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 0.75rem;
+  align-self: flex-start;
+}
+
+.badge-nutrition { background-color: var(--color-nutrition-green-surface); color: var(--color-nutrition-green-dark); }
+.badge-didactic { background-color: var(--color-primary-surface); color: var(--color-primary-dark); }
+.badge-educator { background-color: #f3e8ff; color: #6b21a8; }
+.badge-integral { background-color: var(--color-hope-amber-surface); color: var(--color-hope-amber-dark); }
+.badge-expansion { background-color: var(--color-kifangondo-terra-surface); color: var(--color-kifangondo-terra-dark); }
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.card-price-block {
+  margin: 1rem 0;
+}
+
+.card-price-aoa {
+  font-size: 1.875rem;
+  font-weight: 800;
+  color: var(--color-text-primary);
+}
+
+.card-price-aoa span {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.card-price-usd {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
+
+.card-beneficios {
+  list-style: none;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.card-beneficios li {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.card-beneficios li::before {
+  content: '✓';
+  color: var(--color-nutrition-green);
+  font-weight: 800;
+  margin-right: 0.5rem;
+}
+
+/* Badges e Pílulas */
+.pill-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+}

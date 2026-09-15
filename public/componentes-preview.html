@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Componentes UI - Escola Nova Esperança (Kifangondo, Luanda)</title>
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    .page-header {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--color-border);
+      margin-bottom: 1.5rem;
+    }
+    .stitch-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--color-primary-surface);
+      color: var(--color-primary-dark);
+      padding: 0.25rem 0.75rem;
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Topo Institucional -->
+    <header class="page-header">
+      <div class="stitch-badge">✨ Validado via StitchMCP (Design System: Esperança Solar)</div>
+      <h1 style="font-size: 1.75rem; font-weight: 800; color: var(--color-text-primary);">Escola Nova Esperança</h1>
+      <p style="color: var(--color-text-secondary); font-size: 0.9375rem;">
+        Kifangondo, Município de Ícolo e Bengo · Luanda, Angola | Catálogo de Componentes UI Mobile-First
+      </p>
+    </header>
+
+    <!-- 1. Grid de Indicadores de Impacto Social -->
+    <section>
+      <h2 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Indicadores de Impacto Social</h2>
+      <p style="color: var(--color-text-secondary); font-size: 0.875rem; margin-bottom: 1rem;">
+        Métricas operacionais reais de atendimento comunitário em Kifangondo.
+      </p>
+
+      <div class="impact-grid">
+        <div class="impact-card card-primary">
+          <div class="impact-number">93</div>
+          <div class="impact-label">Alunos Matriculados</div>
+          <div class="impact-desc">Crianças da Iniciação (Pré-escolar) à 4ª classe com acolhimento diário.</div>
+        </div>
+
+        <div class="impact-card card-amber">
+          <div class="impact-number">5 salas</div>
+          <div class="impact-label">Salas em Atividade</div>
+          <div class="impact-desc">1 sala exclusiva para cada nível escolar operando em turno matutino.</div>
+        </div>
+
+        <div class="impact-card card-green">
+          <div class="impact-number">10 colaboradores</div>
+          <div class="impact-label">Equipe Operacional</div>
+          <div class="impact-desc">5 educadoras, coordenação, merendeira e equipe de apoio comunitário.</div>
+        </div>
+
+        <div class="impact-card card-terra">
+          <div class="impact-number">100%</div>
+          <div class="impact-label">Merenda Diária</div>
+          <div class="impact-desc">Refeições completas com pão e manteiga, sopa nutritiva, arroz e feijão.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Termômetro do Fundo de Novas Salas de Aula -->
+    <section style="margin-top: 2rem;">
+      <h2 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Fundo de Ampliação Predial</h2>
+      <div class="progress-termometro">
+        <div class="termometro-header">
+          <div>
+            <div class="termometro-title">Construção de 6 novas salas de aula</div>
+            <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-top: 0.25rem;">
+              Meta indispensável para dobrar a capacidade e reabrir o turno da tarde até às 18:00.
+            </p>
+          </div>
+          <span class="pill-status" style="background: var(--color-kifangondo-terra-surface); color: var(--color-kifangondo-terra-dark);">
+            🚧 32% Arrecadado
+          </span>
+        </div>
+
+        <div class="progress-track">
+          <div class="progress-bar" style="width: 32.33%;"></div>
+        </div>
+
+        <div class="termometro-meta-info">
+          <div><strong>4.850.000 Kz</strong> arrecadados</div>
+          <div>Meta: <strong>15.000.000 Kz</strong> (para 6 salas completas)</div>
+        </div>
+
+        <div style="margin-top: 1rem;">
+          <a href="#apadrinhe" class="btn-action btn-secondary" style="width: 100%;">Apoiar a Obra com Cota Predial</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Cards de Apadrinhamento Comunitário (5 Modalidades) -->
+    <section style="margin-top: 2rem;" id="apadrinhe">
+      <h2 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Modalidades de Apadrinhamento</h2>
+      <p style="color: var(--color-text-secondary); font-size: 0.875rem; margin-bottom: 1rem;">
+        Escolha a cota de sua preferência para apoiar as crianças de Kifangondo com total transparência.
+      </p>
+
+      <div class="cards-apadrinhamento-grid">
+        
+        <!-- Cota 1: Nutricional -->
+        <div class="card-apadrinhamento">
+          <div>
+            <span class="card-badge badge-nutrition">Alimentação Diária</span>
+            <h3 class="card-title">Cota Nutricional (Merenda)</h3>
+            <div class="card-price-block">
+              <div class="card-price-aoa">12.500 Kz <span>/ mês</span></div>
+              <div class="card-price-usd">Aprox. $15 USD · Kwanza nacional</div>
+            </div>
+            <ul class="card-beneficios">
+              <li>Pão fresco com manteiga e café matinal</li>
+              <li>Sopa enriquecida com legumes locais</li>
+              <li>Prato quente de arroz e feijão substancioso</li>
+            </ul>
+          </div>
+          <button class="btn-touch btn-primary" style="width: 100%;">Apadrinhar Nutrição</button>
+        </div>
+
+        <!-- Cota 2: Didático -->
+        <div class="card-apadrinhamento">
+          <div>
+            <span class="card-badge badge-didactic">Material Escolar</span>
+            <h3 class="card-title">Cota Didático & Uniforme</h3>
+            <div class="card-price-block">
+              <div class="card-price-aoa">8.500 Kz <span>/ mês</span></div>
+              <div class="card-price-usd">Aprox. $10 USD · Kwanza nacional</div>
+            </div>
+            <ul class="card-beneficios">
+              <li>Cadernos pautados e estojo com lápis</li>
+              <li>Bata escolar / uniforme oficial</li>
+              <li>Livros e fichas pedagógicas curriculares</li>
+            </ul>
+          </div>
+          <button class="btn-touch btn-primary" style="width: 100%;">Apadrinhar Didático</button>
+        </div>
+
+        <!-- Cota 3: Educador -->
+        <div class="card-apadrinhamento">
+          <div>
+            <span class="card-badge badge-educator">Equipe Pedagógica</span>
+            <h3 class="card-title">Apoio ao Educador & Equipe</h3>
+            <div class="card-price-block">
+              <div class="card-price-aoa">25.000 Kz <span>/ mês</span></div>
+              <div class="card-price-usd">Aprox. $30 USD · Kwanza nacional</div>
+            </div>
+            <ul class="card-beneficios">
+              <li>Subsídio pedagógico para as 5 educadoras</li>
+              <li>Capacitação continuada docente</li>
+              <li>Apoio às equipes de apoio e limpeza</li>
+            </ul>
+          </div>
+          <button class="btn-touch btn-primary" style="width: 100%;">Apoiar Educadores</button>
+        </div>
+
+        <!-- Cota 4: Integral (Destaque) -->
+        <div class="card-apadrinhamento featured">
+          <div>
+            <span class="card-badge badge-integral">⭐ Apadrinhamento Completo</span>
+            <h3 class="card-title">Cota Apadrinhamento Integral</h3>
+            <div class="card-price-block">
+              <div class="card-price-aoa">40.000 Kz <span>/ mês</span></div>
+              <div class="card-price-usd">Aprox. $50 USD · Kwanza nacional</div>
+            </div>
+            <ul class="card-beneficios">
+              <li>Cobertura integral: Merenda + Didática + Saúde</li>
+              <li>Acompanhamento pedagógico individualizado</li>
+              <li>Relatório semestral com foto e evolução</li>
+            </ul>
+          </div>
+          <button class="btn-touch btn-amber" style="width: 100%;">Apadrinhamento Integral</button>
+        </div>
+
+        <!-- Cota 5: Fundo de Salas -->
+        <div class="card-apadrinhamento">
+          <div>
+            <span class="card-badge badge-expansion">Infraestrutura Predial</span>
+            <h3 class="card-title">Fundo de Novas Salas de Aula</h3>
+            <div class="card-price-block">
+              <div class="card-price-aoa">50.000 Kz <span>cota</span></div>
+              <div class="card-price-usd">Aprox. $60 USD · Pontual ou Mensal</div>
+            </div>
+            <ul class="card-beneficios">
+              <li>Cimento, blocos e coberturas para as 6 novas salas</li>
+              <li>Carteiras e quadros escolares novos</li>
+              <li>Permite reabrir o turno da tarde para 120 crianças</li>
+            </ul>
+          </div>
+          <button class="btn-touch btn-secondary" style="width: 100%;">Apoiar Construção</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Rodapé de Transparência -->
+    <footer style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--color-border); text-align: center; color: var(--color-text-secondary); font-size: 0.8125rem;">
+      <p>Igreja Missionária Nova Esperança (IMNE) · Escola Nova Esperança</p>
+      <p>Bairro de Kifangondo, Ícolo e Bengo · Luanda, Angola</p>
+      <p style="margin-top: 0.5rem;">Canais de Pagamento: Multicaixa Express | Transferência Bancária BAI / BFA | Confirmação WhatsApp</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
