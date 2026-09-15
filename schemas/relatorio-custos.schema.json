@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RelatorioCustosTransparencia",
+  "description": "Schema de validação da composição analítica de custos operacionais e obras da Escola Nova Esperança",
+  "type": "object",
+  "required": [
+    "ano_exercicio",
+    "periodo",
+    "moeda",
+    "execucao_semestral",
+    "detalhamento_merenda",
+    "detalhamento_equipe",
+    "fundo_obras_detalhado"
+  ],
+  "properties": {
+    "ano_exercicio": { "type": "integer", "example": 2026 },
+    "periodo": { "type": "string" },
+    "moeda": { "type": "string", "enum": ["AOA"] },
+    "execucao_semestral": {
+      "type": "object",
+      "required": ["receita_total_aoa", "despesa_total_aoa", "saldo_operacional_aoa", "reserva_tecnica_aoa"],
+      "properties": {
+        "receita_total_aoa": { "type": "number", "minimum": 0 },
+        "despesa_total_aoa": { "type": "number", "minimum": 0 },
+        "saldo_operacional_aoa": { "type": "number" },
+        "reserva_tecnica_aoa": { "type": "number", "minimum": 0 }
+      }
+    },
+    "detalhamento_merenda": {
+      "type": "object",
+      "required": [
+        "custo_refeicao_diaria_aluno_aoa",
+        "refeicoes_servidas_mes",
+        "custo_mensal_total_aoa",
+        "itens_principais"
+      ],
+      "properties": {
+        "custo_refeicao_diaria_aluno_aoa": { "type": "number", "minimum": 0 },
+        "refeicoes_servidas_mes": { "type": "integer", "minimum": 1 },
+        "custo_mensal_total_aoa": { "type": "number", "minimum": 0 },
+        "itens_principais": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "object",
+            "required": ["item", "categoria", "consumo_mensal", "custo_aoa"],
+            "properties": {
+              "item": { "type": "string" },
+              "categoria": { "type": "string" },
+              "consumo_mensal": { "type": "string" },
+              "custo_aoa": { "type": "number" }
+            }
+          }
+        }
+      }
+    },
+    "detalhamento_equipe": {
+      "type": "object",
+      "required": ["total_colaboradores", "cargos", "custo_mensal_total_aoa"],
+      "properties": {
+        "total_colaboradores": { "type": "integer", "minimum": 1 },
+        "custo_mensal_total_aoa": { "type": "number" },
+        "cargos": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["cargo", "quantidade", "atribuicoes"],
+            "properties": {
+              "cargo": { "type": "string" },
+              "quantidade": { "type": "integer" },
+              "atribuicoes": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "fundo_obras_detalhado": {
+      "type": "object",
+      "required": [
+        "salas_planejadas",
+        "orcamento_total_aoa",
+        "valor_arrecadado_aoa",
+        "percentual_concluido",
+        "composicao_custos"
+      ],
+      "properties": {
+        "salas_planejadas": { "type": "integer", "const": 6 },
+        "orcamento_total_aoa": { "type": "number" },
+        "valor_arrecadado_aoa": { "type": "number" },
+        "percentual_concluido": { "type": "number" },
+        "composicao_custos": {
+          "type": "array",
+          "minItems": 4,
+          "items": {
+            "type": "object",
+            "required": ["etapa", "descricao", "valor_estimado_aoa", "status"],
+            "properties": {
+              "etapa": { "type": "string" },
+              "descricao": { "type": "string" },
+              "valor_estimado_aoa": { "type": "number" },
+              "status": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

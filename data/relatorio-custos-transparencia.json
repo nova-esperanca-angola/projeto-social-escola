@@ -1,0 +1,112 @@
+{
+  "ano_exercicio": 2026,
+  "periodo": "1º Semestre de 2026 (Janeiro a Junho)",
+  "moeda": "AOA",
+  "data_emissao": "2026-07-10",
+  "execucao_semestral": {
+    "receita_total_aoa": 18500000.0,
+    "despesa_total_aoa": 15850000.0,
+    "saldo_operacional_aoa": 800000.0,
+    "reserva_tecnica_aoa": 1850000.0
+  },
+  "detalhamento_merenda": {
+    "custo_refeicao_diaria_aluno_aoa": 350.0,
+    "refeicoes_servidas_mes": 2046,
+    "custo_mensal_total_aoa": 716100.0,
+    "itens_principais": [
+      {
+        "item": "Pão fresco de padaria local e pasta de amendoim/manteiga",
+        "categoria": "Café da manhã / Desjejum",
+        "consumo_mensal": "2.100 unidades de pão",
+        "custo_aoa": 220000.0
+      },
+      {
+        "item": "Insumos para sopa enriquecida (abóbora, couve, cenoura, batata-doce)",
+        "categoria": "Reforço vitamínico diário",
+        "consumo_mensal": "180 kg de tubérculos e hortaliças",
+        "custo_aoa": 195000.0
+      },
+      {
+        "item": "Arroz agulha, feijão manteiga e óleo vegetal",
+        "categoria": "Almoço substancial",
+        "consumo_mensal": "120 kg de arroz e 75 kg de feijão",
+        "custo_aoa": 185000.0
+      },
+      {
+        "item": "Gás de cozinha, temperos naturais e proteínas (ovos e peixe seco)",
+        "categoria": "Preparo e cocção",
+        "consumo_mensal": "3 botijões de gás de 12kg e insumos",
+        "custo_aoa": 116100.0
+      }
+    ]
+  },
+  "detalhamento_equipe": {
+    "total_colaboradores": 10,
+    "custo_mensal_total_aoa": 863333.33,
+    "cargos": [
+      {
+        "cargo": "Coordenador Geral da Unidade Escolar",
+        "quantidade": 1,
+        "atribuicoes": "Gestão institucional, interface com a comunidade, pais e mantenedora IMNE."
+      },
+      {
+        "cargo": "Subdiretor Pedagógico",
+        "quantidade": 1,
+        "atribuicoes": "Coordenação do plano curricular da Iniciação à 4ª classe, supervisão pedagógica e avaliação."
+      },
+      {
+        "cargo": "Educadoras de Ensino Infantil e Primário",
+        "quantidade": 5,
+        "atribuicoes": "Regência de classe nas 5 salas (Iniciação e 1ª a 4ª classes), acolhimento e alfabetização fônica."
+      },
+      {
+        "cargo": "Merendeira Escolar",
+        "quantidade": 1,
+        "atribuicoes": "Preparo higiênico da merenda diária balanceada, controle de despensa e assepsia dos utensílios."
+      },
+      {
+        "cargo": "Auxiliares de Apoio Operacional e Limpeza",
+        "quantidade": 2,
+        "atribuicoes": "Higienização diária das salas, pátio da Parada, sanitários e apoio no fluxo de segurança da entrada/saída."
+      }
+    ]
+  },
+  "fundo_obras_detalhado": {
+    "salas_planejadas": 6,
+    "orcamento_total_aoa": 15000000.0,
+    "valor_arrecadado_aoa": 4850000.0,
+    "percentual_concluido": 32.33,
+    "composicao_custos": [
+      {
+        "etapa": "Fundações e Alvenaria Estrutural",
+        "descricao": "Aquisição de 4.500 blocos de cimento de 15cm, 280 sacos de cimento Portland, areia lavada, brita e armaduras de ferro de 10mm.",
+        "valor_estimado_aoa": 5200000.0,
+        "status": "Em andamento (50% do material já estocado)"
+      },
+      {
+        "etapa": "Cobertura Térmica e Madeiramento",
+        "descricao": "Vigas de pinho tratado, perfis metálicos galvanizados e telhas termoacústicas onduladas para isolamento do calor de Luanda.",
+        "valor_estimado_aoa": 3800000.0,
+        "status": "Aguardando cotação final e liberação da 2ª parcela"
+      },
+      {
+        "etapa": "Instalações Hidrossanitárias e Elétricas",
+        "descricao": "Tubulações de PVC para novos banheiros infantis, fossa séptica ecológica, fiação antichamas, iluminação LED e tomadas seguras.",
+        "valor_estimado_aoa": 2400000.0,
+        "status": "Planejado"
+      },
+      {
+        "etapa": "Mobiliário Escolar e Lousas",
+        "descricao": "120 carteiras escolares duplas ergonômicas em compensado naval e armação metálica, 6 quadros brancos magnéticos e armários para professores.",
+        "valor_estimado_aoa": 2100000.0,
+        "status": "Planejado"
+      },
+      {
+        "etapa": "Mão de Obra Comunitária e Supervisão de Engenharia",
+        "descricao": "Contratação de pedreiros, serventes e carpinteiros do próprio bairro de Kifangondo, com supervisão técnica voluntária de engenheiro civil.",
+        "valor_estimado_aoa": 1500000.0,
+        "status": "Em andamento"
+      }
+    ]
+  }
+}

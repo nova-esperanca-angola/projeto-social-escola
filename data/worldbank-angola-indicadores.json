@@ -1,0 +1,47 @@
+{
+  "pais_codigo": "AGO",
+  "pais_nome": "Angola",
+  "regiao": "Sub-Saharan Africa",
+  "renda_classificacao": "Lower middle income",
+  "fonte_oficial": "World Bank Open Data API (v2)",
+  "data_atualizacao": "2026-03-01",
+  "indicadores": {
+    "SE.PRM.ENRR": {
+      "codigo": "SE.PRM.ENRR",
+      "nome": "School enrollment, primary (% gross)",
+      "nome_pt": "Taxa Bruta de Matrícula no Ensino Primário (%)",
+      "ano_referencia": 2022,
+      "valor": 114.25,
+      "unidade": "Percentual",
+      "interpretacao": "O valor superior a 100% decorre da inclusão de crianças fora da faixa etária ideal (distorção idade-série) que iniciam os estudos tardiamente nas províncias periféricas como Luanda."
+    },
+    "SE.PRM.CMPT.ZS": {
+      "codigo": "SE.PRM.CMPT.ZS",
+      "nome": "Primary completion rate, total (% of relevant age group)",
+      "nome_pt": "Taxa de Conclusão do Ensino Primário (%)",
+      "ano_referencia": 2022,
+      "valor": 54.82,
+      "unidade": "Percentual",
+      "interpretacao": "Apenas cerca de 55% dos alunos que ingressam na 1ª classe conseguem concluir o ciclo primário em Angola, evidenciando o gravíssimo gargalo de evasão escolar que a Escola Nova Esperança combate diariamente."
+    },
+    "SE.XPD.TOTL.GD.ZS": {
+      "codigo": "SE.XPD.TOTL.GD.ZS",
+      "nome": "Government expenditure on education, total (% of GDP)",
+      "nome_pt": "Despesa Pública em Educação (% do PIB)",
+      "ano_referencia": 2021,
+      "valor": 2.34,
+      "unidade": "Percentual do PIB",
+      "interpretacao": "Investimento público abaixo da meta recomendada internacionalmente pela UNESCO (4% a 6% do PIB), o que acentua a relevância de escolas sociais comunitárias autônomas."
+    },
+    "SE.ADT.LITR.ZS": {
+      "codigo": "SE.ADT.LITR.ZS",
+      "nome": "Literacy rate, adult total (% of people ages 15 and above)",
+      "nome_pt": "Taxa de Alfabetização de Adultos (%)",
+      "ano_referencia": 2022,
+      "valor": 72.28,
+      "unidade": "Percentual",
+      "interpretacao": "Demonstra o desafio intergeracional enfrentado pelos pais em bairros periféricos como Kifangondo para auxiliar os filhos nas tarefas escolares."
+    }
+  },
+  "notas_metodologicas": "Dados harmonizados a partir das séries temporais oficiais do Banco Mundial em parceria com o Instituto de Estatística da UNESCO (UIS)."
+}

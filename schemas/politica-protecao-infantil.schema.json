@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PoliticaProtecaoInfantil",
+  "description": "Contrato estruturado para a Política Institucional de Proteção e Salvaguarda de Menores da Escola Nova Esperança",
+  "type": "object",
+  "required": [
+    "instituicao",
+    "mantenedora",
+    "versao",
+    "data_aprovacao",
+    "marco_legal",
+    "principios_fundamentais",
+    "diretrizes_imagem",
+    "mecanismo_ouvidoria"
+  ],
+  "properties": {
+    "instituicao": {
+      "type": "string",
+      "example": "Escola Nova Esperança"
+    },
+    "mantenedora": {
+      "type": "string",
+      "example": "Igreja Missionária Nova Esperança (IMNE)"
+    },
+    "versao": {
+      "type": "string",
+      "example": "1.0"
+    },
+    "data_aprovacao": {
+      "type": "string",
+      "format": "date",
+      "example": "2026-02-10"
+    },
+    "marco_legal": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "principios_fundamentais": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["codigo", "titulo", "descricao"],
+        "properties": {
+          "codigo": { "type": "string" },
+          "titulo": { "type": "string" },
+          "descricao": { "type": "string" }
+        }
+      }
+    },
+    "diretrizes_imagem": {
+      "type": "object",
+      "required": [
+        "proibicao_dados_nominais",
+        "enquadramento_prioritario",
+        "uso_obrigatorio_pseudonimos",
+        "exigencia_consentimento_pais"
+      ],
+      "properties": {
+        "proibicao_dados_nominais": { "type": "boolean" },
+        "enquadramento_prioritario": { "type": "string" },
+        "uso_obrigatorio_pseudonimos": { "type": "boolean" },
+        "exigencia_consentimento_pais": { "type": "boolean" }
+      }
+    },
+    "mecanismo_ouvidoria": {
+      "type": "object",
+      "required": ["email", "canal_confidencial", "prazo_resposta_horas"],
+      "properties": {
+        "email": { "type": "string" },
+        "canal_confidencial": { "type": "string" },
+        "prazo_resposta_horas": { "type": "integer" }
+      }
+    }
+  }
+}
