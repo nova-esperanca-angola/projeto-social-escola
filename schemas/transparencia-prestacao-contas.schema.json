@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TransparenciaPrestacaoContas",
+  "description": "Contrato de Prestação de Contas e Balancete Financeiro da Escola Nova Esperança (WDLC Fase 2)",
+  "type": "object",
+  "required": [
+    "ano_exercicio",
+    "periodo",
+    "moeda_base",
+    "resumo_financeiro",
+    "destinacao_recursos",
+    "fundo_obras_salas",
+    "relatorios_publicados"
+  ],
+  "properties": {
+    "ano_exercicio": { "type": "integer" },
+    "periodo": { "type": "string" },
+    "moeda_base": { "type": "string", "enum": ["AOA"] },
+    "resumo_financeiro": {
+      "type": "object",
+      "required": [
+        "total_receitas_aoa",
+        "total_despesas_aoa",
+        "saldo_operacional_aoa",
+        "reserva_tecnica_aoa"
+      ],
+      "properties": {
+        "total_receitas_aoa": { "type": "number", "minimum": 0 },
+        "total_despesas_aoa": { "type": "number", "minimum": 0 },
+        "saldo_operacional_aoa": { "type": "number" },
+        "reserva_tecnica_aoa": { "type": "number", "minimum": 0 }
+      }
+    },
+    "destinacao_recursos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["categoria", "percentual", "valor_executado_aoa", "descricao"],
+        "properties": {
+          "categoria": { "type": "string" },
+          "percentual": { "type": "number", "minimum": 0, "maximum": 100 },
+          "valor_executado_aoa": { "type": "number", "minimum": 0 },
+          "descricao": { "type": "string" }
+        }
+      }
+    },
+    "fundo_obras_salas": {
+      "type": "object",
+      "required": [
+        "meta_financeira_aoa",
+        "valor_arrecadado_aoa",
+        "percentual_atingido",
+        "status_obra",
+        "salas_alvo"
+      ],
+      "properties": {
+        "meta_financeira_aoa": { "type": "number", "minimum": 0 },
+        "valor_arrecadado_aoa": { "type": "number", "minimum": 0 },
+        "percentual_atingido": { "type": "number", "minimum": 0, "maximum": 100 },
+        "status_obra": { "type": "string" },
+        "salas_alvo": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "relatorios_publicados": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["titulo", "data_publicacao", "arquivo_pdf"],
+        "properties": {
+          "titulo": { "type": "string" },
+          "data_publicacao": { "type": "string" },
+          "arquivo_pdf": { "type": "string" }
+        }
+      }
+    }
+  }
+}

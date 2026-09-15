@@ -1,0 +1,64 @@
+{
+  "ano_exercicio": 2026,
+  "periodo": "1º Semestre de 2026 (Janeiro a Junho)",
+  "moeda_base": "AOA",
+  "data_atualizacao": "2026-07-10",
+  "resumo_financeiro": {
+    "total_receitas_aoa": 18500000.0,
+    "total_despesas_aoa": 15850000.0,
+    "saldo_operacional_aoa": 800000.0,
+    "reserva_tecnica_aoa": 1850000.0
+  },
+  "destinacao_recursos": [
+    {
+      "categoria": "Alimentação & Merenda Diária",
+      "percentual": 42.5,
+      "valor_executado_aoa": 7862500.0,
+      "descricao": "Aquisição de pão, manteiga, insumos para sopas enriquecidas, arroz, feijão e gás para os 93 alunos matriculados."
+    },
+    {
+      "categoria": "Auxílio e Formação da Equipe Operacional",
+      "percentual": 28.0,
+      "valor_executado_aoa": 5180000.0,
+      "descricao": "Ajuda de custo, transporte e capacitação contínua para as 5 educadoras, 1 merendeira e 2 profissionais de limpeza."
+    },
+    {
+      "categoria": "Material Didático & Artigos Escolares",
+      "percentual": 12.5,
+      "valor_executado_aoa": 2312500.0,
+      "descricao": "Cadernos pedagógicos, lápis, borrachas, papel sulfite, tintas e reposição de uniformes escolares."
+    },
+    {
+      "categoria": "Manutenção Predial & Higiene",
+      "percentual": 7.0,
+      "valor_executado_aoa": 1295000.0,
+      "descricao": "Produtos de limpeza, assepsia diária dos sanitários, pequenos reparos hidráulicos e elétricos nas 5 salas."
+    },
+    {
+      "categoria": "Reserva Técnica de Contingência",
+      "percentual": 10.0,
+      "valor_executado_aoa": 1850000.0,
+      "descricao": "Fundo de salvaguarda de 10% mantido para flutuações de preços dos alimentos no mercado de Luanda."
+    }
+  ],
+  "fundo_obras_salas": {
+    "meta_financeira_aoa": 15000000.0,
+    "valor_arrecadado_aoa": 4850000.0,
+    "percentual_atingido": 32.33,
+    "status_obra": "Fase de aquisição de materiais para fundação do bloco anexo",
+    "salas_alvo": 6,
+    "impacto_esperado": "Construção de 6 novas salas para viabilizar a reabertura do turno da tarde e acolhimento do 2º ciclo do primário e secundário."
+  },
+  "relatorios_publicados": [
+    {
+      "titulo": "Relatório de Prestação de Contas - Exercício 2025 Completo",
+      "data_publicacao": "2026-01-15",
+      "arquivo_pdf": "relatorios/prestacao-contas-2025.pdf"
+    },
+    {
+      "titulo": "Balancete Semestral - 1º Semestre de 2026",
+      "data_publicacao": "2026-07-10",
+      "arquivo_pdf": "relatorios/balancete-2026-s1.pdf"
+    }
+  ]
+}

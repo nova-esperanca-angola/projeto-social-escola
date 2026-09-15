@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IntencaoApadrinhamento",
+  "description": "Contrato de dados da intenção de doação e cadastro de padrinho (WDLC Fase 2)",
+  "type": "object",
+  "required": [
+    "codigo_referencia",
+    "cota_id",
+    "frequencia",
+    "valor_aoa",
+    "padrinho",
+    "metodo_pagamento_preferencial",
+    "data_registro",
+    "status"
+  ],
+  "properties": {
+    "codigo_referencia": {
+      "type": "string",
+      "pattern": "^NE-[0-9]{4}-[A-Z0-9]{4}$"
+    },
+    "cota_id": {
+      "type": "string"
+    },
+    "frequencia": {
+      "type": "string",
+      "enum": ["mensal", "trimestral", "anual", "pontual"]
+    },
+    "valor_aoa": {
+      "type": "number",
+      "minimum": 1000
+    },
+    "padrinho": {
+      "type": "object",
+      "required": ["nome", "contato", "tipo_contato", "exibir_no_mural_publico"],
+      "properties": {
+        "nome": { "type": "string" },
+        "contato": { "type": "string" },
+        "tipo_contato": { "type": "string", "enum": ["whatsapp", "email", "ambos"] },
+        "pais_residencia": { "type": "string" },
+        "exibir_no_mural_publico": { "type": "boolean" }
+      }
+    },
+    "metodo_pagamento_preferencial": {
+      "type": "string",
+      "enum": ["multicaixa_express", "iban_bai", "iban_bfa", "transferencia_internacional"]
+    },
+    "data_registro": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["aguardando_comprovativo", "confirmado", "expirado"]
+    }
+  }
+}
