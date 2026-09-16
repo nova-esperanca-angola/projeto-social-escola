@@ -154,7 +154,8 @@ assertTest(str_contains($planosContent, '50.000 Kz') || str_contains($planosCont
 // Canais Oficiais de Doação
 $canaisContent = file_get_contents($filePartialCanais);
 assertTest(str_contains($canaisContent, 'Multicaixa Express') && str_contains($canaisContent, '9305-61688'), "Canais devem exibir Multicaixa Express 9305-61688");
-assertTest(str_contains($canaisContent, 'IBAN') && (str_contains($canaisContent, 'Atlântico') || str_contains($canaisContent, 'BCI')), "Canais devem exibir Transferência IBAN (Banco Atlântico · Banco BCI)");
+assertTest(str_contains($canaisContent, 'Banco Atlântico') && str_contains($canaisContent, 'Banco BCI'), "Canais devem exibir Banco Atlântico e Banco BCI");
+assertTest(!str_contains($canaisContent, 'Diáspora Global'), "Canais oficiais focam exclusivamente nos dados reais (sem Diáspora conceitual)");
 assertTest(str_contains($canaisContent, 'WhatsApp') || str_contains($canaisContent, 'whatsapp'), "Canais devem exibir contato WhatsApp com a Coordenação");
 
 // 3. Validação do Roteamento e Renderização das Páginas

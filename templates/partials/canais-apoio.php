@@ -11,28 +11,34 @@
   <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
     <!-- MCX -->
     <div class="bg-surface-container-lowest p-3 rounded-xl border border-outline-variant/30 flex items-center gap-3">
-      <span class="material-symbols-outlined text-primary text-2xl" data-icon="smartphone">smartphone</span>
+      <div class="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0">
+        <span class="material-symbols-outlined text-2xl" data-icon="smartphone">smartphone</span>
+      </div>
       <div>
         <div class="font-label-md text-xs text-on-background font-bold">Multicaixa Express</div>
-        <div class="text-[11px] text-on-surface-variant font-mono font-bold text-primary">9305-61688</div>
+        <div class="text-xs text-primary font-mono font-bold select-all">9305-61688</div>
       </div>
     </div>
 
-    <!-- IBAN -->
+    <!-- Banco Atlântico -->
     <div class="bg-surface-container-lowest p-3 rounded-xl border border-outline-variant/30 flex items-center gap-3">
-      <span class="material-symbols-outlined text-secondary text-2xl" data-icon="account_balance">account_balance</span>
+      <div class="w-10 h-10 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
+        <span class="material-symbols-outlined text-2xl" data-icon="account_balance">account_balance</span>
+      </div>
       <div>
-        <div class="font-label-md text-xs text-on-background font-bold">Transferência IBAN</div>
-        <div class="text-[11px] text-on-surface-variant font-semibold">Banco Atlântico · Banco BCI</div>
+        <div class="font-label-md text-xs text-on-background font-bold">Banco Atlântico</div>
+        <div class="text-[11px] text-on-surface-variant font-mono select-all font-semibold">0005-0000-5089-22202-1014-6</div>
       </div>
     </div>
 
-    <!-- Global -->
+    <!-- Banco BCI -->
     <div class="bg-surface-container-lowest p-3 rounded-xl border border-outline-variant/30 flex items-center gap-3">
-      <span class="material-symbols-outlined text-hope-amber-dark text-2xl" data-icon="public">public</span>
+      <div class="w-10 h-10 rounded-lg bg-hope-amber-dark/10 text-hope-amber-dark flex items-center justify-center shrink-0">
+        <span class="material-symbols-outlined text-2xl" data-icon="account_balance">account_balance</span>
+      </div>
       <div>
-        <div class="font-label-md text-xs text-on-background font-bold">Diáspora Global</div>
-        <div class="text-[11px] text-on-surface-variant">SWIFT · Cartão Internacional</div>
+        <div class="font-label-md text-xs text-on-background font-bold">Banco BCI</div>
+        <div class="text-[11px] text-on-surface-variant font-mono select-all font-semibold">0005-0000-6972-1564-1019-7</div>
       </div>
     </div>
   </div>
