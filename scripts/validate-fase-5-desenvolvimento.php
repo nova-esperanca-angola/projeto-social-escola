@@ -131,7 +131,7 @@ assertTest(str_contains($bottomNavContent, 'Obras'), "Bottom Nav deve ter link O
 // Bento Grid 2x2 do Mockup
 $bentoContent = file_get_contents($filePartialBento);
 assertTest(str_contains($bentoContent, '93'), "Bento Grid deve exibir métrica de 93 alunos");
-assertTest(str_contains($bentoContent, '5') && (str_contains($bentoContent, 'Salas') || str_contains($bentoContent, 'salas')), "Bento Grid deve exibir 5 salas de aula");
+assertTest((str_contains($bentoContent, '08') || str_contains($bentoContent, '8')) && (str_contains($bentoContent, 'Salas') || str_contains($bentoContent, 'salas')), "Bento Grid deve exibir 08 salas de aula");
 assertTest(str_contains($bentoContent, '10') && (str_contains($bentoContent, 'Colaboradores') || str_contains($bentoContent, 'colaboradores')), "Bento Grid deve exibir 10 colaboradores");
 assertTest(str_contains($bentoContent, '100%') && (str_contains($bentoContent, 'Merenda') || str_contains($bentoContent, 'merenda')), "Bento Grid deve exibir 100% de merenda garantida");
 
@@ -143,7 +143,7 @@ assertTest(str_contains($termometroContent, 'Terraplanagem'), "Termômetro deve 
 assertTest(str_contains($termometroContent, 'Alvenaria') || str_contains($termometroContent, 'Sapatas'), "Termômetro deve conter marco de Alvenaria/Sapatas");
 assertTest(str_contains($termometroContent, 'Cobertura'), "Termômetro deve conter marco de Cobertura");
 
-// Planos de Apadrinhamento (5 Tiers do Mockup)
+// Planos de Apoio
 $planosContent = file_get_contents($filePartialPlanos);
 assertTest(str_contains($planosContent, '12.500 Kz') || str_contains($planosContent, '12500'), "Planos devem conter Cota Nutricional de 12.500 Kz");
 assertTest(str_contains($planosContent, '8.500 Kz') || str_contains($planosContent, '8500'), "Planos devem conter Cota Didática de 8.500 Kz");
@@ -153,8 +153,8 @@ assertTest(str_contains($planosContent, '50.000 Kz') || str_contains($planosCont
 
 // Canais Oficiais de Doação
 $canaisContent = file_get_contents($filePartialCanais);
-assertTest(str_contains($canaisContent, 'Multicaixa Express'), "Canais devem exibir Multicaixa Express");
-assertTest(str_contains($canaisContent, 'IBAN'), "Canais devem exibir Transferência IBAN");
+assertTest(str_contains($canaisContent, 'Multicaixa Express') && str_contains($canaisContent, '9305-61688'), "Canais devem exibir Multicaixa Express 9305-61688");
+assertTest(str_contains($canaisContent, 'IBAN') && (str_contains($canaisContent, 'Atlântico') || str_contains($canaisContent, 'BCI')), "Canais devem exibir Transferência IBAN (Banco Atlântico · Banco BCI)");
 assertTest(str_contains($canaisContent, 'WhatsApp') || str_contains($canaisContent, 'whatsapp'), "Canais devem exibir contato WhatsApp com a Coordenação");
 
 // 3. Validação do Roteamento e Renderização das Páginas

@@ -10,7 +10,7 @@
   </h1>
 
   <p class="font-body-sm text-on-surface-variant text-sm leading-relaxed">
-    Registros das rotinas diárias dos <strong>93 alunos</strong> nas 5 salas de aula, no pátio da Parada matinal e durante a merenda diária balanceada:
+    Registros das rotinas diárias dos <strong>93 alunos</strong> nas 8 salas de aula, no pátio da Parada matinal e durante a merenda diária balanceada:
   </p>
 
   <div class="p-3 rounded-xl bg-surface-container/60 border border-outline-variant/20 text-xs text-on-surface-variant flex items-center gap-2">
@@ -36,7 +36,7 @@
   <div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 shadow-sm space-y-2">
     <div class="flex items-center gap-2 text-secondary font-bold text-sm">
       <span class="material-symbols-outlined text-xl" data-icon="auto_stories">auto_stories</span>
-      As 5 Salas de Aula em Ação
+      As 8 Salas de Aula em Ação
     </div>
     <p class="text-xs text-on-surface-variant leading-relaxed">
       Alfabetização fônica, leitura guiada, exercícios de aritmética e oficinas de arte com materiais didáticos completos para cada criança.

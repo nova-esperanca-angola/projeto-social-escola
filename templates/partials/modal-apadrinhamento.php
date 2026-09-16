@@ -119,12 +119,23 @@
       </div>
 
       <!-- Dados de Transferência Oficiais -->
-      <div class="text-left bg-surface-container-lowest p-3.5 rounded-xl border border-outline-variant/30 space-y-2 text-xs">
+      <div class="text-left bg-surface-container-lowest p-3.5 rounded-xl border border-outline-variant/30 space-y-2.5 text-xs">
         <div class="font-bold text-on-background">Coordenadas Oficiais para Transferência:</div>
-        <div><strong>Banco:</strong> Banco Angolano de Investimentos (BAI)</div>
-        <div><strong>IBAN:</strong> <span class="font-mono select-all text-primary font-bold">AO06.0040.0000.1234.5678.9012.3</span></div>
-        <div><strong>Titular:</strong> Igreja Missionária Nova Esperança - Escola</div>
-        <div><strong>Multicaixa Express:</strong> <span class="font-mono font-bold">+244 923 000 000</span></div>
+        
+        <div class="p-2 rounded-lg bg-surface-container/60 border border-outline-variant/20 space-y-0.5">
+          <div class="font-bold text-primary">Banco Atlântico</div>
+          <div><strong>IBAN:</strong> <span class="font-mono select-all text-on-background font-bold">0005-0000-5089-22202-1014-6</span></div>
+        </div>
+
+        <div class="p-2 rounded-lg bg-surface-container/60 border border-outline-variant/20 space-y-0.5">
+          <div class="font-bold text-secondary">Banco BCI</div>
+          <div><strong>IBAN:</strong> <span class="font-mono select-all text-on-background font-bold">0005-0000-6972-1564-1019-7</span></div>
+        </div>
+
+        <div class="pt-0.5 space-y-1">
+          <div><strong>Titular:</strong> Igreja Missionária Nova Esperança - Escola</div>
+          <div><strong>Multicaixa Express (Expresso):</strong> <span class="font-mono font-bold text-primary select-all">9305-61688</span></div>
+        </div>
       </div>
 
       <div class="pt-2 flex flex-col gap-2">

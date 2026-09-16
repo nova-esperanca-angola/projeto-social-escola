@@ -93,10 +93,19 @@ class DonationController
             'codigo_referencia' => $refCode,
             'mensagem' => 'Intenção de apadrinhamento registrada com sucesso!',
             'dados_bancarios' => [
-                'banco' => 'Banco Angolano de Investimentos (BAI)',
-                'iban' => 'AO06.0040.0000.1234.5678.9012.3',
+                'banco_atlantico' => [
+                    'banco' => 'Banco Atlântico',
+                    'iban' => '0005-0000-5089-22202-1014-6'
+                ],
+                'banco_bci' => [
+                    'banco' => 'Banco BCI',
+                    'iban' => '0005-0000-6972-1564-1019-7'
+                ],
+                'banco' => 'Banco Atlântico / Banco BCI',
+                'iban' => '0005-0000-5089-22202-1014-6',
+                'iban_bci' => '0005-0000-6972-1564-1019-7',
                 'titular' => 'Igreja Missionária Nova Esperança - Escola',
-                'multicaixa_express' => '+244 923 000 000',
+                'multicaixa_express' => '9305-61688',
                 'instrucoes' => "Ao realizar a transferência, utilize a referência {$refCode} no descritivo."
             ]
         ], 201);

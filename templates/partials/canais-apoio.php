@@ -14,7 +14,7 @@
       <span class="material-symbols-outlined text-primary text-2xl" data-icon="smartphone">smartphone</span>
       <div>
         <div class="font-label-md text-xs text-on-background font-bold">Multicaixa Express</div>
-        <div class="text-[11px] text-on-surface-variant font-mono">+244 923 000 000</div>
+        <div class="text-[11px] text-on-surface-variant font-mono font-bold text-primary">9305-61688</div>
       </div>
     </div>
 
@@ -23,7 +23,7 @@
       <span class="material-symbols-outlined text-secondary text-2xl" data-icon="account_balance">account_balance</span>
       <div>
         <div class="font-label-md text-xs text-on-background font-bold">Transferência IBAN</div>
-        <div class="text-[11px] text-on-surface-variant">BAI · BFA · BPC</div>
+        <div class="text-[11px] text-on-surface-variant font-semibold">Banco Atlântico · Banco BCI</div>
       </div>
     </div>
 
@@ -45,10 +45,10 @@
       </div>
       <div>
         <div class="font-label-md text-on-background font-bold text-sm">Fale com a Coordenação</div>
-        <div class="text-xs text-on-surface-variant">Envio de comprovativos e agendamento de visitas</div>
+        <div class="text-xs text-on-surface-variant">Envio de comprovativos e agendamento de visitas (+244 930 561 688)</div>
       </div>
     </div>
-    <a class="w-full sm:w-auto px-4 py-2 bg-nutrition-green text-white rounded-lg font-label-md text-xs font-bold text-center inline-flex items-center justify-center gap-1.5 active:scale-95 transition-all" href="https://wa.me/244923000000?text=Ol%C3%A1,%20gostaria%20de%20apoiar%20a%20Escola%20Nova%20Esperan%C3%A7a" target="_blank" rel="noopener">
+    <a class="w-full sm:w-auto px-4 py-2 bg-nutrition-green text-white rounded-lg font-label-md text-xs font-bold text-center inline-flex items-center justify-center gap-1.5 active:scale-95 transition-all" href="https://wa.me/244930561688?text=Ol%C3%A1,%20gostaria%20de%20apoiar%20a%20Escola%20Nova%20Esperan%C3%A7a" target="_blank" rel="noopener">
       <span class="material-symbols-outlined text-sm" data-icon="send">send</span>
       WhatsApp Kifangondo
     </a>

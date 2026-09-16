@@ -32,7 +32,7 @@ class HomeController
             'diagnostico' => $diagData,
             'metricas' => [
                 'alunos' => 93,
-                'salas' => 5,
+                'salas' => 8,
                 'colaboradores' => 10,
                 'merenda' => '100%'
             ]

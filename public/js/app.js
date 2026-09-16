@@ -162,7 +162,7 @@ function exibirSucesso(codigoRef, nomePadrinho, valorAoa) {
   );
 
   if (btnWa) {
-    btnWa.href = `https://wa.me/244923000000?text=${textoWhatsApp}`;
+    btnWa.href = `https://wa.me/244930561688?text=${textoWhatsApp}`;
   }
 
   if (etapaSucesso) {
