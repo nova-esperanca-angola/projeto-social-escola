@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "DemandaPedagogicaApadrinhamento",
-  "description": "Contrato formal de dados da Escola Nova Esperança (Kifangondo, Luanda) - WDLC Fase 1",
+  "description": "Contrato formal de dados da Escola Cristã Nova Esperança (Kifangondo, Sequele · Ícolo e Bengo) - WDLC Fase 1",
   "type": "object",
   "required": [
     "instituicao",

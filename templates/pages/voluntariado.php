@@ -10,7 +10,7 @@
   </h1>
 
   <p class="font-body-sm text-on-surface-variant text-sm leading-relaxed">
-    Além de contribuições financeiras, a Escola Nova Esperança acolhe voluntários capacitados e organizações parceiras para atuar nos seguintes eixos estratégicos:
+    Além de contribuições financeiras, a Escola Cristã Nova Esperança acolhe voluntários capacitados e organizações parceiras para atuar nos seguintes eixos estratégicos:
   </p>
 
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs">

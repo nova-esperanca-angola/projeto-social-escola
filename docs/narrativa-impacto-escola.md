@@ -1,15 +1,15 @@
 # Narrativa de Impacto Comunitário: O Florescer de Kifangondo
 
 > *"Educar uma criança em Kifangondo não é apenas transmitir letras e números; é restituir a ela a certeza de que o seu futuro não está confinado à poeira das margens, mas aberto à plenitude de sua dignidade."*  
-> — Coordenação Pedagógica da Escola Nova Esperança
+> — Coordenação Pedagógica da Escola Cristã Nova Esperança
 
 ---
 
-## 1. O Ponto de Partida: Kifangondo e os Desafios de Luanda
+## 1. O Ponto de Partida: Kifangondo, Sequele e a Província de Ícolo e Bengo
 
-A cerca de 30 quilômetros do centro administrativo de Luanda, o bairro de **Kifangondo** guarda na sua história batalhas emblemáticas da nação angolana. No entanto, o seu presente enfrenta uma batalha diária silenciosa: a luta por acesso universal à educação de base. Em meio a um crescimento demográfico exponencial desprovido de infraestrutura pública suficiente, estima-se que mais de **1.200 crianças** na região estejam fora de qualquer sala de aula oficial, e menos de **14% das crianças em idade pré-escolar** têm acesso a centros reconhecidos de desenvolvimento infantil.
+O contexto do Bairro de **Kifangondo** reflete os desafios estruturais da província de **Ícolo e Bengo**, Município do **Sequele**, onde a ação da **Escola Cristã Nova Esperança** constitui uma resposta de amor e cuidado educacional para as crianças. Em meio a um crescimento demográfico desprovido de rede pública suficiente, estima-se que mais de **1.200 crianças** na região estejam fora de qualquer sala de aula oficial, e menos de **14% das crianças em idade pré-escolar** têm acesso a centros reconhecidos de desenvolvimento infantil.
 
-Foi diante dessa urgência social que a **Igreja Missionária Nova Esperança (IMNE)** mobilizou a comunidade local para transformar um terreno antes ocioso num refúgio de saber, afeto e acolhimento estruturado: a **Escola Nova Esperança**.
+Foi diante dessa urgência social que a **Igreja Missionária Nova Esperança (IMNE)** mobilizou a comunidade local para transformar um terreno antes ocioso num refúgio de saber, afeto e acolhimento estruturado: a **Escola Cristã Nova Esperança**.
 
 ---
 
@@ -61,15 +61,15 @@ Reforço de leitura, resolução de problemas matemáticos e oficinas de express
 
 ---
 
-## 5. O Olhar para o Amanhã: O Fundo de Ampliação das 6 Novas Salas
+## 5. O Olhar para o Amanhã: O Fundo de Ampliação das 8 Novas Salas Necessárias
 
 O sucesso com os 93 alunos é apenas o primeiro capítulo. Centenas de famílias de Kifangondo procuram mensalmente a secretaria em busca de vagas que nossa estrutura física atual de 5 salas não consegue acolher. 
 
 Além disso, ao concluírem a 4ª classe, os alunos correm o risco iminente de abandono escolar precoce devido à escassez de vagas no 2º Ciclo e no Secundário no bairro.
 
-Por essa razão, o **Fundo de Ampliação Predial** projeta a construção de **6 novas salas de aula**, dotadas de alvenaria ventilada, cobertura térmica metálica, carteiras ergonômicas e novos blocos sanitários. Esta expansão permitirá:
+Por essa razão, o **Fundo de Ampliação Predial** projeta a construção das **8 novas salas de aula necessárias**, dotadas de alvenaria ventilada, cobertura térmica metálica, carteiras ergonômicas e novos blocos sanitários. Esta expansão permitirá:
 1. Reabertura do turno da tarde até às 18:00;
 2. Acolhimento de mais 120 crianças na primeira infância e primário;
 3. Criação de turmas do 2º ciclo (5ª e 6ª classes) e início do ciclo secundário, blindando nossos adolescentes contra o desamparo e a evasão.
 
-A Escola Nova Esperança é o testemunho vivo de que, com transparência ética, respeito inegociável à dignidade infantil e engajamento comunitário fraterno, a educação transforma destinos em Angola.
+A Escola Cristã Nova Esperança é o testemunho vivo de que, com transparência ética, respeito inegociável à dignidade infantil e engajamento comunitário fraterno, a educação transforma destinos em Angola.

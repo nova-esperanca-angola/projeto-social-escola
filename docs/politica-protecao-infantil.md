@@ -1,6 +1,6 @@
 # Política Institucional de Proteção e Salvaguarda da Imagem de Menores
 
-> **Instituição:** Escola Nova Esperança — Bairro de Kifangondo, Município de Ícolo e Bengo, Luanda, Angola  
+> **Instituição:** Escola Cristã Nova Esperança — Bairro de Kifangondo, Município do Sequele, Província de Ícolo e Bengo, Angola  
 > **Mantenedora Oficial:** Igreja Missionária Nova Esperança (IMNE) — Direção Geral  
 > **Aprovação:** Resolução nº 04/2026 do Conselho Diretor da IMNE  
 > **Data de Entrada em Vigor:** 10 de Fevereiro de 2026  
@@ -11,7 +11,7 @@
 
 ## 1. Declaração de Princípios e Compromisso Ético
 
-A **Escola Nova Esperança**, sob a governança da **Igreja Missionária Nova Esperança (IMNE)**, tem como missão inegociável proporcionar educação infantil e ensino primário de excelência para crianças em situação de vulnerabilidade no Bairro de Kifangondo. 
+A **Escola Cristã Nova Esperança**, sob a governança da **Igreja Missionária Nova Esperança (IMNE)**, tem como missão inegociável proporcionar educação infantil e ensino primário de excelência para crianças em situação de vulnerabilidade no Bairro de Kifangondo, Município do Sequele, Província de Ícolo e Bengo. 
 
 Reconhecemos que toda criança é um sujeito pleno de direitos, dotada de dignidade inerente, cuja integridade física, psíquica, moral e de imagem deve prevalecer sobre quaisquer interesses de captação de recursos, comunicação pública ou divulgação institucional.
 

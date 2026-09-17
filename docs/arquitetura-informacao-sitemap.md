@@ -28,7 +28,7 @@ A arquitetura do portal foi concebida para converter visitantes e doadores (naci
 ### 2.1 [`/`] — Início / Apresentação da Escola Infantil
 - **Hero Principal:** Destaque de acolhimento aos **93 alunos matriculados**, operando da Iniciação à 4ª classe com 5 salas de aula.
 - **Destaque da Rotina:** Breve síntese da Parada matinal (07:30-08:00), Merenda balanceada e horários de saída (11:30 para creche e 12:00 para primário).
-- **Termômetro de Obras:** Indicador visual de arrecadação do **Fundo de Ampliação Predial** (meta de 6 novas salas para viabilizar a volta do turno da tarde até 18:00).
+- **Termômetro de Obras:** Indicador visual de arrecadação do **Fundo de Ampliação Predial** (meta de 8 novas salas necessárias para viabilizar a volta do turno da tarde até 18:00).
 - **Chamada Principal (CTA):** Botão direto para o fluxo de apadrinhamento em [`/apadrinhe`].
 
 ### 2.2 [`/sobre`] — Nossa História & Desafios da Educação em Luanda

@@ -26,13 +26,14 @@ class HomeController
         }
 
         $html = View::render('home', [
-            'pageTitle' => 'Escola Nova Esperança - Kifangondo, Luanda · Angola',
+            'pageTitle' => 'Escola Cristã Nova Esperança - Kifangondo, Sequele · Ícolo e Bengo',
             'currentRoute' => '/',
             'transparencia' => $transpData,
             'diagnostico' => $diagData,
             'metricas' => [
                 'alunos' => 93,
-                'salas' => 8,
+                'salas' => 5,
+                'salas_necessarias' => 8,
                 'colaboradores' => 10,
                 'merenda' => '100%'
             ]

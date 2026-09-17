@@ -154,7 +154,7 @@ function exibirSucesso(codigoRef, nomePadrinho, valorAoa) {
   if (codigoEl) codigoEl.textContent = codigoRef;
 
   const textoWhatsApp = encodeURIComponent(
-    `Olá, Escola Nova Esperança! Registrei uma intenção de apadrinhamento no portal.\n\n` +
+    `Olá, Escola Cristã Nova Esperança! Registrei uma intenção de apadrinhamento no portal.\n\n` +
     `Código de Referência: ${codigoRef}\n` +
     `Nome: ${nomePadrinho}\n` +
     `Valor: ${Number(valorAoa).toLocaleString('pt-AO')} AOA\n\n` +

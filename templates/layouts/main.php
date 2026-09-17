@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?= htmlspecialchars($pageTitle ?? 'Escola Nova Esperança - Kifangondo, Luanda') ?></title>
+  <title><?= htmlspecialchars($pageTitle ?? 'Escola Cristã Nova Esperança - Kifangondo, Sequele · Ícolo e Bengo') ?></title>
   
   <!-- Google Fonts: Plus Jakarta Sans & Inter (Stitch Design System) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">

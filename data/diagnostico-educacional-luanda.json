@@ -1,10 +1,10 @@
 {
   "regiao": {
     "pais": "Angola",
-    "provincia": "Luanda",
-    "municipio": "Ícolo e Bengo",
+    "provincia": "Ícolo e Bengo",
+    "municipio": "Sequele",
     "comunidade": "Bairro de Kifangondo",
-    "contexto_geografico": "Zona periurbana a nordeste de Luanda, historicamente marcada por migrações internas e rápida expansão populacional desprovida de rede escolar pública proporcional."
+    "contexto_geografico": "O contexto do Bairro de Kifangondo reflete os desafios estruturais da província de Icolo e Bengo, Município do Sequele, onde a ação da Escola Cristã Nova Esperança constitui uma resposta de amor e cuidado educacional para as crianças."
   },
   "indicadores_chave": {
     "taxa_matricula_pre_escolar_percentual": 13.8,
@@ -14,9 +14,9 @@
     "porcentagem_familias_inseguranca_alimentar_moderada": 48.0
   },
   "diagnostico_narrativo": {
-    "primeira_infancia": "Em Luanda, menos de 14% das crianças de 3 a 5 anos têm acesso a creches ou centros de educação pré-escolar reconhecidos. Em bairros periféricos como Kifangondo, esse índice é ainda mais crítico, empurrando as crianças para o isolamento ou para cuidados precários enquanto os pais buscam o sustento no comércio informal.",
-    "seguranca_alimentar": "A merenda escolar diária fornecida pela Escola Nova Esperança constitui, para cerca de 45% dos alunos, a principal refeição balanceada do dia. Estudos apontam que a desnutrição na primeira infância compromete de forma irreversível o desenvolvimento cognitivo e motor.",
-    "gargalo_do_ensino_secundario": "A ausência de escolas secundárias próximas obriga adolescentes a percorrer longas distâncias ou a abandonar os estudos ao término da 6ª classe. A expansão da Escola Nova Esperança para o I e II Ciclos do Secundário é uma resposta direta a esse abismo educacional comunitário."
+    "primeira_infancia": "Na província de Ícolo e Bengo e no Município do Sequele, menos de 14% das crianças de 3 a 5 anos têm acesso a creches ou centros de educação pré-escolar reconhecidos. Em comunidades como Kifangondo, esse índice é ainda mais crítico, empurrando as crianças para o isolamento ou para cuidados precários enquanto os pais buscam o sustento no comércio informal.",
+    "seguranca_alimentar": "A merenda escolar diária fornecida pela Escola Cristã Nova Esperança constitui, para cerca de 45% dos alunos, a principal refeição balanceada do dia. Estudos apontam que a desnutrição na primeira infância compromete de forma irreversível o desenvolvimento cognitivo e motor.",
+    "gargalo_do_ensino_secundario": "A ausência de escolas secundárias próximas obriga adolescentes a percorrer longas distâncias ou a abandonar os estudos ao término da 6ª classe. A expansão da Escola Cristã Nova Esperança para o I e II Ciclos do Secundário é uma resposta direta a esse abismo educacional comunitário."
   },
   "fontes_consultadas": [
     "Instituto Nacional de Estatística de Angola (INE) - Recenseamento Geral da População e Habitação",

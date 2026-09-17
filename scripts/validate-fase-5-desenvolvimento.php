@@ -117,8 +117,8 @@ assertTest(str_contains($layoutContent, 'hope-amber-dark') || str_contains($layo
 
 // Top App Bar do Mockup
 $topBarContent = file_get_contents($filePartialTopBar);
-assertTest(str_contains($topBarContent, 'Escola Nova Esperança'), "Top App Bar deve exibir o nome da escola");
-assertTest(str_contains($topBarContent, 'Kifangondo, Luanda · Angola'), "Top App Bar deve exibir a localização oficial");
+assertTest(str_contains($topBarContent, 'Escola Cristã Nova Esperança'), "Top App Bar deve exibir o nome institucional Escola Cristã Nova Esperança");
+assertTest(str_contains($topBarContent, 'Sequele') && (str_contains($topBarContent, 'Ícolo e Bengo') || str_contains($topBarContent, 'Icolo e Bengo')), "Top App Bar deve exibir a localização oficial: Sequele, Ícolo e Bengo");
 assertTest(str_contains($topBarContent, 'Impacto') && str_contains($topBarContent, 'Verificado'), "Top App Bar deve exibir selo de Impacto Verificado");
 
 // Bottom Navigation do Mockup
@@ -131,7 +131,8 @@ assertTest(str_contains($bottomNavContent, 'Obras'), "Bottom Nav deve ter link O
 // Bento Grid 2x2 do Mockup
 $bentoContent = file_get_contents($filePartialBento);
 assertTest(str_contains($bentoContent, '93'), "Bento Grid deve exibir métrica de 93 alunos");
-assertTest((str_contains($bentoContent, '08') || str_contains($bentoContent, '8')) && (str_contains($bentoContent, 'Salas') || str_contains($bentoContent, 'salas')), "Bento Grid deve exibir 08 salas de aula");
+assertTest((str_contains($bentoContent, '05') || str_contains($bentoContent, '5')) && (str_contains($bentoContent, 'Salas') || str_contains($bentoContent, 'salas')), "Bento Grid deve exibir 05 salas de aula ativas");
+assertTest(!str_contains($bentoContent, '08') && !str_contains($bentoContent, '>8<'), "Bento Grid não deve exibir 8 salas ativas");
 assertTest(str_contains($bentoContent, '10') && (str_contains($bentoContent, 'Colaboradores') || str_contains($bentoContent, 'colaboradores')), "Bento Grid deve exibir 10 colaboradores");
 assertTest(str_contains($bentoContent, '100%') && (str_contains($bentoContent, 'Merenda') || str_contains($bentoContent, 'merenda')), "Bento Grid deve exibir 100% de merenda garantida");
 
@@ -186,7 +187,7 @@ $reqHome = new NovaEsperanca\Core\Request('GET', '/');
 $resHome = $router->dispatch($reqHome);
 assertTest($resHome->getStatusCode() === 200, "Rota GET / deve retornar status 200");
 $bodyHome = $resHome->getBody();
-assertTest(str_contains($bodyHome, 'Escola Nova Esperança'), "Home deve conter o nome institucional");
+assertTest(str_contains($bodyHome, 'Escola Cristã Nova Esperança'), "Home deve conter o nome institucional Escola Cristã Nova Esperança");
 assertTest(str_contains($bodyHome, '93'), "Home deve conter o indicador de 93 alunos matriculados");
 assertTest(str_contains($bodyHome, '15.000.000'), "Home deve conter o termômetro de 15.000.000 Kz");
 

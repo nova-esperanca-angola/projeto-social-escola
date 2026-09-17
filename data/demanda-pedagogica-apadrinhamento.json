@@ -1,20 +1,21 @@
 {
   "instituicao": {
-    "nome": "Escola Nova Esperança",
-    "sigla": "ENE",
+    "nome": "Escola Cristã Nova Esperança",
+    "sigla": "ECNE",
     "mantenedora": "Igreja Missionária Nova Esperança (IMNE)",
     "ano_fundacao": 2018,
     "localizacao": {
       "pais": "Angola",
-      "provincia": "Luanda",
-      "municipio": "Ícolo e Bengo",
+      "provincia": "Ícolo e Bengo",
+      "municipio": "Sequele",
       "bairro": "Kifangondo",
-      "referencia": "Comunidade de Kifangondo, adjacente à sede da Igreja Missionária Nova Esperança"
+      "referencia": "Comunidade de Kifangondo, Município do Sequele, Província de Ícolo e Bengo, adjacente à sede da Igreja Missionária Nova Esperança"
     }
   },
   "cenario_operacional": {
     "alunos_matriculados": 93,
     "salas_em_uso": 5,
+    "salas_necessarias_meta": 8,
     "regime_turnos": {
       "turno_atual": "matutino_temporario",
       "horario_geral": "07:30 às 12:00",
@@ -30,7 +31,7 @@
           "horario": "12:30 às 18:00"
         }
       },
-      "justificativa_transicao": "Como o ano letivo em Angola inicia em setembro e a escola necessita de reformas e ampliação de salas de aula, operou-se temporariamente a unificação no turno da manhã com 5 turmas (Iniciação à 4ª classe), até que novas salas de aula sejam viabilizadas para a retomada dos dois turnos e acolhimento das classes subsequentes."
+      "justificativa_transicao": "Como o ano letivo em Angola inicia em setembro e a escola necessita de reformas e ampliação predial, operou-se temporariamente a unificação no turno da manhã com 5 turmas (Iniciação à 4ª classe) em 5 salas atuais, até que as 8 salas de aula necessárias sejam construídas para a retomada dos dois turnos e acolhimento digno das classes subsequentes."
     }
   },
   "turmas_ativas": [
@@ -164,9 +165,9 @@
     },
     "ampliacao_salas_meta": {
       "salas_atuais": 5,
-      "novas_salas_necessarias": 6,
-      "total_salas_alvo": 11,
-      "descricao": "Construção de bloco anexo com novas salas de aula e sanitários adequados para destravar o retorno dos 2 turnos e os novos ciclos de ensino."
+      "novas_salas_necessarias": 8,
+      "total_salas_alvo": 13,
+      "descricao": "Construção de bloco anexo com as 8 novas salas de aula necessárias e sanitários adequados para destravar o retorno dos 2 turnos e os novos ciclos de ensino."
     },
     "previsao_retomada_turnos": "Assim que viabilizada a estrutura física de novas salas, retoma-se o turno vespertino (12:30 às 18:00) acolhendo até à 7ª classe e subsequentes."
   },
@@ -214,7 +215,7 @@
         "tipo": "pontual_ou_recorrente",
         "valor_sugerido_aoa": 50000,
         "equivalente_estimado_usd": 60,
-        "descricao": "Doação destinada à compra de cimento, blocos, coberturas e carteiras escolares para erguer novas salas e retomar o turno da tarde.",
+        "descricao": "Doação destinada à compra de cimento, blocos, coberturas e carteiras escolares para erguer as 8 novas salas necessárias e retomar o turno da tarde.",
         "itens_cobertos": ["Materiais de construção civil", "Carteiras e lousas escolares", "Instalações elétricas e janelas"]
       }
     ],

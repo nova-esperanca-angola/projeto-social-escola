@@ -6,7 +6,7 @@
         Fundo de Infraestrutura
       </span>
       <h2 class="font-headline-md text-headline-md text-on-background font-bold text-xl">
-        Expansão de 6 Novas Salas
+        Expansão de 8 Novas Salas Necessárias
       </h2>
       <p class="font-body-sm text-body-sm text-on-surface-variant mt-1 text-xs sm:text-sm">
         Meta vital para restaurar o turno da tarde e acolher <strong>+120 crianças</strong> atualmente fora do sistema escolar em Kifangondo.
@@ -60,7 +60,7 @@
   </div>
 
   <!-- Construction Action CTA -->
-  <button onclick="abrirModalApadrinhamento('obras', 50000, 'Fundo de Obras (6 Novas Salas)', 'pontual')" class="w-full min-h-[48px] bg-secondary text-on-secondary hover:bg-secondary/90 active:scale-[0.98] transition-all rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 shadow-sm font-bold text-white">
+  <button onclick="abrirModalApadrinhamento('obras', 50000, 'Fundo de Obras (8 Novas Salas)', 'pontual')" class="w-full min-h-[48px] bg-secondary text-on-secondary hover:bg-secondary/90 active:scale-[0.98] transition-all rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 shadow-sm font-bold text-white">
     <span class="material-symbols-outlined text-lg" data-icon="handyman">handyman</span>
     Contribuir com Materiais ou Cota de Obra
   </button>

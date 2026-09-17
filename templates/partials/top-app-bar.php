@@ -4,10 +4,10 @@
     <a href="/" class="flex items-center space-x-2.5 hover:opacity-90 transition-opacity">
       <span class="material-symbols-outlined text-primary text-2xl" data-icon="school">school</span>
       <div class="flex flex-col">
-        <span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">Escola Nova Esperança</span>
-        <span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1 text-xs">
+        <span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight text-sm sm:text-base">Escola Cristã Nova Esperança</span>
+        <span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1 text-[11px] sm:text-xs">
           <span class="material-symbols-outlined text-xs" data-icon="location_on">location_on</span>
-          Kifangondo, Luanda · Angola
+          Kifangondo, Sequele · Ícolo e Bengo, Angola
         </span>
       </div>
     </a>

@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "RelatorioCustosTransparencia",
-  "description": "Schema de validação da composição analítica de custos operacionais e obras da Escola Nova Esperança",
+  "description": "Schema de validação da composição analítica de custos operacionais e obras da Escola Cristã Nova Esperança",
   "type": "object",
   "required": [
     "ano_exercicio",
@@ -84,7 +84,7 @@
         "composicao_custos"
       ],
       "properties": {
-        "salas_planejadas": { "type": "integer", "const": 6 },
+        "salas_planejadas": { "type": "integer", "const": 8 },
         "orcamento_total_aoa": { "type": "number" },
         "valor_arrecadado_aoa": { "type": "number" },
         "percentual_concluido": { "type": "number" },

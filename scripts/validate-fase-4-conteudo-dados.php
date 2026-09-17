@@ -130,9 +130,9 @@ assertTest(isset($merenda['custo_refeicao_diaria_aluno_aoa']), "Relatório deve 
 assertTest(isset($merenda['refeicoes_servidas_mes']), "Relatório deve informar total de refeições mensais");
 assertTest(count($merenda['itens_principais'] ?? []) >= 3, "Relatório deve discriminar ao menos 3 itens principais da merenda (pão, sopa, grãos)");
 
-// Verificação do plano de ampliação predial (6 salas)
+// Verificação do plano de ampliação predial (8 salas)
 $obras = $jsonRelatorio['fundo_obras_detalhado'] ?? [];
-assertTest(($obras['salas_planejadas'] ?? 0) === 6, "Plano de obras deve especificar exatamente 6 salas de aula");
+assertTest(($obras['salas_planejadas'] ?? 0) === 8, "Plano de obras deve especificar exatamente 8 salas de aula necessárias");
 assertTest(($obras['orcamento_total_aoa'] ?? 0) === 15000000.0 || ($obras['orcamento_total_aoa'] ?? 0) === 15000000, "Orçamento do Fundo de Salas deve totalizar 15.000.000 AOA");
 assertTest(count($obras['composicao_custos'] ?? []) >= 4, "Plano de obras deve ter ao menos 4 categorias de composição de custos (alvenaria, cobertura, carteiras, instalações)");
 

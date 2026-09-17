@@ -57,8 +57,10 @@ if (!$data || !$schemaJson) {
 }
 
 // 3. Validação dos Campos de Instituição
-assertTest(isset($data['instituicao']['nome']) && !empty($data['instituicao']['nome']), "Instituição deve possuir nome");
+assertTest(str_contains($data['instituicao']['nome'] ?? '', 'Escola Cristã Nova Esperança'), "Instituição deve ser Escola Cristã Nova Esperança");
 assertTest(($data['instituicao']['localizacao']['bairro'] ?? '') === 'Kifangondo', "Localização deve ser no bairro de Kifangondo");
+assertTest(($data['instituicao']['localizacao']['municipio'] ?? '') === 'Sequele', "Município deve ser Sequele");
+assertTest(($data['instituicao']['localizacao']['provincia'] ?? '') === 'Ícolo e Bengo' || ($data['instituicao']['localizacao']['provincia'] ?? '') === 'Icolo e Bengo', "Província deve ser Ícolo e Bengo");
 
 // 4. Validação da Capacidade Operacional Vigente (Regra de Negócio: 93 alunos e 5 salas)
 assertTest(($data['cenario_operacional']['alunos_matriculados'] ?? 0) === 93, "Alunos matriculados deve ser exatamente 93");

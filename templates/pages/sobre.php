@@ -11,10 +11,10 @@
 
   <div class="space-y-3 font-body-sm text-on-surface-variant text-sm leading-relaxed">
     <p>
-      A cerca de 30 km do centro de Luanda, no município de Ícolo e Bengo, o bairro histórico de <strong>Kifangondo</strong> abriga milhares de famílias trabalhadoras que enfrentam diariamente uma escassez severa de serviços públicos básicos.
+      O contexto do Bairro de <strong>Kifangondo</strong> reflete os desafios estruturais da província de <strong>Ícolo e Bengo</strong>, Município do <strong>Sequele</strong>, onde a ação da <strong>Escola Cristã Nova Esperança</strong> constitui uma resposta de amor e cuidado educacional para as crianças.
     </p>
     <p>
-      Fundada pela <strong>Igreja Missionária Nova Esperança (IMNE)</strong> como um ministério de acolhimento e resgate social, a <strong>Escola Nova Esperança</strong> nasceu da determinação de não permitir que centenas de crianças crescessem à margem das salas de aula. O que começou com um barracão provisório é hoje um complexo escolar acolhedor com <strong>8 salas de aula ativas</strong> atendendo <strong>93 alunos matriculados</strong> da Iniciação à 4ª classe.
+      Fundada pela <strong>Igreja Missionária Nova Esperança (IMNE)</strong> como um ministério comunitário de acolhimento e ensino, a <strong>Escola Cristã Nova Esperança</strong> conta hoje com <strong>5 salas de aula ativas</strong> acolhendo com carinho e dedicação <strong>93 alunos matriculados</strong> da Iniciação à 4ª classe no turno matutino, mobilizando esforços constantes na construção das <strong>8 salas de aula que precisamos</strong> para viabilizar a volta do turno vespertino e acolher novos ciclos.
     </p>
   </div>
 </section>

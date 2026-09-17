@@ -34,7 +34,7 @@ class Router
         if (!$handler) {
             // Rota 404
             $html404 = View::render('404', [
-                'pageTitle' => 'Página Não Encontrada - Escola Nova Esperança',
+                'pageTitle' => 'Página Não Encontrada - Escola Cristã Nova Esperança',
                 'currentRoute' => $uri
             ]);
             return Response::html($html404, 404);

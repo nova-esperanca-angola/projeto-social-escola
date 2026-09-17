@@ -10,7 +10,7 @@
   </h1>
 
   <p class="font-body-sm text-on-surface-variant text-sm leading-relaxed">
-    O apadrinhamento da Escola Nova Esperança é estruturado em <strong>2 etapas transparentes e seguras</strong>, sem intermediários ou taxas administrativas ocultas:
+    O apadrinhamento da Escola Cristã Nova Esperança é estruturado em <strong>2 etapas transparentes e seguras</strong>, sem intermediários ou taxas administrativas ocultas:
   </p>
 
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs">

@@ -2,14 +2,14 @@
 
 > **Período de Referência:** 1º Semestre de 2026 (Janeiro a Junho de 2026)  
 > **Moeda:** Kwanza Angolano (AOA)  
-> **Entidade Auditada:** Escola Nova Esperança (Kifangondo, Luanda)  
+> **Entidade Auditada:** Escola Cristã Nova Esperança (Kifangondo, Sequele · Ícolo e Bengo)  
 > **Mantenedora:** Igreja Missionária Nova Esperança (IMNE)
 
 ---
 
 ## 1. Resumo Executivo da Execução Orçamentária
 
-Durante o primeiro semestre letivo de 2026, a Escola Nova Esperança administrou um orçamento de receitas totais de **18.500.000,00 AOA**, proveniente de cotas de apadrinhamento individual, doações institucionais de empresas parceiras e ofertas voluntárias da mantenedora IMNE.
+Durante o primeiro semestre letivo de 2026, a Escola Cristã Nova Esperança administrou um orçamento de receitas totais de **18.500.000,00 AOA**, proveniente de cotas de apadrinhamento individual, doações institucionais de empresas parceiras e ofertas voluntárias da mantenedora IMNE.
 
 | Rubrica Orçamentária | Valor Executado (AOA) | Percentual (%) |
 |---|---|---|
@@ -54,17 +54,17 @@ A escola conta exclusivamente com profissionais dedicados residentes na comunida
 
 ---
 
-## 4. Orçamento Analítico do Fundo de Ampliação das 6 Novas Salas
+## 4. Orçamento Analítico do Fundo de Ampliação das 8 Novas Salas Necessárias
 
-O plano diretor da Escola Nova Esperança estabelece a construção de um bloco anexo de **6 novas salas de aula** para acolher o 2º ciclo (5ª e 6ª classes) e reabrir o turno vespertino, totalizando uma meta financeira de **15.000.000,00 AOA**.
+O plano diretor da Escola Cristã Nova Esperança estabelece a construção de um bloco anexo das **8 novas salas de aula necessárias** para acolher o 2º ciclo (5ª e 6ª classes) e reabrir o turno vespertino, totalizando uma meta financeira de **15.000.000,00 AOA**.
 
 | Etapa da Obra | Descrição Técnica dos Materiais | Valor Estimado (AOA) | Status da Fase |
 |---|---|---|---|
 | **1. Alvenaria e Fundações** | 4.500 blocos de 15cm, 280 sacos de cimento Portland, areia lavada, brita e ferragens 10mm. | 5.200.000,00 AOA | Em andamento (50% estocado) |
 | **2. Cobertura Térmica** | Madeiramento imunizado, perfis metálicos galvanizados e telhas termoacústicas onduladas. | 3.800.000,00 AOA | Cotações concluídas |
 | **3. Instalações Hidrossanitárias & Elétricas** | 2 novos sanitários infantis acessíveis, fossa séptica biológica, fiação antichamas e luminárias LED. | 2.400.000,00 AOA | Planejado |
-| **4. Mobiliário e Carteiras Escolares** | 120 conjuntos de carteiras duplas ergonômicas, 6 quadros brancos magnéticos e armários de apoio. | 2.100.000,00 AOA | Planejado |
+| **4. Mobiliário e Carteiras Escolares** | 120 conjuntos de carteiras duplas ergonômicas, quadros brancos magnéticos e armários de apoio. | 2.100.000,00 AOA | Planejado |
 | **5. Mão de Obra e Gestão Local** | Contratação de mestres de obras e pedreiros de Kifangondo com supervisão de engenheiro voluntário. | 1.500.000,00 AOA | Em execução gradual |
-| **Total Global do Projeto de Obras** | **6 Salas Estruturadas e Equipadas** | **15.000.000,00 AOA** | **32,33% Arrecadado** |
+| **Total Global do Projeto de Obras** | **8 Salas Estruturadas e Equipadas** | **15.000.000,00 AOA** | **32,33% Arrecadado** |
 
 *Valor total arrecadado no Fundo de Obras até o momento:* **4.850.000,00 AOA**.

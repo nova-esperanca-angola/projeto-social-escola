@@ -1,9 +1,9 @@
-# Escola Nova Esperança (Kifangondo, Luanda)
+# Escola Cristã Nova Esperança (Kifangondo, Sequele · Ícolo e Bengo)
 ## Documento de Requisitos Pedagógicos, Operacionais e Programa de Apadrinhamento (Fase 1 - WDLC #1)
 
-> **Instituição:** Escola Nova Esperança  
+> **Instituição:** Escola Cristã Nova Esperança  
 > **Mantenedora:** Igreja Missionária Nova Esperança (IMNE)  
-> **Localização:** Bairro de Kifangondo, Município de Ícolo e Bengo, Província de Luanda - Angola  
+> **Localização:** Bairro de Kifangondo, Município do Sequele, Província de Ícolo e Bengo - Angola  
 > **Metodologia:** Spec-Driven Development (SDD)  
 > **Data de Atualização:** Setembro de 2026  
 
@@ -11,7 +11,7 @@
 
 ## 1. Contexto Institucional e Realidade Operacional
 
-A **Escola Nova Esperança** é o braço socioeducacional da Igreja Missionária Nova Esperança, atuando diretamente no acolhimento de crianças em situação de vulnerabilidade no bairro de Kifangondo, periferia de Luanda.
+A **Escola Cristã Nova Esperança** é o braço socioeducacional da Igreja Missionária Nova Esperança, atuando diretamente no acolhimento de crianças em situação de vulnerabilidade no Bairro de Kifangondo, Município do Sequele, Província de Ícolo e Bengo. O contexto local reflete desafios estruturais regionais onde a escola constitui uma resposta de amor e cuidado educacional para as crianças.
 
 Em Angola, o ano letivo inicia oficialmente no mês de **setembro**. Por ocasião do início das aulas e da necessidade premente de obras e reestruturação física das instalações, a direção escolar organizou um arranjo operacional de transição:
 
@@ -90,8 +90,8 @@ Para manter o funcionamento e viabilizar o plano de expansão, foram formuladas 
    Contribuição para ajuda de custo e capacitação das 5 educadoras, merendeira e equipe de limpeza.
 4. **Apadrinhamento Integral (Criança Completa):** `40.000 AOA/mês (~50 USD)`  
    Cobre alimentação diária, material escolar, assistência pedagógica e acompanhamento social.
-5. **Fundo de Ampliação Predial (Novas Salas de Aula):** `50.000 AOA (~60 USD)` *(Pontual ou Recorrente)*  
-   Aquisição de cimento, blocos, telhas, janelas e carteiras para construção de novas salas e viabilização do turno da tarde.
+5. **Fundo de Ampliação Predial (8 Novas Salas Necessárias):** `50.000 AOA (~60 USD)` *(Pontual ou Recorrente)*  
+   Aquisição de cimento, blocos, telhas, janelas e carteiras para construção das 8 salas que precisamos e viabilização do turno da tarde.
 
 ### 6.2 Canais de Contribuição
 - **Angola:** Transferência bancária via IBAN (BAI / BFA) e Multicaixa Express em favor da Igreja Missionária Nova Esperança.

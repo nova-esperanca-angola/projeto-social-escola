@@ -4,7 +4,7 @@
     <div class="flex items-center gap-2">
       <span class="material-symbols-outlined text-primary text-xl" data-icon="analytics">analytics</span>
       <h3 class="font-headline-sm text-headline-sm text-on-background font-bold text-base sm:text-lg">
-        Diagnóstico Educacional de Luanda
+        Diagnóstico Educacional Regional
       </h3>
     </div>
     <span class="text-[11px] font-label-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-full">
@@ -13,7 +13,7 @@
   </div>
 
   <p class="font-body-sm text-xs sm:text-sm text-on-surface-variant leading-relaxed">
-    O contexto de vulnerabilidade no Bairro de Kifangondo reflete os desafios estruturais da província de Luanda, onde a ação da Escola Nova Esperança constitui uma barreira vital contra o abandono e o desamparo infantil:
+    O contexto do Bairro de Kifangondo reflete os desafios estruturais da província de Icolo e Bengo, Município do Sequele, onde a ação da Escola Cristã Nova Esperança constitui uma resposta de amor e cuidado educacional para as crianças:
   </p>
 
   <div class="grid grid-cols-2 gap-2.5 pt-1">

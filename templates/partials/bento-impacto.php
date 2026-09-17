@@ -28,9 +28,9 @@
         <span class="material-symbols-outlined text-2xl" data-icon="foundation">foundation</span>
       </div>
       <div>
-        <div class="font-metric-stat text-metric-stat text-hope-amber-dark leading-none text-2xl sm:text-3xl font-extrabold">08</div>
+        <div class="font-metric-stat text-metric-stat text-hope-amber-dark leading-none text-2xl sm:text-3xl font-extrabold">05</div>
         <div class="font-label-md text-label-md text-on-background font-bold mt-1 text-sm">Salas de Aula Ativas</div>
-        <div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 text-xs">Turno matutino estruturado</div>
+        <div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 text-xs">Turno matutino estruturado (Meta: +8)</div>
       </div>
     </div>
 

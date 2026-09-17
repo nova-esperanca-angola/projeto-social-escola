@@ -16,7 +16,7 @@ class PageController
         $diag = file_exists($diagFile) ? json_decode((string)file_get_contents($diagFile), true) : [];
 
         $html = View::render('sobre', [
-            'pageTitle' => 'Nossa História & Diagnóstico - Escola Nova Esperança',
+            'pageTitle' => 'Nossa História & Diagnóstico - Escola Cristã Nova Esperança',
             'currentRoute' => '/sobre',
             'diagnostico' => $diag
         ]);
@@ -26,7 +26,7 @@ class PageController
     public function apadrinhe(Request $request): Response
     {
         $html = View::render('apadrinhe', [
-            'pageTitle' => 'Planos de Apadrinhamento - Escola Nova Esperança',
+            'pageTitle' => 'Planos de Apadrinhamento - Escola Cristã Nova Esperança',
             'currentRoute' => '/apadrinhe'
         ]);
         return Response::html($html);
@@ -42,7 +42,7 @@ class PageController
         $transp = file_exists($transpFile) ? json_decode((string)file_get_contents($transpFile), true) : [];
 
         $html = View::render('transparencia', [
-            'pageTitle' => 'Transparência e Prestação de Contas - Escola Nova Esperança',
+            'pageTitle' => 'Transparência e Prestação de Contas - Escola Cristã Nova Esperança',
             'currentRoute' => '/transparencia',
             'custos' => $custos,
             'transparencia' => $transp
@@ -53,7 +53,7 @@ class PageController
     public function galeria(Request $request): Response
     {
         $html = View::render('galeria', [
-            'pageTitle' => 'Galeria & Rotina Escolar - Escola Nova Esperança',
+            'pageTitle' => 'Galeria & Rotina Escolar - Escola Cristã Nova Esperança',
             'currentRoute' => '/galeria'
         ]);
         return Response::html($html);
@@ -62,7 +62,7 @@ class PageController
     public function voluntariado(Request $request): Response
     {
         $html = View::render('voluntariado', [
-            'pageTitle' => 'Voluntariado & Parcerias - Escola Nova Esperança',
+            'pageTitle' => 'Voluntariado & Parcerias - Escola Cristã Nova Esperança',
             'currentRoute' => '/voluntariado'
         ]);
         return Response::html($html);

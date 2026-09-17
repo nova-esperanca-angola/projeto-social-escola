@@ -145,7 +145,7 @@
       </button>
     </div>
 
-    <!-- TIER 5: Fundo de Obras para 6 Novas Salas -->
+    <!-- TIER 5: Fundo de Obras para 8 Novas Salas -->
     <div class="bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-4 shadow-sm relative space-y-3">
       <div class="flex justify-between items-start">
         <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-xs font-bold">
@@ -157,7 +157,7 @@
           <div class="font-body-sm text-xs text-on-surface-variant mt-0.5">Aprox. $60 USD</div>
         </div>
       </div>
-      <h3 class="font-headline-sm text-headline-sm text-on-background font-bold text-base">Fundo de Obras para 6 Novas Salas</h3>
+      <h3 class="font-headline-sm text-headline-sm text-on-background font-bold text-base">Fundo de Obras para 8 Novas Salas</h3>
       <ul class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant text-xs sm:text-sm">
         <li class="flex items-start gap-2">
           <span class="material-symbols-outlined text-secondary text-base shrink-0 mt-0.5" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
@@ -169,10 +169,10 @@
         </li>
         <li class="flex items-start gap-2">
           <span class="material-symbols-outlined text-secondary text-base shrink-0 mt-0.5" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-          <span>Permite reabrir o turno da tarde para 120 novas crianças</span>
+          <span>Permite construir as 8 salas necessárias para a volta do turno vespertino</span>
         </li>
       </ul>
-      <button onclick="abrirModalApadrinhamento('obras', 50000, 'Fundo de Obras para 6 Novas Salas', 'pontual')" class="w-full min-h-[48px] bg-secondary text-white hover:bg-secondary/90 active:scale-[0.98] transition-all rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 font-bold">
+      <button onclick="abrirModalApadrinhamento('obras', 50000, 'Fundo de Obras para 8 Novas Salas', 'pontual')" class="w-full min-h-[48px] bg-secondary text-white hover:bg-secondary/90 active:scale-[0.98] transition-all rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 font-bold">
         <span class="material-symbols-outlined text-lg" data-icon="handyman">handyman</span>
         Doar para a Obra
       </button>

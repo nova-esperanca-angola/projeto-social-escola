@@ -10,7 +10,7 @@
   </h1>
 
   <p class="font-body-sm text-on-surface-variant text-sm leading-relaxed">
-    Cada Kwanza doado à Escola Nova Esperança é gerido com integridade cristã e responsabilidade técnica pela Igreja Missionária Nova Esperança. Abaixo apresentamos o balancete analítico do 1º Semestre de 2026:
+    Cada Kwanza doado à Escola Cristã Nova Esperança é gerido com integridade cristã e responsabilidade técnica pela Igreja Missionária Nova Esperança. Abaixo apresentamos o balancete analítico do 1º Semestre de 2026:
   </p>
 
   <!-- Indicadores Orçamentários Globais -->

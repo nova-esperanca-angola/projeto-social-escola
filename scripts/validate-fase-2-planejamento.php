@@ -78,11 +78,11 @@ assertTest($percentualReserva >= 10, "Reserva técnica deve representar no míni
 // Validação do Fundo de Novas Salas de Aula
 $fundoSalas = $tData['fundo_obras_salas'] ?? [];
 assertTest(isset($fundoSalas['meta_financeira_aoa']) && $fundoSalas['meta_financeira_aoa'] > 0, "Fundo de obras deve ter meta financeira definida em AOA");
-assertTest(isset($fundoSalas['salas_alvo']) && $fundoSalas['salas_alvo'] > 0, "Fundo de obras deve especificar o número de salas alvo");
+assertTest(($fundoSalas['salas_alvo'] ?? 0) === 8, "Fundo de obras deve especificar exatamente 8 salas alvo que precisamos");
 
-// 4. Validação do Diagnóstico Educacional de Luanda
-assertTest(($dData['regiao']['provincia'] ?? '') === 'Luanda', "Diagnóstico deve focar na Província de Luanda");
-assertTest(($dData['regiao']['municipio'] ?? '') === 'Ícolo e Bengo', "Diagnóstico deve abranger o município de Ícolo e Bengo");
+// 4. Validação do Diagnóstico Educacional
+assertTest(($dData['regiao']['provincia'] ?? '') === 'Ícolo e Bengo' || ($dData['regiao']['provincia'] ?? '') === 'Icolo e Bengo', "Diagnóstico deve focar na Província de Ícolo e Bengo");
+assertTest(($dData['regiao']['municipio'] ?? '') === 'Sequele', "Diagnóstico deve abranger o Município do Sequele");
 assertTest(isset($dData['indicadores_chave']['taxa_matricula_pre_escolar_percentual']), "Deve conter taxa de matrícula na pré-escola");
 assertTest(isset($dData['indicadores_chave']['deficit_vagas_comunidade_kifangondo']), "Deve conter estimativa de déficit em Kifangondo");
 
