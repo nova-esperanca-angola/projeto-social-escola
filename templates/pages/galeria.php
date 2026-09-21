@@ -49,13 +49,16 @@
     </p>
   </div>
 
-  <div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 shadow-sm space-y-2">
+  <div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 shadow-sm space-y-3 overflow-hidden">
+    <div class="overflow-hidden rounded-xl aspect-[16/10] bg-surface-container shadow-inner">
+      <img src="/assets/images/merenda-escolar.jpeg" alt="Distribuição da Merenda Escolar Diária na Escola Cristã Nova Esperança" class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500" loading="lazy">
+    </div>
     <div class="flex items-center gap-2 text-nutrition-green-dark font-bold text-sm">
       <span class="material-symbols-outlined text-xl" data-icon="restaurant">restaurant</span>
       A Merenda Escolar Diária (10:00 - 10:45)
     </div>
     <p class="text-xs text-on-surface-variant leading-relaxed">
-      Distribuição do pão fresco, sopa nutritiva enriquecida e pratos quentes, garantindo energia e foco cognitivo para o aprendizado.
+      Distribuição da refeição nutritiva e pratos quentes servidos com carinho às crianças uniformizadas, garantindo energia e foco cognitivo para o aprendizado.
     </p>
   </div>
 
