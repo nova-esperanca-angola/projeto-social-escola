@@ -1,14 +1,20 @@
 {
-  "name": "Esperança Solar",
+  "name": "Nova Esperança Angola",
   "project": "Escola Nova Esperança - Kifangondo",
   "stitchProjectId": "5162131248924929494",
   "stitchScreenId": "7d8a046430cc4a9488c0004d4e9aeb38",
   "colors": {
     "primary": {
-      "DEFAULT": "#1d4ed8",
-      "dark": "#1e3a8a",
-      "light": "#3b82f6",
-      "surface": "#eff6ff"
+      "DEFAULT": "#009ada",
+      "dark": "#006fa1",
+      "light": "#38bdf8",
+      "surface": "#f0f9fd"
+    },
+    "brand-green": {
+      "DEFAULT": "#006338",
+      "dark": "#004728",
+      "light": "#058a50",
+      "surface": "#e6f5ee"
     },
     "hope-amber": {
       "DEFAULT": "#f59e0b",
@@ -23,9 +29,9 @@
       "surface": "#ffedd5"
     },
     "nutrition-green": {
-      "DEFAULT": "#16a34a",
-      "dark": "#15803d",
-      "light": "#22c55e",
+      "DEFAULT": "#01a85a",
+      "dark": "#008748",
+      "light": "#34d399",
       "surface": "#dcfce7"
     },
     "neutral": {

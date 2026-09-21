@@ -6,10 +6,15 @@
 
 :root {
   /* Cores Principais do Projeto */
-  --color-primary: #1d4ed8;
-  --color-primary-dark: #1e3a8a;
-  --color-primary-light: #3b82f6;
-  --color-primary-surface: #eff6ff;
+  --color-primary: #009ada;
+  --color-primary-dark: #006fa1;
+  --color-primary-light: #38bdf8;
+  --color-primary-surface: #f0f9fd;
+
+  --color-brand-green: #006338;
+  --color-brand-green-dark: #004728;
+  --color-brand-green-light: #058a50;
+  --color-brand-green-surface: #e6f5ee;
 
   --color-hope-amber: #f59e0b;
   --color-hope-amber-dark: #d97706;
@@ -21,9 +26,9 @@
   --color-kifangondo-terra-light: #ea580c;
   --color-kifangondo-terra-surface: #ffedd5;
 
-  --color-nutrition-green: #16a34a;
-  --color-nutrition-green-dark: #15803d;
-  --color-nutrition-green-light: #22c55e;
+  --color-nutrition-green: #01a85a;
+  --color-nutrition-green-dark: #008748;
+  --color-nutrition-green-light: #34d399;
   --color-nutrition-green-surface: #dcfce7;
 
   /* Superfícies e Neutros */
