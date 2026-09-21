@@ -19,6 +19,19 @@
   </div>
 </section>
 
+<!-- Registro Fotográfico da Comunidade Escolar -->
+<div class="rounded-2xl overflow-hidden border border-outline-variant/40 shadow-sm bg-surface-container-lowest">
+  <div class="relative aspect-[16/10] sm:aspect-[21/9] w-full overflow-hidden bg-surface-container">
+    <img src="/assets/images/parada-civica.jpeg" alt="Comunidade, Educadores e Alunos da Escola Cristã Nova Esperança em Kifangondo" class="w-full h-full object-cover object-center" loading="lazy">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent flex items-end p-4">
+      <div class="text-white">
+        <div class="font-headline-sm font-bold text-sm sm:text-base drop-shadow-sm">Alunos e Coordenação na Parada Matinal Cívica</div>
+        <p class="text-white/90 text-xs mt-0.5 max-w-lg drop-shadow-sm">Crianças da Escola Cristã Nova Esperança uniformizadas com a liderança educacional em Kifangondo.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Widget Diagnóstico Luanda & World Bank -->
 <?= \NovaEsperanca\Core\View::partial('widget-diagnostico', $diagnostico ?? []) ?>
 

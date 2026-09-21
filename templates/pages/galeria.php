@@ -23,13 +23,16 @@
 
 <!-- Momentos da Rotina -->
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-  <div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 shadow-sm space-y-2">
+  <div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 shadow-sm space-y-3 overflow-hidden">
+    <div class="overflow-hidden rounded-xl aspect-[16/10] bg-surface-container shadow-inner">
+      <img src="/assets/images/parada-civica.jpeg" alt="Parada Cívica Matinal na Escola Cristã Nova Esperança" class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500" loading="lazy">
+    </div>
     <div class="flex items-center gap-2 text-primary font-bold text-sm">
       <span class="material-symbols-outlined text-xl" data-icon="campaign">campaign</span>
       A Parada Matinal Cívica (07:30 - 08:00)
     </div>
     <p class="text-xs text-on-surface-variant leading-relaxed">
-      Reunião cívico-pedagógica no pátio central para entoação do hino nacional, devocional de gratidão e renovação de laços comunitários.
+      Reunião cívico-pedagógica no pátio central para entoação do hino nacional, devocional de gratidão e acolhimento dos alunos uniformizados.
     </p>
   </div>
 
