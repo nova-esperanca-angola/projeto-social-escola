@@ -99,7 +99,7 @@ assertTest(str_contains($previewHtml, '40.000') || str_contains($previewHtml, '4
 assertTest(str_contains($previewHtml, '50.000') || str_contains($previewHtml, '50000'), "Preview deve exibir cota de 50.000 AOA");
 
 // Verificação do Termômetro do Fundo de Novas Salas
-assertTest(str_contains($previewHtml, '15.000.000') || str_contains($previewHtml, '15000000'), "Preview deve exibir meta de 15.000.000 AOA no termômetro");
+assertTest(str_contains($previewHtml, '55.359.800') || str_contains($previewHtml, '55359800'), "Preview deve exibir meta de 55.359.800 AOA no termômetro");
 assertTest(str_contains($previewHtml, '8 novas salas') || str_contains($previewHtml, '8 salas'), "Preview deve informar a meta de 8 novas salas de aula necessárias");
 
 // Verificação dos Indicadores de Impacto Social

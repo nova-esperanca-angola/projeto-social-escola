@@ -20,15 +20,15 @@
   <!-- Linear Thermometer -->
   <div class="space-y-2 pt-1">
     <div class="flex justify-between items-baseline font-label-md">
-      <span class="text-secondary font-bold text-base sm:text-lg">32% Arrecadado</span>
-      <span class="text-on-surface-variant text-xs">Faltam 10.150.000 Kz</span>
+      <span class="text-secondary font-bold text-base sm:text-lg">0% Arrecadado</span>
+      <span class="text-on-surface-variant text-xs">Faltam 55.359.800 Kz</span>
     </div>
     <div class="w-full bg-surface-container h-3.5 rounded-full overflow-hidden p-0.5 border border-outline-variant/20">
-      <div class="h-full rounded-full bg-gradient-to-r from-hope-amber-dark to-secondary transition-all duration-500" style="width: 32.33%;"></div>
+      <div class="h-full rounded-full bg-gradient-to-r from-hope-amber-dark to-secondary transition-all duration-500" style="width: 0%;"></div>
     </div>
     <div class="flex justify-between items-center text-xs font-label-sm pt-1 text-on-surface-variant">
-      <span class="font-bold text-on-background">4.850.000 Kz angariados</span>
-      <span>Meta: 15.000.000 Kz</span>
+      <span class="font-bold text-on-background">0 Kz angariados</span>
+      <span>Meta: 55.359.800 Kz</span>
     </div>
   </div>
 

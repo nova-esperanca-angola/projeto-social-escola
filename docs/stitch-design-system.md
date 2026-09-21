@@ -129,5 +129,5 @@ A estética é **Humanista, Solar e Otimista**, inspirada nos tons terrosos e en
 
 ### Componentes de Destaque
 1. **Cards de Apadrinhamento Comunitário**: Cartões compactos com cantos arredondados, valores em Kwanzas (AOA) e dólares (USD), lista de benefícios e botão de ação touch de 48px.
-2. **Termômetro de Obras**: Barra de progresso para visualização da meta de 8 novas salas necessárias (32% arrecadados / 4.850.000 AOA de 15.000.000 AOA).
+2. **Termômetro de Obras**: Barra de progresso para visualização da meta de 8 novas salas necessárias (0% arrecadados / 0 AOA de 55.359.800 AOA).
 3. **Grid de Indicadores de Impacto**: Indicadores dos 93 alunos matriculados, 5 salas de aula, 10 colaboradores e 100% de merenda diária servida.

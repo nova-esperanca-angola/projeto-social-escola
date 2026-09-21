@@ -73,39 +73,39 @@
   },
   "fundo_obras_detalhado": {
     "salas_planejadas": 8,
-    "orcamento_total_aoa": 15000000.0,
-    "valor_arrecadado_aoa": 4850000.0,
-    "percentual_concluido": 32.33,
+    "orcamento_total_aoa": 55359800.0,
+    "valor_arrecadado_aoa": 0.0,
+    "percentual_concluido": 0.0,
     "composicao_custos": [
       {
         "etapa": "Fundações e Alvenaria Estrutural",
-        "descricao": "Aquisição de 4.500 blocos de cimento de 15cm, 280 sacos de cimento Portland, areia lavada, brita e armaduras de ferro de 10mm.",
-        "valor_estimado_aoa": 5200000.0,
-        "status": "Em andamento (50% do material já estocado)"
+        "descricao": "Aquisição de blocos de cimento de 15cm, sacos de cimento Portland, areia lavada, brita e armaduras de ferro estrutural para 8 novas salas.",
+        "valor_estimado_aoa": 19500000.0,
+        "status": "Planejado (Aguardando captação)"
       },
       {
         "etapa": "Cobertura Térmica e Madeiramento",
-        "descricao": "Vigas de pinho tratado, perfis metálicos galvanizados e telhas termoacústicas onduladas para isolamento do calor de Luanda.",
-        "valor_estimado_aoa": 3800000.0,
-        "status": "Aguardando cotação final e liberação da 2ª parcela"
+        "descricao": "Vigas estruturais, perfis metálicos galvanizados e telhas termoacústicas para isolamento térmico e acústico sob o clima de Luanda.",
+        "valor_estimado_aoa": 14200000.0,
+        "status": "Planejado (Aguardando captação)"
       },
       {
         "etapa": "Instalações Hidrossanitárias e Elétricas",
-        "descricao": "Tubulações de PVC para novos banheiros infantis, fossa séptica ecológica, fiação antichamas, iluminação LED e tomadas seguras.",
-        "valor_estimado_aoa": 2400000.0,
-        "status": "Planejado"
+        "descricao": "Tubulações de PVC para novos blocos sanitários infantis, fossa ecológica, fiação antichamas, iluminação LED e aterramento.",
+        "valor_estimado_aoa": 8900000.0,
+        "status": "Planejado (Aguardando captação)"
       },
       {
         "etapa": "Mobiliário Escolar e Lousas",
-        "descricao": "120 carteiras escolares duplas ergonômicas em compensado naval e armação metálica, 6 quadros brancos magnéticos e armários para professores.",
-        "valor_estimado_aoa": 2100000.0,
-        "status": "Planejado"
+        "descricao": "Carteiras escolares duplas ergonômicas para as 8 novas salas, quadros brancos magnéticos e armários pedagógicos para professores.",
+        "valor_estimado_aoa": 7259800.0,
+        "status": "Planejado (Aguardando captação)"
       },
       {
         "etapa": "Mão de Obra Comunitária e Supervisão de Engenharia",
-        "descricao": "Contratação de pedreiros, serventes e carpinteiros do próprio bairro de Kifangondo, com supervisão técnica voluntária de engenheiro civil.",
-        "valor_estimado_aoa": 1500000.0,
-        "status": "Em andamento"
+        "descricao": "Contratação de mestres de obras, pedreiros e auxiliares de Kifangondo, com supervisão técnica e responsabilidade de engenharia.",
+        "valor_estimado_aoa": 5500000.0,
+        "status": "Planejado (Aguardando captação)"
       }
     ]
   }

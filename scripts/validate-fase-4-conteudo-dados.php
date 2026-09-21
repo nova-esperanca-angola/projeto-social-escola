@@ -133,7 +133,8 @@ assertTest(count($merenda['itens_principais'] ?? []) >= 3, "Relatório deve disc
 // Verificação do plano de ampliação predial (8 salas)
 $obras = $jsonRelatorio['fundo_obras_detalhado'] ?? [];
 assertTest(($obras['salas_planejadas'] ?? 0) === 8, "Plano de obras deve especificar exatamente 8 salas de aula necessárias");
-assertTest(($obras['orcamento_total_aoa'] ?? 0) === 15000000.0 || ($obras['orcamento_total_aoa'] ?? 0) === 15000000, "Orçamento do Fundo de Salas deve totalizar 15.000.000 AOA");
+assertTest(($obras['orcamento_total_aoa'] ?? 0) === 55359800.0 || ($obras['orcamento_total_aoa'] ?? 0) === 55359800, "Orçamento do Fundo de Salas deve totalizar 55.359.800 AOA");
+assertTest(($obras['valor_arrecadado_aoa'] ?? -1) === 0.0 || ($obras['valor_arrecadado_aoa'] ?? -1) === 0, "Valor arrecadado inicial do Fundo de Obras deve ser 0 AOA");
 assertTest(count($obras['composicao_custos'] ?? []) >= 4, "Plano de obras deve ter ao menos 4 categorias de composição de custos (alvenaria, cobertura, carteiras, instalações)");
 
 // 5. Validação da Base Canônica e Serviço PHP World Bank

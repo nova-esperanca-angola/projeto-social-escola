@@ -56,15 +56,15 @@ A escola conta exclusivamente com profissionais dedicados residentes na comunida
 
 ## 4. Orçamento Analítico do Fundo de Ampliação das 8 Novas Salas Necessárias
 
-O plano diretor da Escola Cristã Nova Esperança estabelece a construção de um bloco anexo das **8 novas salas de aula necessárias** para acolher o 2º ciclo (5ª e 6ª classes) e reabrir o turno vespertino, totalizando uma meta financeira de **15.000.000,00 AOA**.
+O plano diretor da Escola Cristã Nova Esperança estabelece a construção de um bloco anexo das **8 novas salas de aula necessárias** para acolher o 2º ciclo (5ª e 6ª classes) e reabrir o turno vespertino, totalizando uma meta financeira de **55.359.800,00 AOA**.
 
 | Etapa da Obra | Descrição Técnica dos Materiais | Valor Estimado (AOA) | Status da Fase |
 |---|---|---|---|
-| **1. Alvenaria e Fundações** | 4.500 blocos de 15cm, 280 sacos de cimento Portland, areia lavada, brita e ferragens 10mm. | 5.200.000,00 AOA | Em andamento (50% estocado) |
-| **2. Cobertura Térmica** | Madeiramento imunizado, perfis metálicos galvanizados e telhas termoacústicas onduladas. | 3.800.000,00 AOA | Cotações concluídas |
-| **3. Instalações Hidrossanitárias & Elétricas** | 2 novos sanitários infantis acessíveis, fossa séptica biológica, fiação antichamas e luminárias LED. | 2.400.000,00 AOA | Planejado |
-| **4. Mobiliário e Carteiras Escolares** | 120 conjuntos de carteiras duplas ergonômicas, quadros brancos magnéticos e armários de apoio. | 2.100.000,00 AOA | Planejado |
-| **5. Mão de Obra e Gestão Local** | Contratação de mestres de obras e pedreiros de Kifangondo com supervisão de engenheiro voluntário. | 1.500.000,00 AOA | Em execução gradual |
-| **Total Global do Projeto de Obras** | **8 Salas Estruturadas e Equipadas** | **15.000.000,00 AOA** | **32,33% Arrecadado** |
+| **1. Alvenaria e Fundações** | Blocos de 15cm, sacos de cimento Portland, areia lavada, brita e ferragens estruturais para 8 salas. | 19.500.000,00 AOA | Planejado (Aguardando captação) |
+| **2. Cobertura Térmica** | Madeiramento imunizado, perfis metálicos galvanizados e telhas termoacústicas onduladas. | 14.200.000,00 AOA | Planejado (Aguardando captação) |
+| **3. Instalações Hidrossanitárias & Elétricas** | Novos sanitários infantis acessíveis, fossa séptica biológica, fiação antichamas e luminárias LED. | 8.900.000,00 AOA | Planejado (Aguardando captação) |
+| **4. Mobiliário e Carteiras Escolares** | Conjuntos de carteiras duplas ergonômicas para 8 salas, quadros brancos magnéticos e armários de apoio. | 7.259.800,00 AOA | Planejado (Aguardando captação) |
+| **5. Mão de Obra e Gestão Local** | Contratação de mestres de obras e pedreiros de Kifangondo com supervisão e responsabilidade técnica. | 5.500.000,00 AOA | Planejado (Aguardando captação) |
+| **Total Global do Projeto de Obras** | **8 Salas Estruturadas e Equipadas** | **55.359.800,00 AOA** | **0,00% Arrecadado** |
 
-*Valor total arrecadado no Fundo de Obras até o momento:* **4.850.000,00 AOA**.
+*Valor total arrecadado no Fundo de Obras até o momento:* **0,00 AOA** (Faltam 55.359.800,00 AOA).

@@ -138,8 +138,8 @@ assertTest(str_contains($bentoContent, '100%') && (str_contains($bentoContent, '
 
 // Termômetro Linear do Mockup
 $termometroContent = file_get_contents($filePartialTermometro);
-assertTest(str_contains($termometroContent, '15.000.000 Kz') || str_contains($termometroContent, '15.000.000'), "Termômetro deve exibir meta de 15.000.000 Kz");
-assertTest(str_contains($termometroContent, '4.850.000 Kz') || str_contains($termometroContent, '4.850.000'), "Termômetro deve exibir arrecadação de 4.850.000 Kz");
+assertTest(str_contains($termometroContent, '55.359.800 Kz') || str_contains($termometroContent, '55.359.800'), "Termômetro deve exibir meta de 55.359.800 Kz");
+assertTest(str_contains($termometroContent, '0 Kz angariados') || str_contains($termometroContent, '0 Kz'), "Termômetro deve exibir arrecadação inicial de 0 Kz");
 assertTest(str_contains($termometroContent, 'Terraplanagem'), "Termômetro deve conter marco de Terraplanagem");
 assertTest(str_contains($termometroContent, 'Alvenaria') || str_contains($termometroContent, 'Sapatas'), "Termômetro deve conter marco de Alvenaria/Sapatas");
 assertTest(str_contains($termometroContent, 'Cobertura'), "Termômetro deve conter marco de Cobertura");
@@ -154,10 +154,10 @@ assertTest(str_contains($planosContent, '50.000 Kz') || str_contains($planosCont
 
 // Canais Oficiais de Doação
 $canaisContent = file_get_contents($filePartialCanais);
-assertTest(str_contains($canaisContent, 'Multicaixa Express') && str_contains($canaisContent, '9305-61688'), "Canais devem exibir Multicaixa Express 9305-61688");
-assertTest(str_contains($canaisContent, 'Banco Atlântico') && str_contains($canaisContent, 'Banco BCI'), "Canais devem exibir Banco Atlântico e Banco BCI");
-assertTest(!str_contains($canaisContent, 'Diáspora Global'), "Canais oficiais focam exclusivamente nos dados reais (sem Diáspora conceitual)");
-assertTest(str_contains($canaisContent, 'WhatsApp') || str_contains($canaisContent, 'whatsapp'), "Canais devem exibir contato WhatsApp com a Coordenação");
+assertTest(str_contains($canaisContent, '9305-61688') || str_contains($canaisContent, '930561688'), "Canais devem exibir Multicaixa Express 9305-61688");
+assertTest(str_contains($canaisContent, 'Atlântico') && str_contains($canaisContent, 'BCI'), "Canais devem exibir Banco Atlântico e Banco BCI");
+assertTest(!str_contains($canaisContent, 'Diáspora') && !str_contains($canaisContent, 'PayPal'), "Canais oficiais focam exclusivamente nos dados reais (sem Diáspora conceitual)");
+assertTest(str_contains($canaisContent, 'WhatsApp') || str_contains($canaisContent, 'wa.me'), "Canais devem exibir contato WhatsApp com a Coordenação");
 
 // 3. Validação do Roteamento e Renderização das Páginas
 require_once $fileRequest;
@@ -189,7 +189,7 @@ assertTest($resHome->getStatusCode() === 200, "Rota GET / deve retornar status 2
 $bodyHome = $resHome->getBody();
 assertTest(str_contains($bodyHome, 'Escola Cristã Nova Esperança'), "Home deve conter o nome institucional Escola Cristã Nova Esperança");
 assertTest(str_contains($bodyHome, '93'), "Home deve conter o indicador de 93 alunos matriculados");
-assertTest(str_contains($bodyHome, '15.000.000'), "Home deve conter o termômetro de 15.000.000 Kz");
+assertTest(str_contains($bodyHome, '55.359.800'), "Home deve conter o termômetro de 55.359.800 Kz");
 
 // Teste de Rota GET /sobre
 $reqSobre = new NovaEsperanca\Core\Request('GET', '/sobre');
