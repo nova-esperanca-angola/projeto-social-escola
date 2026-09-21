@@ -36,13 +36,16 @@
     </p>
   </div>
 
-  <div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 shadow-sm space-y-2">
+  <div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 shadow-sm space-y-3 overflow-hidden">
+    <div class="overflow-hidden rounded-xl aspect-[16/10] bg-surface-container shadow-inner">
+      <img src="/assets/images/predio-salas-atual.jpeg" alt="Prédio Atual das 5 Salas de Aula da Escola Cristã Nova Esperança" class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500" loading="lazy">
+    </div>
     <div class="flex items-center gap-2 text-secondary font-bold text-sm">
       <span class="material-symbols-outlined text-xl" data-icon="auto_stories">auto_stories</span>
       As 5 Salas de Aula em Ação
     </div>
     <p class="text-xs text-on-surface-variant leading-relaxed">
-      Alfabetização fônica, leitura guiada, exercícios de aritmética e oficinas de arte com materiais didáticos completos para cada criança.
+      Fachada do prédio atual onde funcionam as 5 salas de aula (Iniciação à 4ª classe), com alfabetização e acolhimento diário às 93 crianças.
     </p>
   </div>
 
