@@ -61,16 +61,6 @@
       Distribuição da refeição nutritiva e pratos quentes servidos com carinho às crianças uniformizadas, garantindo energia e foco cognitivo para o aprendizado.
     </p>
   </div>
-
-  <div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 shadow-sm space-y-2">
-    <div class="flex items-center gap-2 text-hope-amber-dark font-bold text-sm">
-      <span class="material-symbols-outlined text-xl" data-icon="foundation">foundation</span>
-      Avanço do Bloco de Obras (8 Salas Necessárias)
-    </div>
-    <p class="text-xs text-on-surface-variant leading-relaxed">
-      Acompanhamento transparente da fundação e alvenaria que permitirão erguer as 8 salas que precisamos e reabrir o turno vespertino.
-    </p>
-  </div>
 </div>
 
 <?= \NovaEsperanca\Core\View::partial('canais-apoio') ?>
