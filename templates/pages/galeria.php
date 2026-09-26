@@ -22,9 +22,9 @@
 </section>
 
 <!-- Momentos da Rotina -->
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-  <div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 shadow-sm space-y-3 overflow-hidden">
-    <div class="overflow-hidden rounded-xl aspect-[16/10] bg-surface-container shadow-inner">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+  <div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-4 shadow-sm hover:shadow-md transition-shadow space-y-3 overflow-hidden">
+    <div class="aspect-[16/10] overflow-hidden rounded-xl bg-surface-container">
       <img src="/assets/images/parada-civica.jpeg" alt="Parada Cívica Matinal na Escola Cristã Nova Esperança" class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500" loading="lazy">
     </div>
     <div class="flex items-center gap-2 text-primary font-bold text-sm">
@@ -36,8 +36,8 @@
     </p>
   </div>
 
-  <div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 shadow-sm space-y-3 overflow-hidden">
-    <div class="overflow-hidden rounded-xl aspect-[16/10] bg-surface-container shadow-inner">
+  <div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-4 shadow-sm hover:shadow-md transition-shadow space-y-3 overflow-hidden">
+    <div class="aspect-[16/10] overflow-hidden rounded-xl bg-surface-container">
       <img src="/assets/images/predio-salas-atual.jpeg" alt="Prédio Atual das 5 Salas de Aula da Escola Cristã Nova Esperança" class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500" loading="lazy">
     </div>
     <div class="flex items-center gap-2 text-secondary font-bold text-sm">
@@ -49,8 +49,8 @@
     </p>
   </div>
 
-  <div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 shadow-sm space-y-3 overflow-hidden">
-    <div class="overflow-hidden rounded-xl aspect-[16/10] bg-surface-container shadow-inner">
+  <div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-4 shadow-sm hover:shadow-md transition-shadow space-y-3 overflow-hidden">
+    <div class="aspect-[16/10] overflow-hidden rounded-xl bg-surface-container">
       <img src="/assets/images/merenda-escolar.jpeg" alt="Distribuição da Merenda Escolar Diária na Escola Cristã Nova Esperança" class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500" loading="lazy">
     </div>
     <div class="flex items-center gap-2 text-nutrition-green-dark font-bold text-sm">

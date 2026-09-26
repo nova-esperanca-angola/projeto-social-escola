@@ -49,9 +49,12 @@ jobs:
       - name: "Validar Issue #10 - Home Desktop (Hero Duplo, Bento 4 Colunas e Termômetro Expandido)"
         run: php scripts/validate-issue-10-home-desktop.php
 
+      - name: "Validar Issue #11 - Páginas Institucionais Desktop (Sobre, Galeria e Transparência)"
+        run: php scripts/validate-issue-11-institucionais-desktop.php
+
       - name: "Sucesso no Quality Gate"
         run: |
-          echo "Todos os critérios das Fases 1 a 7 e das Issues #9 e #10 do WDLC foram aprovados com 100% de sucesso!"
+          echo "Todos os critérios das Fases 1 a 7 e das Issues #9, #10 e #11 do WDLC foram aprovados com 100% de sucesso!"
 
   deploy:
     name: Deploy em Produção (Hostinger)
