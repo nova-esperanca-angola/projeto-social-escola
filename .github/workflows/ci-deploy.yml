@@ -8,7 +8,7 @@ on:
 
 jobs:
   validate-and-test:
-    name: Validação SDD & Testes Automatizados (Fases 1 a 7 + Issue #9)
+    name: "Validação SDD & Testes Automatizados (Fases 1 a 7 + Issue #9)"
     runs-on: ubuntu-latest
 
     steps:
@@ -43,11 +43,12 @@ jobs:
       - name: Validar Fase 7 - Roteamento Hostinger, Headers de Segurança & Backups
         run: php scripts/validate-fase-7-deploy-lancamento.php
 
-      - name: Validar Issue #9 - Desktop Shell, Header Completo & Rodapé Institucional
+      - name: "Validar Issue #9 - Desktop Shell, Header Completo & Rodapé Institucional"
         run: php scripts/validate-issue-9-desktop-shell.php
 
-      - name: Sucesso no Quality Gate
-        run: echo "Todos os critérios das Fases 1 a 7 e da Issue #9 do WDLC foram aprovados com 100% de sucesso!"
+      - name: "Sucesso no Quality Gate"
+        run: |
+          echo "Todos os critérios das Fases 1 a 7 e da Issue #9 do WDLC foram aprovados com 100% de sucesso!"
 
   deploy:
     name: Deploy em Produção (Hostinger)
