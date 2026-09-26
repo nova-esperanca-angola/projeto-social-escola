@@ -55,9 +55,12 @@ jobs:
       - name: "Validar Issue #12 - Apadrinhamento Desktop e Modal de Doação Multimoeda (SWIFT/BIC)"
         run: php scripts/validate-issue-12-apadrinhamento-desktop.php
 
+      - name: "Validar Issue #13 - Responsividade Multi-Device, Acessibilidade Desktop WCAG AA e QA"
+        run: php scripts/validate-issue-13-qa-responsividade-acessibilidade.php
+
       - name: "Sucesso no Quality Gate"
         run: |
-          echo "Todos os critérios das Fases 1 a 7 e das Issues #9, #10, #11 e #12 do WDLC foram aprovados com 100% de sucesso!"
+          echo "Todos os critérios das Fases 1 a 7 e das Issues #9, #10, #11, #12 e #13 do WDLC foram aprovados com 100% de sucesso!"
 
   deploy:
     name: Deploy em Produção (Hostinger)

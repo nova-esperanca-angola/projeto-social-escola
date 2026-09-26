@@ -50,7 +50,7 @@ $footerNavLinks = [
         <?php foreach ($footerNavLinks as $link): ?>
           <li>
             <a href="<?= htmlspecialchars($link['href']) ?>"
-               class="inline-flex items-center gap-1.5 font-body-sm text-body-sm text-xs text-on-surface-variant hover:text-primary transition-colors font-medium">
+               class="inline-flex items-center gap-1.5 font-body-sm text-body-sm text-xs text-on-surface-variant hover:text-primary transition-colors font-medium rounded focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none focus:outline-none">
               <span class="material-symbols-outlined text-sm text-primary/60" data-icon="chevron_right">chevron_right</span>
               <?= htmlspecialchars($link['label']) ?>
             </a>
@@ -61,17 +61,17 @@ $footerNavLinks = [
       <h4 class="font-label-md text-label-md text-on-surface font-bold text-xs uppercase tracking-wider mt-4">Saltos Diretos</h4>
       <ul class="mt-2 space-y-1">
         <li>
-          <a href="/#bento-impacto" class="font-body-sm text-body-sm text-[11px] text-on-surface-variant hover:text-primary transition-colors">
+          <a href="/#bento-impacto" class="font-body-sm text-body-sm text-[11px] text-on-surface-variant hover:text-primary transition-colors rounded focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none focus:outline-none">
             Indicadores de Impacto (Bento Grid)
           </a>
         </li>
         <li>
-          <a href="/#termometro-obras" class="font-body-sm text-body-sm text-[11px] text-on-surface-variant hover:text-primary transition-colors">
+          <a href="/#termometro-obras" class="font-body-sm text-body-sm text-[11px] text-on-surface-variant hover:text-primary transition-colors rounded focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none focus:outline-none">
             Termômetro de Obras (8 salas)
           </a>
         </li>
         <li>
-          <a href="/transparencia#prestacao-contas" class="font-body-sm text-body-sm text-[11px] text-on-surface-variant hover:text-primary transition-colors">
+          <a href="/transparencia#prestacao-contas" class="font-body-sm text-body-sm text-[11px] text-on-surface-variant hover:text-primary transition-colors rounded focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none focus:outline-none">
             Prestação de Contas do Semestre
           </a>
         </li>
@@ -178,7 +178,7 @@ $footerNavLinks = [
       </p>
       <a href="https://wa.me/244930561688?text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20a%20Coordena%C3%A7%C3%A3o%20da%20Escola%20Nova%20Esperan%C3%A7a"
          target="_blank" rel="noopener"
-         class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-nutrition-green text-white font-label-md text-label-md text-xs font-bold hover:bg-nutrition-green-dark active:scale-95 transition-all">
+         class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-nutrition-green text-white font-label-md text-label-md text-xs font-bold hover:bg-nutrition-green-dark active:scale-95 transition-all focus-visible:ring-2 focus-visible:ring-nutrition-green-dark focus-visible:outline-none focus:outline-none">
         <span class="material-symbols-outlined text-sm" data-icon="chat">chat</span>
         Coordenação no WhatsApp · +244 930 561 688
       </a>

@@ -28,7 +28,7 @@ $navLinks = [
     <nav aria-label="Navegação principal" class="hidden md:flex items-center gap-1 lg:gap-3 shrink-0">
       <?php foreach ($navLinks as $link): ?>
         <a href="<?= htmlspecialchars($link['href']) ?>"
-           class="shrink-0 text-xs lg:text-sm px-1.5 lg:px-2 py-2 rounded-t-md whitespace-nowrap <?= $currentRoute === $link['href'] ? 'text-primary font-bold border-b-2 border-primary bg-primary/5' : 'text-on-surface-variant hover:text-primary transition-colors font-medium' ?>"
+           class="shrink-0 text-xs lg:text-sm px-1.5 lg:px-2 py-2 rounded-t-md whitespace-nowrap focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none focus:outline-none <?= $currentRoute === $link['href'] ? 'text-primary font-bold border-b-2 border-primary bg-primary/5' : 'text-on-surface-variant hover:text-primary transition-colors font-medium' ?>"
            <?= $currentRoute === $link['href'] ? 'aria-current="page"' : '' ?>><?= htmlspecialchars($link['label']) ?></a>
       <?php endforeach; ?>
     </nav>
@@ -44,7 +44,7 @@ $navLinks = [
     <button type="button"
             onclick="abrirModalApadrinhamento('integral', 40000, 'Apadrinhamento Integral')"
             aria-label="Apadrinhar Agora"
-            class="hidden md:inline-flex items-center justify-center gap-1.5 shrink-0 bg-primary hover:bg-primary-dark text-white font-bold px-3 py-2 rounded-lg shadow-sm active:scale-95 transition-all text-xs lg:text-sm whitespace-nowrap">
+            class="hidden md:inline-flex items-center justify-center gap-1.5 shrink-0 bg-primary hover:bg-primary-dark text-white font-bold px-3 py-2 rounded-lg shadow-sm active:scale-95 transition-all text-xs lg:text-sm whitespace-nowrap focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none focus:outline-none">
       <span class="material-symbols-outlined text-sm" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
       Apadrinhar Agora
     </button>
