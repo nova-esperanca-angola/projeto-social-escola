@@ -28,6 +28,7 @@
       <div>
         <div class="font-label-md text-xs text-on-background font-bold">Banco Atlântico</div>
         <div class="text-[11px] text-on-surface-variant font-mono select-all font-semibold">0005-0000-5089-22202-1014-6</div>
+        <div class="text-[11px] text-secondary font-mono select-all font-bold">SWIFT/BIC: BMAOAOLU</div>
       </div>
     </div>
 
@@ -39,7 +40,24 @@
       <div>
         <div class="font-label-md text-xs text-on-background font-bold">Banco BCI</div>
         <div class="text-[11px] text-on-surface-variant font-mono select-all font-semibold">0005-0000-6972-1564-1019-7</div>
+        <div class="text-[11px] text-hope-amber-dark font-mono select-all font-bold">SWIFT/BIC: BCIDAOLU</div>
       </div>
+    </div>
+  </div>
+
+  <!-- Transferência bancária internacional (SWIFT / Remessa Exterior) -->
+  <div class="bg-surface-container-lowest rounded-xl p-3.5 border border-outline-variant/30 space-y-1.5">
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-secondary text-lg" data-icon="public">public</span>
+      <span class="font-label-md text-xs text-on-background font-bold">Transferência Internacional (SWIFT / Remessa Exterior)</span>
+    </div>
+    <div class="text-[11px] text-on-surface-variant leading-snug">
+      <strong class="text-on-background">Banco Atlântico:</strong> SWIFT/BIC <span class="font-mono font-bold text-secondary select-all">BMAOAOLU</span> · IBAN <span class="font-mono font-bold text-on-background select-all">AO06 0005 0000 5089 2220 2101 4</span><br>
+      <strong class="text-on-background">Banco BCI:</strong> SWIFT/BIC <span class="font-mono font-bold text-hope-amber-dark select-all">BCIDAOLU</span> · IBAN <span class="font-mono font-bold text-on-background select-all">AO06 0005 0000 6972 1564 1019 7</span>
+    </div>
+    <div class="text-[11px] text-on-surface-variant leading-snug">
+      <strong class="text-on-background">Titular:</strong> Igreja Missionária Nova Esperança - Escola · No descritivo, informe o código de referência
+      <span class="font-mono font-bold text-primary select-all">NE-2026-XXXX</span> gerado no formulário de apadrinhamento.
     </div>
   </div>
 

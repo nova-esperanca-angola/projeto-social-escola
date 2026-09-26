@@ -12,6 +12,53 @@ let cotaAtual = {
 
 let modalSessionStartTime = 0;
 
+/**
+ * Taxas cambiais informativas de referência (Issue #12):
+ * 1 USD ≈ 830 AOA | 1 EUR ≈ 900 AOA | 1 BRL ≈ 150 AOA
+ * O Kwanza (AOA/Kz) é a moeda oficial de liquidação; a conversão é apenas
+ * uma estimativa exibida para doadores internacionais.
+ */
+const TAXAS_CAMBIAIS_REFERENCIA = {
+  USD: 830,
+  EUR: 900,
+  BRL: 150
+};
+
+const SIMBOLOS_CAMBIAIS = {
+  USD: '$',
+  EUR: '€',
+  BRL: 'R$'
+};
+
+/** Atualiza as equivalências EUR/USD/BRL da Etapa 1 a partir do valor em Kwanzas. */
+function atualizarConversaoCambial(valorAoa) {
+  const valor = Number(valorAoa) || 0;
+
+  const campoUsd = document.getElementById('cota-valor-usd');
+  const campoEur = document.getElementById('cota-valor-eur');
+  const campoBrl = document.getElementById('cota-valor-brl');
+
+  if (campoUsd) {
+    campoUsd.textContent = SIMBOLOS_CAMBIAIS.USD + ' ' + Math.round(valor / TAXAS_CAMBIAIS_REFERENCIA.USD).toLocaleString('pt-AO');
+  }
+  if (campoEur) {
+    campoEur.textContent = SIMBOLOS_CAMBIAIS.EUR + ' ' + Math.round(valor / TAXAS_CAMBIAIS_REFERENCIA.EUR).toLocaleString('pt-AO');
+  }
+  if (campoBrl) {
+    campoBrl.textContent = SIMBOLOS_CAMBIAIS.BRL + ' ' + Math.round(valor / TAXAS_CAMBIAIS_REFERENCIA.BRL).toLocaleString('pt-AO');
+  }
+}
+
+// Recalcula as equivalências cambiais sempre que o doador ajusta o valor da cota
+document.addEventListener('DOMContentLoaded', function() {
+  const inputValor = document.getElementById('input-valor');
+  if (inputValor) {
+    inputValor.addEventListener('input', function() {
+      atualizarConversaoCambial(inputValor.value);
+    });
+  }
+});
+
 function abrirModalApadrinhamento(tipo, valor, nome, freq = 'mensal') {
   cotaAtual.tipo = tipo;
   cotaAtual.valor = valor;
@@ -37,6 +84,9 @@ function abrirModalApadrinhamento(tipo, valor, nome, freq = 'mensal') {
   if (valorInputEl) valorInputEl.value = valor;
   if (freqInputEl) freqInputEl.value = freq;
   if (freqDisplayEl) freqDisplayEl.textContent = freq === 'pontual' ? 'cota única' : '/ ' + freq;
+
+  // Equivalência internacional estimada para a cota recém-selecionada
+  atualizarConversaoCambial(valor);
 
   // Limpar campo honeypot
   const hpField = document.getElementById('hp_confirm_field');
@@ -72,6 +122,9 @@ function avancarParaEtapa2() {
 
   if (inputValor) cotaAtual.valor = parseFloat(inputValor.value) || 1000;
   if (inputFreq) cotaAtual.frequencia = inputFreq.value;
+
+  // Garante que as equivalências exibidas correspondem ao valor confirmado
+  atualizarConversaoCambial(cotaAtual.valor);
 
   document.getElementById('etapa-1')?.classList.add('hidden');
   document.getElementById('form-apadrinhamento')?.classList.remove('hidden');
