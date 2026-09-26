@@ -1,24 +1,36 @@
-<!-- SECTION 2: TERMÔMETRO DE OBRAS (Fiel ao Mockup Stitch) -->
-<section id="termometro-obras" class="bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-5 shadow-sm space-y-4 scroll-mt-20">
-  <div class="flex items-start justify-between gap-3">
-    <div>
+<?php
+/**
+ * TERMOMETRO DE OBRAS — Cabecalho amplo, barra em largura total e timeline de 4 fases (Issue #10)
+ * Meta e arrecadação sao os valores oficiais auditados, preservados de forma literal.
+ */
+$dadosObras = $dadosObras ?? [];
+?>
+<!-- SECTION 2: TERMÔMETRO DE OBRAS (Meta 55.359.800 Kz · 4 Fases Construtivas) -->
+<section id="termometro-obras" class="bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-5 md:p-6 shadow-sm space-y-5 scroll-mt-20">
+  <!-- Cabecalho Amplo: Contexto a Esquerda, Metrica em Destaque a Direita -->
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-6 items-start">
+    <div class="lg:col-span-7">
       <span class="inline-block px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-xs font-semibold uppercase tracking-wider mb-1">
         Fundo de Infraestrutura
       </span>
-      <h2 class="font-headline-md text-headline-md text-on-background font-bold text-xl">
+      <h2 class="font-headline-md text-headline-md text-on-background font-bold text-xl sm:text-2xl">
         Expansão de 8 Novas Salas Necessárias
       </h2>
       <p class="font-body-sm text-body-sm text-on-surface-variant mt-1 text-xs sm:text-sm">
         Meta vital para restaurar o turno da tarde e acolher <strong>+120 crianças</strong> atualmente fora do sistema escolar em Kifangondo.
       </p>
     </div>
-    <div class="p-2.5 rounded-xl bg-secondary-fixed/50 text-secondary shrink-0">
-      <span class="material-symbols-outlined text-2xl" data-icon="architecture">architecture</span>
+
+    <!-- Metrica em Destaque -->
+    <div class="lg:col-span-5 w-full rounded-2xl bg-secondary-fixed/40 border border-secondary/20 p-4 text-center lg:text-right">
+      <div class="font-label-sm text-label-sm text-on-secondary-fixed font-semibold uppercase tracking-wider text-[10px] sm:text-xs">Meta da Expansão</div>
+      <div class="font-metric-stat text-metric-stat text-secondary font-extrabold leading-none text-2xl sm:text-3xl mt-1">55.359.800 Kz</div>
+      <div class="font-body-sm text-body-sm text-on-surface-variant text-xs sm:text-sm mt-1">0 Kz angariados</div>
     </div>
   </div>
 
-  <!-- Linear Thermometer -->
-  <div class="space-y-2 pt-1">
+  <!-- Linear Thermometer em Largura Total -->
+  <div class="space-y-2">
     <div class="flex justify-between items-baseline font-label-md">
       <span class="text-secondary font-bold text-base sm:text-lg">0% Arrecadado</span>
       <span class="text-on-surface-variant text-xs">Faltam 55.359.800 Kz</span>
@@ -26,35 +38,38 @@
     <div class="w-full bg-surface-container h-3.5 rounded-full overflow-hidden p-0.5 border border-outline-variant/20">
       <div class="h-full rounded-full bg-gradient-to-r from-hope-amber-dark to-secondary transition-all duration-500" style="width: 0%;"></div>
     </div>
-    <div class="flex justify-between items-center text-xs font-label-sm pt-1 text-on-surface-variant">
-      <span class="font-bold text-on-background">0 Kz angariados</span>
-      <span>Meta: 55.359.800 Kz</span>
-    </div>
   </div>
 
-  <!-- Milestone Steps Horizontal Flow -->
-  <div class="pt-2 border-t border-outline-variant/30 space-y-2">
+  <!-- Linha do Tempo Horizontal dos Marcos Construtivos -->
+  <div class="pt-4 border-t border-outline-variant/30 space-y-3">
     <div class="font-label-sm text-xs text-on-surface-variant uppercase tracking-wider font-bold">Fases da Construção:</div>
-    <div class="grid grid-cols-3 gap-2 text-center text-xs">
-      <!-- Step 1 Done -->
-      <div class="bg-nutrition-green/10 border border-nutrition-green/20 rounded-xl p-2 flex flex-col items-center justify-center">
-        <span class="material-symbols-outlined text-nutrition-green text-lg mb-1" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-3">
+      <!-- Marco 1: Terraplanagem (Concluido) -->
+      <div data-test="marco-1" class="bg-nutrition-green/10 border border-nutrition-green/20 rounded-xl p-3 flex flex-col items-center justify-center text-center">
+        <span class="material-symbols-outlined text-nutrition-green text-xl mb-1" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
         <span class="font-bold text-on-background leading-tight text-xs">Terraplanagem</span>
         <span class="text-nutrition-green-dark text-[10px] font-semibold mt-0.5">Concluído</span>
       </div>
 
-      <!-- Step 2 In Progress -->
-      <div class="bg-secondary-fixed/40 border border-secondary/30 rounded-xl p-2 flex flex-col items-center justify-center">
-        <span class="material-symbols-outlined text-secondary text-lg mb-1" data-icon="engineering">engineering</span>
+      <!-- Marco 2: Alvenaria / Sapatas (Em andamento) -->
+      <div data-test="marco-2" class="bg-secondary-fixed/40 border border-secondary/30 rounded-xl p-3 flex flex-col items-center justify-center text-center">
+        <span class="material-symbols-outlined text-secondary text-xl mb-1" data-icon="engineering">engineering</span>
         <span class="font-bold text-on-background leading-tight text-xs">Alvenaria/Sapatas</span>
         <span class="text-secondary font-semibold text-[10px] mt-0.5">Em andamento</span>
       </div>
 
-      <!-- Step 3 Upcoming -->
-      <div class="bg-surface-container border border-outline-variant/30 rounded-xl p-2 flex flex-col items-center justify-center opacity-70">
-        <span class="material-symbols-outlined text-outline text-lg mb-1" data-icon="roofing">roofing</span>
-        <span class="font-bold text-on-background leading-tight text-xs">Cobertura/Acab.</span>
+      <!-- Marco 3: Cobertura (Proxima fase) -->
+      <div data-test="marco-3" class="bg-surface-container border border-outline-variant/30 rounded-xl p-3 flex flex-col items-center justify-center text-center opacity-70">
+        <span class="material-symbols-outlined text-outline text-xl mb-1" data-icon="roofing">roofing</span>
+        <span class="font-bold text-on-background leading-tight text-xs">Cobertura</span>
         <span class="text-on-surface-variant text-[10px] font-semibold mt-0.5">Próxima fase</span>
+      </div>
+
+      <!-- Marco 4: Acabamentos e Instalacoes (Aguardando fundos) -->
+      <div data-test="marco-4" class="bg-surface-container border border-outline-variant/30 rounded-xl p-3 flex flex-col items-center justify-center text-center opacity-70">
+        <span class="material-symbols-outlined text-outline text-xl mb-1" data-icon="format_paint">format_paint</span>
+        <span class="font-bold text-on-background leading-tight text-xs">Acabamentos</span>
+        <span class="text-on-surface-variant text-[10px] font-semibold mt-0.5">Aguardando fundos</span>
       </div>
     </div>
   </div>
