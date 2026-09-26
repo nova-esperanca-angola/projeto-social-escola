@@ -1,5 +1,5 @@
 <!-- PÁGINA TRANSPARÊNCIA: AUDITORIA E CUSTOS (ESTILO STITCH) -->
-<section class="rounded-2xl bg-surface-container-lowest p-5 border border-outline-variant/40 shadow-sm space-y-4">
+<section id="prestacao-contas" class="rounded-2xl bg-surface-container-lowest p-5 border border-outline-variant/40 shadow-sm space-y-4 scroll-mt-20">
   <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-nutrition-green/15 text-nutrition-green-dark font-label-sm text-xs font-semibold">
     <span class="material-symbols-outlined text-sm" data-icon="account_balance_wallet" style="font-variation-settings: 'FILL' 1;">account_balance_wallet</span>
     Prestação de Contas Aberta · 2026

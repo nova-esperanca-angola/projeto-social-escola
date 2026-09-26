@@ -1,5 +1,5 @@
 <!-- SECTION 1: INDICADORES DE IMPACTO REAL (2x2 Bento Mobile Grid Fiel ao Stitch) -->
-<section class="space-y-3">
+<section id="bento-impacto" class="space-y-3 scroll-mt-20">
   <div class="flex items-center justify-between">
     <h2 class="font-headline-sm text-headline-sm text-on-background font-bold tracking-tight text-lg">
       Indicadores de Impacto Real

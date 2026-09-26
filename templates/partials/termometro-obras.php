@@ -1,5 +1,5 @@
 <!-- SECTION 2: TERMÔMETRO DE OBRAS (Fiel ao Mockup Stitch) -->
-<section class="bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-5 shadow-sm space-y-4">
+<section id="termometro-obras" class="bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-5 shadow-sm space-y-4 scroll-mt-20">
   <div class="flex items-start justify-between gap-3">
     <div>
       <span class="inline-block px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-xs font-semibold uppercase tracking-wider mb-1">

@@ -79,15 +79,18 @@
     }
   </style>
 </head>
-<body class="bg-surface-container-low text-on-surface font-body-md antialiased min-h-screen pb-24 selection:bg-primary-fixed selection:text-on-primary-fixed">
+<body class="bg-surface-container-low text-on-surface font-body-md antialiased min-h-screen pb-24 md:pb-0 selection:bg-primary-fixed selection:text-on-primary-fixed">
 
   <!-- TOP APP BAR DO STITCH -->
   <?= \NovaEsperanca\Core\View::partial('top-app-bar', ['currentRoute' => $currentRoute ?? '/']) ?>
 
-  <!-- VIEWPORT CONTAINER (Mobile-First max-w-screen-md) -->
-  <main class="w-full max-w-screen-md mx-auto px-4 pt-4 space-y-6">
+  <!-- VIEWPORT CONTAINER (Mobile-First max-w-screen-md · Expansão Progressiva até max-w-7xl) -->
+  <main class="w-full max-w-screen-md md:max-w-5xl lg:max-w-7xl mx-auto px-4 md:px-6 pt-4 space-y-6">
     <?= $content ?>
   </main>
+
+  <!-- RODAPÉ INSTITUCIONAL (Visível apenas em >= 768px) -->
+  <?= \NovaEsperanca\Core\View::partial('desktop-footer', ['currentRoute' => $currentRoute ?? '/']) ?>
 
   <!-- MODAL DE APADRINHAMENTO EM 2 ETAPAS -->
   <?= \NovaEsperanca\Core\View::partial('modal-apadrinhamento') ?>
