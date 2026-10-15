@@ -44,18 +44,18 @@ $dadosObras = $dadosObras ?? [];
   <div class="pt-4 border-t border-outline-variant/30 space-y-3">
     <div class="font-label-sm text-xs text-on-surface-variant uppercase tracking-wider font-bold">Fases da Construção:</div>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-3">
-      <!-- Marco 1: Terraplanagem (Concluido) -->
-      <div data-test="marco-1" class="bg-nutrition-green/10 border border-nutrition-green/20 rounded-xl p-3 flex flex-col items-center justify-center text-center">
-        <span class="material-symbols-outlined text-nutrition-green text-xl mb-1" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-        <span class="font-bold text-on-background leading-tight text-xs">Terraplanagem</span>
-        <span class="text-nutrition-green-dark text-[10px] font-semibold mt-0.5">Concluído</span>
+      <!-- Marco 1: Fundações e Sapatas (Em andamento) -->
+      <div data-test="marco-1" class="bg-secondary-fixed/40 border border-secondary/30 rounded-xl p-3 flex flex-col items-center justify-center text-center">
+        <span class="material-symbols-outlined text-secondary text-xl mb-1" data-icon="foundation">foundation</span>
+        <span class="font-bold text-on-background leading-tight text-xs">Fundações</span>
+        <span class="text-secondary font-semibold text-[10px] mt-0.5">Em andamento</span>
       </div>
 
-      <!-- Marco 2: Alvenaria / Sapatas (Em andamento) -->
-      <div data-test="marco-2" class="bg-secondary-fixed/40 border border-secondary/30 rounded-xl p-3 flex flex-col items-center justify-center text-center">
-        <span class="material-symbols-outlined text-secondary text-xl mb-1" data-icon="engineering">engineering</span>
-        <span class="font-bold text-on-background leading-tight text-xs">Alvenaria/Sapatas</span>
-        <span class="text-secondary font-semibold text-[10px] mt-0.5">Em andamento</span>
+      <!-- Marco 2: Alvenaria Estrutural (Próxima fase) -->
+      <div data-test="marco-2" class="bg-surface-container border border-outline-variant/30 rounded-xl p-3 flex flex-col items-center justify-center text-center opacity-70">
+        <span class="material-symbols-outlined text-outline text-xl mb-1" data-icon="domain">domain</span>
+        <span class="font-bold text-on-background leading-tight text-xs">Alvenaria</span>
+        <span class="text-on-surface-variant text-[10px] font-semibold mt-0.5">Próxima fase</span>
       </div>
 
       <!-- Marco 3: Cobertura (Proxima fase) -->

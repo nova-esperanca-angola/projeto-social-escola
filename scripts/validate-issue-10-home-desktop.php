@@ -11,7 +11,7 @@ declare(strict_types=1);
  * 2. Bento Grid de Impacto responsivo progressivo (grid-cols-2 -> lg:grid-cols-4) com os
  *    4 pilares auditados: 93 alunos, 05 salas, 10 colaboradores locais e 100% de merenda.
  * 3. Termometro de Obras com barra de progresso em largura total e linha do tempo horizontal
- *    de 4 marcos construtivos (Terraplanagem, Sapatas/Alvenaria, Cobertura, Acabamentos).
+ *    de 4 marcos construtivos (Fundações, Alvenaria, Cobertura, Acabamentos).
  * 4. Preservacao integral dos dados oficiais (93, 05, 10, 100%, 55.359.800 Kz, 0 Kz) e das
  *    salvaguardas infantis, alem da ausencia de identificacao de menores.
  * 5. Casos de borda: coalescencia nula das variaveis dinamicas, protecao contra overflow
@@ -202,9 +202,10 @@ if ($termoContent !== '') {
         str_contains($termoContent, 'grid grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-3'),
         "Termometro: linha do tempo responsiva 'grid grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-3'"
     );
+    assertCondition(!str_contains($termoContent, 'Terraplanagem'), "Termometro: 'Terraplanagem' removida (terreno ja se encontra plano)");
     $marcos = [
-        ['n' => 1, 'titulo' => 'Terraplanagem',            'status' => 'Concluído',         'icone' => 'check_circle',  'badge' => 'bg-nutrition-green/10'],
-        ['n' => 2, 'titulo' => 'Alvenaria',                 'status' => 'Em andamento',      'icone' => 'engineering',    'badge' => 'bg-secondary-fixed/40'],
+        ['n' => 1, 'titulo' => 'Fundações',                 'status' => 'Em andamento',      'icone' => 'foundation',     'badge' => 'bg-secondary-fixed/40'],
+        ['n' => 2, 'titulo' => 'Alvenaria',                 'status' => 'Próxima fase',      'icone' => 'domain',         'badge' => 'bg-surface-container'],
         ['n' => 3, 'titulo' => 'Cobertura',                 'status' => 'Próxima fase',      'icone' => 'roofing',        'badge' => 'bg-surface-container'],
         ['n' => 4, 'titulo' => 'Acabamentos',               'status' => 'Aguardando fundos', 'icone' => 'format_paint',   'badge' => 'bg-surface-container'],
     ];

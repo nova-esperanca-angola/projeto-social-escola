@@ -140,8 +140,9 @@ assertTest(str_contains($bentoContent, '100%') && (str_contains($bentoContent, '
 $termometroContent = file_get_contents($filePartialTermometro);
 assertTest(str_contains($termometroContent, '55.359.800 Kz') || str_contains($termometroContent, '55.359.800'), "Termômetro deve exibir meta de 55.359.800 Kz");
 assertTest(str_contains($termometroContent, '0 Kz angariados') || str_contains($termometroContent, '0 Kz'), "Termômetro deve exibir arrecadação inicial de 0 Kz");
-assertTest(str_contains($termometroContent, 'Terraplanagem'), "Termômetro deve conter marco de Terraplanagem");
-assertTest(str_contains($termometroContent, 'Alvenaria') || str_contains($termometroContent, 'Sapatas'), "Termômetro deve conter marco de Alvenaria/Sapatas");
+assertTest(!str_contains($termometroContent, 'Terraplanagem'), "Termômetro não deve conter marco de Terraplanagem (terreno já plano)");
+assertTest(str_contains($termometroContent, 'Fundações') || str_contains($termometroContent, 'Sapatas'), "Termômetro deve conter marco de Fundações/Sapatas");
+assertTest(str_contains($termometroContent, 'Alvenaria'), "Termômetro deve conter marco de Alvenaria");
 assertTest(str_contains($termometroContent, 'Cobertura'), "Termômetro deve conter marco de Cobertura");
 
 // Planos de Apoio
