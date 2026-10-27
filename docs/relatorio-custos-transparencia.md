@@ -28,15 +28,20 @@ Durante o primeiro semestre letivo de 2026, a Escola Cristã Nova Esperança adm
 
 A merenda escolar constitui a espinha dorsal da assiduidade e da saúde física dos **93 alunos matriculados**.
 
-- **Custo Unitário da Refeição por Aluno/Dia:** **350,00 AOA**
+- **Custo Unitário da Refeição por Aluno/Dia:** **115,89 AOA**
 - **Refeições Servidas no Mês (22 dias letivos x 93 alunos):** **2.046 refeições/mês**
-- **Custo Mensal Consolidado da Merenda:** **716.100,00 AOA**
+- **Custo Mensal Consolidado da Merenda:** **237.100,00 AOA** (subtotal dos produtos com preço indicado no Projecto de Merenda Escolar; não inclui mocotó, transporte, gás, água ou utensílios)
 
 ### Composição Detalhada dos Insumos Mensais da Merenda:
-1. **Pão fresco e manteiga/pasta de amendoim local:** 2.100 pães artesanais adquiridos diariamente na padaria comunitária de Kifangondo (**220.000,00 AOA/mês**).
-2. **Hortaliças e tubérculos para sopa rica:** 180 kg de abóbora, couve, cenoura, batata-doce e rama de mandioca ricos em vitamina A e ferro (**195.000,00 AOA/mês**).
-3. **Cereais e grãos básicos:** 120 kg de arroz agulha e 75 kg de feijão manteiga para almoços substanciais (**185.000,00 AOA/mês**).
-4. **Proteínas e cocção:** Ovos caipiras, peixe seco regional, óleo de palma/girassol, sal iodado e 3 botijões de gás de cozinha 12kg (**116.100,00 AOA/mês**).
+1. **Feijão:** 25 kg (**50.000,00 AOA/mês**).
+2. **Fuba/farinha de milho:** 25 kg (**13.900,00 AOA/mês**).
+3. **Salsicha:** 4 caixas (**80.000,00 AOA/mês**).
+4. **Óleo alimentar:** 1 caixa / 12 litros (**21.000,00 AOA/mês**).
+5. **Açúcar:** 50 kg (**54.000,00 AOA/mês**).
+6. **Massa alimentar:** 2 caixas (**11.200,00 AOA/mês**).
+7. **Tomate:** 1 balde (**4.000,00 AOA/mês**).
+8. **Cenoura:** 1 balde (**3.000,00 AOA/mês**).
+9. **Mocotó/pé de galinha:** 4 pacotes (**preço a cotar**).
 
 ---
 

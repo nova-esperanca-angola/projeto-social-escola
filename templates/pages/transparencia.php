@@ -108,7 +108,7 @@ $formatarAoa = static function ($valor, int $decimais = 0): string {
               <strong class="text-on-background"><?= htmlspecialchars((string)($item['categoria'] ?? ''), ENT_QUOTES, 'UTF-8') ?>:</strong>
               <?= htmlspecialchars((string)($item['item'] ?? ''), ENT_QUOTES, 'UTF-8') ?>
             </span>
-            <span class="shrink-0 font-semibold text-nutrition-green-dark"><?= $formatarAoa($item['custo_aoa'] ?? 0) ?></span>
+            <span class="shrink-0 font-semibold text-nutrition-green-dark"><?= ($item['custo_aoa'] ?? 0) > 0 ? $formatarAoa($item['custo_aoa']) : 'A cotar' ?></span>
           </li>
         <?php } ?>
       </ul>

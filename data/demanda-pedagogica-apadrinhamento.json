@@ -116,9 +116,26 @@
   "cardapio_merenda": {
     "horario_distribuicao": "09:30 às 10:00",
     "itens": [
-      "Café com leite ou chá com pão e manteiga",
-      "Sopa nutritiva de legumes e tubérculos locais",
-      "Arroz com feijão e caldo substancioso"
+      "1.ª semana · Segunda-feira: Sopa de feijão com salsicha",
+      "1.ª semana · Terça-feira: Papa de milho (fuba), soja e leite em pó",
+      "1.ª semana · Quarta-feira: Mocotó/pé de galinha com batata e cenoura",
+      "1.ª semana · Quinta-feira: Arroz com feijão",
+      "1.ª semana · Sexta-feira: Massa com salsicha",
+      "2.ª semana · Segunda-feira: Banana-pão, salsicha e salada de tomate",
+      "2.ª semana · Terça-feira: Massa com salsicha",
+      "2.ª semana · Quarta-feira: Arroz com feijão",
+      "2.ª semana · Quinta-feira: Mocotó/pé de galinha com batata e cenoura",
+      "2.ª semana · Sexta-feira: Papa de milho (fuba), soja e leite em pó",
+      "3.ª semana · Segunda-feira: Sopa de feijão com salsicha",
+      "3.ª semana · Terça-feira: Massa com salsicha",
+      "3.ª semana · Quarta-feira: Arroz com feijão",
+      "3.ª semana · Quinta-feira: Mocotó/pé de galinha com batata e cenoura",
+      "3.ª semana · Sexta-feira: Papa de milho (fuba), soja e leite em pó",
+      "4.ª semana · Segunda-feira: Massa com salsicha",
+      "4.ª semana · Terça-feira: Arroz com feijão",
+      "4.ª semana · Quarta-feira: Mocotó/pé de galinha com batata e cenoura",
+      "4.ª semana · Quinta-feira: Papa de milho (fuba), soja e leite em pó",
+      "4.ª semana · Sexta-feira: Banana-pão, salsicha e salada de tomate"
     ],
     "objetivo_nutricional": "Garantir aporte calórico e vitamínico diário para crianças em fase de desenvolvimento cognitivo e físico, combatendo o déficit nutricional na comunidade de Kifangondo."
   },
@@ -179,8 +196,8 @@
         "tipo": "recorrente_mensal",
         "valor_sugerido_aoa": 12500,
         "equivalente_estimado_usd": 15,
-        "descricao": "Custeia a merenda diária balanceada (pão com manteiga, sopa enriquecida, arroz com feijão) para 1 criança durante o mês letivo.",
-        "itens_cobertos": ["Café matinal", "Pão e manteiga", "Ingredientes de sopa", "Arroz e feijão", "Gás de cozinha"]
+        "descricao": "Custeia a merenda diária balanceada (sopa de feijão, papa de milho com soja, arroz com feijão, massa com salsicha) para 1 criança durante o mês letivo.",
+        "itens_cobertos": ["Feijão e arroz", "Fuba, soja e leite em pó", "Salsicha e mocotó", "Massa, tomate e cenoura", "Óleo alimentar"]
       },
       {
         "id": "cota-didatica",

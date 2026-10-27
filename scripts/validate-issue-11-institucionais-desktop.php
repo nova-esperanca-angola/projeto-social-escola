@@ -11,7 +11,7 @@ declare(strict_types=1);
  * 2. /galeria em grade de 3 colunas no desktop (lg:grid-cols-3) com as 3 fotografias autenticas,
  *    molduras aspect-[16/10], micro-interacao de hover e salvaguarda infantil ativa.
  * 3. /transparencia com Painel Executivo bi-colunar (Balanco Anual Operacional de 18.500.000 AOA
- *    ao lado da Decomposicao da Merenda de 350 AOA/dia) e tabela orcamentaria responsiva das
+ *    ao lado da Decomposicao da Merenda de 115,89 AOA/dia) e tabela orcamentaria responsiva das
  *    8 novas salas (55.359.800 AOA) espelhando a base canonica fundo_obras_detalhado.
  * 4. Preservacao de dados, salvaguardas infantis e tratamento dos casos de borda declarados.
  * 5. Registro do validador no pipeline de CI (GitHub Actions) e regressao das Fases 1 a 7 e das
@@ -205,7 +205,7 @@ assertCondition(count($composicao) === 5, "Base canonica: fundo_obras_detalhado 
 assertCondition(isset($obras['orcamento_total_aoa']) && (float)$obras['orcamento_total_aoa'] === 55359800.0, "Base canonica: orcamento total das obras e de 55.359.800 AOA");
 assertCondition(isset($obras['valor_arrecadado_aoa']) && (float)$obras['valor_arrecadado_aoa'] === 0.0, "Base canonica: valor arrecadado das obras e de 0 AOA");
 assertCondition(isset($execucao['receita_total_aoa']) && (float)$execucao['receita_total_aoa'] === 18500000.0, "Base canonica: receita total do semestre e de 18.500.000 AOA");
-assertCondition(isset($merenda['custo_refeicao_diaria_aluno_aoa']) && (float)$merenda['custo_refeicao_diaria_aluno_aoa'] === 350.0, "Base canonica: custo da refeicao diaria e de 350 AOA");
+assertCondition(isset($merenda['custo_refeicao_diaria_aluno_aoa']) && (float)$merenda['custo_refeicao_diaria_aluno_aoa'] === 115.89, "Base canonica: custo da refeicao diaria e de 115,89 AOA");
 
 // Renderizacao real das tres rotas atraves do Router real
 require_once $rootDir . DIRECTORY_SEPARATOR . 'src' . DIRECTORY_SEPARATOR . 'Core' . DIRECTORY_SEPARATOR . 'View.php';
@@ -297,8 +297,8 @@ foreach (($merenda['itens_principais'] ?? []) as $item) {
     assertCondition(str_contains($transpHtml, (string)$item['item']), "Transparencia renderizada: item de merenda '{$item['categoria']}' presente");
 }
 assertCondition(
-    substr_count($transpHtml, '350,00 AOA') === 1,
-    "Transparencia renderizada: custo diario de 350,00 AOA exibido em destaque"
+    substr_count($transpHtml, '115,89 AOA') === 1,
+    "Transparencia renderizada: custo diario de 115,89 AOA exibido em destaque"
 );
 
 // Estruturas multi-colunares renderizadas
@@ -321,7 +321,7 @@ assertCondition(str_contains($galeriaHtml, 'Lei nº 25/12'), "Galeria renderizad
 assertCondition(preg_match_all('/<h1[\s>]/', $transpHtml) === 1, "Transparencia renderizada: exatamente 1 <h1>");
 assertCondition(str_contains($transpHtml, 'lg:grid-cols-12') && str_contains($transpHtml, 'lg:col-span-7') && str_contains($transpHtml, 'lg:col-span-5'), "Transparencia renderizada: painel executivo de 12 colunas com 7/5");
 assertCondition(str_contains($transpHtml, '18.500.000'), "Transparencia renderizada: receitas de 18.500.000 AOA preservadas (Fase 5)");
-assertCondition(str_contains($transpHtml, '350'), "Transparencia renderizada: custo da merenda de 350 AOA preservado (Fase 5)");
+assertCondition(str_contains($transpHtml, '115,89'), "Transparencia renderizada: custo da merenda de 115,89 AOA preservado");
 assertCondition(str_contains($transpHtml, 'id="termometro-obras"'), "Transparencia renderizada: termometro de obras preservado");
 assertCondition(str_contains($transpHtml, 'md:grid-cols-4'), "Transparencia renderizada: timeline de 4 marcos do termometro preservada (Issue #10)");
 assertCondition(str_contains($transpHtml, 'min-w-[550px]'), "Transparencia renderizada: tabela com min-w-[550px] contra quebra de layout");

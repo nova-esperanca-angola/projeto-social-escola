@@ -212,7 +212,7 @@ $resTransp = $router->dispatch($reqTransp);
 assertTest($resTransp->getStatusCode() === 200, "Rota GET /transparencia deve retornar status 200");
 $bodyTransp = $resTransp->getBody();
 assertTest(str_contains($bodyTransp, '18.500.000') || str_contains($bodyTransp, '18500000'), "Página Transparência deve exibir receitas de 18.500.000 AOA");
-assertTest(str_contains($bodyTransp, '350'), "Página Transparência deve exibir custo da merenda de 350 AOA/dia");
+assertTest(str_contains($bodyTransp, '115,89'), "Página Transparência deve exibir custo da merenda de 115,89 AOA/dia");
 
 // Teste de Rota GET /galeria
 $reqGaleria = new NovaEsperanca\Core\Request('GET', '/galeria');

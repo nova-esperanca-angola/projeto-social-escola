@@ -10,33 +10,63 @@
     "reserva_tecnica_aoa": 1850000.0
   },
   "detalhamento_merenda": {
-    "custo_refeicao_diaria_aluno_aoa": 350.0,
+    "custo_refeicao_diaria_aluno_aoa": 115.89,
     "refeicoes_servidas_mes": 2046,
-    "custo_mensal_total_aoa": 716100.0,
+    "custo_mensal_total_aoa": 237100.0,
     "itens_principais": [
       {
-        "item": "Pão fresco de padaria local e pasta de amendoim/manteiga",
-        "categoria": "Café da manhã / Desjejum",
-        "consumo_mensal": "2.100 unidades de pão",
-        "custo_aoa": 220000.0
+        "item": "Feijão",
+        "categoria": "Grãos",
+        "consumo_mensal": "25 kg",
+        "custo_aoa": 50000.0
       },
       {
-        "item": "Insumos para sopa enriquecida (abóbora, couve, cenoura, batata-doce)",
-        "categoria": "Reforço vitamínico diário",
-        "consumo_mensal": "180 kg de tubérculos e hortaliças",
-        "custo_aoa": 195000.0
+        "item": "Fuba/farinha de milho",
+        "categoria": "Cereais",
+        "consumo_mensal": "25 kg",
+        "custo_aoa": 13900.0
       },
       {
-        "item": "Arroz agulha, feijão manteiga e óleo vegetal",
-        "categoria": "Almoço substancial",
-        "consumo_mensal": "120 kg de arroz e 75 kg de feijão",
-        "custo_aoa": 185000.0
+        "item": "Salsicha",
+        "categoria": "Proteína",
+        "consumo_mensal": "4 caixas",
+        "custo_aoa": 80000.0
       },
       {
-        "item": "Gás de cozinha, temperos naturais e proteínas (ovos e peixe seco)",
+        "item": "Óleo alimentar",
         "categoria": "Preparo e cocção",
-        "consumo_mensal": "3 botijões de gás de 12kg e insumos",
-        "custo_aoa": 116100.0
+        "consumo_mensal": "1 caixa / 12 litros",
+        "custo_aoa": 21000.0
+      },
+      {
+        "item": "Açúcar",
+        "categoria": "Mercearia",
+        "consumo_mensal": "50 kg",
+        "custo_aoa": 54000.0
+      },
+      {
+        "item": "Massa alimentar",
+        "categoria": "Cereais",
+        "consumo_mensal": "2 caixas",
+        "custo_aoa": 11200.0
+      },
+      {
+        "item": "Tomate",
+        "categoria": "Hortaliças",
+        "consumo_mensal": "1 balde",
+        "custo_aoa": 4000.0
+      },
+      {
+        "item": "Cenoura",
+        "categoria": "Hortaliças",
+        "consumo_mensal": "1 balde",
+        "custo_aoa": 3000.0
+      },
+      {
+        "item": "Mocotó/pé de galinha",
+        "categoria": "Proteína",
+        "consumo_mensal": "4 pacotes (preço a cotar)",
+        "custo_aoa": 0.0
       }
     ]
   },

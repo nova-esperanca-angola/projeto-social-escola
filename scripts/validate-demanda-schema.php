@@ -108,8 +108,9 @@ assertTest($temSaidaPrimario, "Rotina deve contemplar a saída da 1ª à 4ª cla
 // 7. Validação do Cardápio da Merenda
 $cardapio = $data['cardapio_merenda']['itens'] ?? [];
 $cardapioTexto = strtolower(implode(' ', $cardapio));
-assertTest(str_contains($cardapioTexto, 'pão') || str_contains($cardapioTexto, 'pao'), "Cardápio deve conter pão com manteiga");
-assertTest(str_contains($cardapioTexto, 'sopa'), "Cardápio deve conter sopa nutritiva");
+assertTest(count($cardapio) === 20, "Cardápio deve cobrir 4 semanas de 5 dias letivos (20 refeições)");
+assertTest(str_contains($cardapioTexto, 'sopa de feijão com salsicha'), "Cardápio deve conter sopa de feijão com salsicha");
+assertTest(str_contains($cardapioTexto, 'papa de milho'), "Cardápio deve conter papa de milho (fuba), soja e leite em pó");
 assertTest(str_contains($cardapioTexto, 'arroz com feijão') || str_contains($cardapioTexto, 'arroz com feijao'), "Cardápio deve conter arroz com feijão");
 
 // 8. Validação das Turmas Ativas (Soma deve bater com 93 alunos)

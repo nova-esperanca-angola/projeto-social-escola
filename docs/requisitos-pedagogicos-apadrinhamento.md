@@ -58,10 +58,15 @@ A vivência escolar combina formação espiritual, rigor pedagógico e seguranç
 A merenda escolar diária é um pilar vital para combater a vulnerabilidade nutricional e garantir foco na aprendizagem:
 
 - **Horário:** 09:30 às 10:00.
-- **Cardápio Balanceado:**
-  1. *Desjejum:* Pão fresco com manteiga acompanhado de café com leite ou chá quente.
-  2. *Reforço Calórico:* Sopas nutritivas enriquecidas com legumes, tubérculos locais e vegetais.
-  3. *Prato Quente Substancioso:* Arroz com feijão bem temperado, garantindo ferro e proteína vegetal.
+- **Cardápio Mensal (4 semanas, conforme o Projecto de Merenda Escolar):**
+
+| Dia | 1.ª semana | 2.ª semana | 3.ª semana | 4.ª semana |
+|---|---|---|---|---|
+| Segunda-feira | Sopa de feijão com salsicha | Banana-pão, salsicha e salada de tomate | Sopa de feijão com salsicha | Massa com salsicha |
+| Terça-feira | Papa de milho (fuba), soja e leite em pó | Massa com salsicha | Massa com salsicha | Arroz com feijão |
+| Quarta-feira | Mocotó/pé de galinha com batata e cenoura | Arroz com feijão | Arroz com feijão | Mocotó/pé de galinha com batata e cenoura |
+| Quinta-feira | Arroz com feijão | Mocotó/pé de galinha com batata e cenoura | Mocotó/pé de galinha com batata e cenoura | Papa de milho (fuba), soja e leite em pó |
+| Sexta-feira | Massa com salsicha | Papa de milho (fuba), soja e leite em pó | Papa de milho (fuba), soja e leite em pó | Banana-pão, salsicha e salada de tomate |
 
 ---
 

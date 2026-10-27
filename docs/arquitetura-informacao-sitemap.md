@@ -52,7 +52,7 @@ A arquitetura do portal foi concebida para converter visitantes e doadores (naci
 ### 2.5 [`/galeria`] — Atividades Pedagógicas & Vida Escolar
 - Registros fotográficos da Parada e devocional no pátio.
 - Atividades pedagógicas dentro das 5 salas de aula.
-- Distribuição e consumo da merenda comunitária diária (pão com manteiga, sopa e arroz com feijão).
+- Distribuição e consumo da merenda comunitária diária (sopa de feijão, papa de milho, arroz com feijão, massa com salsicha e mocotó).
 
 ### 2.6 [`/voluntariado`] — Cadastro de Voluntários & Parceiros
 - Eixos de voluntariado: Apoio pedagógico/reforço, saúde/nutrição, mutirões de construção civil e doações de gêneros alimentícios.
