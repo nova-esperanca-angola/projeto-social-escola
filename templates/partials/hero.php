@@ -27,7 +27,7 @@ $dados = $dados ?? [];
 
       <!-- Botoes de Acao (flex-wrap evita esmagamento entre 768px e 1024px) -->
       <div class="flex flex-wrap items-center gap-3 pt-2">
-        <button type="button" onclick="abrirModalApadrinhamento('integral', 40000, 'Apadrinhamento Integral')" aria-label="Apadrinhar uma criança por 40.000 Kz" class="inline-flex items-center justify-center min-h-[48px] px-5 py-2.5 rounded-lg bg-primary hover:bg-primary-dark text-white font-label-md font-bold transition-all shadow-sm active:scale-95">
+        <button type="button" onclick="abrirModalApadrinhamento('integral', 20500, 'Apadrinhamento Integral')" aria-label="Apadrinhar uma criança por 20.500 Kz" class="inline-flex items-center justify-center min-h-[48px] px-5 py-2.5 rounded-lg bg-primary hover:bg-primary-dark text-white font-label-md font-bold transition-all shadow-sm active:scale-95">
           <span class="material-symbols-outlined text-lg mr-1.5" data-icon="volunteer_activism">volunteer_activism</span>
           Apadrinhe uma Criança
         </button>

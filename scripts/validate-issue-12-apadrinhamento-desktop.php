@@ -64,10 +64,10 @@ $taxas = ['USD' => 830.0, 'EUR' => 900.0, 'BRL' => 150.0];
 
 /** Tabela canonica de planos: id, nome, valor AOA, frequencia e equivalencias informativas. */
 $planos = [
-    ['id' => 'nutricional', 'nome' => 'Cota Nutricional',           'aoa' => 12500.0, 'freq' => 'mensal',  'usd' => 15,  'eur' => 14,  'brl' => 80],
-    ['id' => 'integral',    'nome' => 'Apadrinhamento Integral',    'aoa' => 40000.0, 'freq' => 'mensal',  'usd' => 48,  'eur' => 44,  'brl' => 260],
-    ['id' => 'didatica',    'nome' => 'Cota Didática',              'aoa' =>  8500.0, 'freq' => 'mensal',  'usd' => 10,  'eur' => 9,   'brl' => 55],
-    ['id' => 'educador',    'nome' => 'Apoio Educador',             'aoa' => 25000.0, 'freq' => 'mensal',  'usd' => 30,  'eur' => 28,  'brl' => 160],
+    ['id' => 'nutricional', 'nome' => 'Cota Nutricional',           'aoa' =>  3000.0, 'freq' => 'mensal',  'usd' => 4,   'eur' => 3,   'brl' => 20],
+    ['id' => 'integral',    'nome' => 'Apadrinhamento Integral',    'aoa' => 20500.0, 'freq' => 'mensal',  'usd' => 25,  'eur' => 23,  'brl' => 137],
+    ['id' => 'didatica',    'nome' => 'Cota Didática',              'aoa' =>  4500.0, 'freq' => 'mensal',  'usd' => 5,   'eur' => 5,   'brl' => 30],
+    ['id' => 'educador',    'nome' => 'Apoio Educador',             'aoa' =>  9500.0, 'freq' => 'mensal',  'usd' => 11,  'eur' => 11,  'brl' => 63],
     ['id' => 'obras',       'nome' => 'Fundo de Obras para 8 Novas Salas', 'aoa' => 50000.0, 'freq' => 'pontual', 'usd' => 60, 'eur' => 55, 'brl' => 325],
 ];
 
@@ -90,7 +90,7 @@ if ($planosContent !== '') {
         str_contains($planosContent, 'border-2 border-hope-amber-dark/80 bg-gradient-to-b from-surface-container-lowest to-tertiary-fixed/10 lg:scale-[1.03] lg:shadow-xl'),
         "Planos: card do Apadrinhamento Integral em destaque com elevacao visual e gradiente tematico"
     );
-    assertCondition(str_contains($planosContent, 'Mais Escolhido / Destaque'), "Planos: badge tematico 'Mais Escolhido / Destaque' preservado no plano de 40.000 Kz");
+    assertCondition(str_contains($planosContent, 'Mais Escolhido / Destaque'), "Planos: badge tematico 'Mais Escolhido / Destaque' preservado no plano de 20.500 Kz");
     assertCondition(str_contains($planosContent, 'Apoio Institucional & Expansão Predial'), "Planos: bloco complementar de suporte institucional rotulado");
     assertCondition(
         substr_count($planosContent, 'min-h-[48px] rounded-lg font-bold flex items-center justify-center gap-2') === 5
@@ -129,7 +129,7 @@ if ($planosContent !== '') {
         );
         assertCondition(str_contains($planosContent, $assinatura), "Planos: CTA do plano '{$plano['id']}' chama o modal com a assinatura canonica");
     }
-    assertCondition(str_contains($planosContent, '40.000 Kz'), "Planos: Apadrinhamento Integral de 40.000 Kz preservado");
+    assertCondition(str_contains($planosContent, '20.500 Kz'), "Planos: Apadrinhamento Integral de 20.500 Kz preservado");
     assertCondition(str_contains($planosContent, '50.000 Kz'), "Planos: Fundo de Obras de 50.000 Kz preservado");
 }
 

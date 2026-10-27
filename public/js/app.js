@@ -5,7 +5,7 @@
 
 let cotaAtual = {
   tipo: 'nutricional',
-  valor: 12500,
+  valor: 3000,
   nome: 'Cota Nutricional',
   frequencia: 'mensal'
 };

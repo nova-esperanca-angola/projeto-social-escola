@@ -105,8 +105,8 @@ if ($topBarFile !== '' && $topBarContent !== '') {
     assertCondition(str_contains($topBarContent, 'hover:text-primary transition-colors font-medium'), "Estilo Stitch aplicado ao link inativo (hover:text-primary)");
     assertCondition(str_contains($topBarContent, 'Apadrinhar Agora'), "CTA 'Apadrinhar Agora' presente na Top App Bar");
     assertCondition(
-        str_contains($topBarContent, "abrirModalApadrinhamento('integral', 40000, 'Apadrinhamento Integral')"),
-        "CTA dispara abrirModalApadrinhamento('integral', 40000, 'Apadrinhamento Integral')"
+        str_contains($topBarContent, "abrirModalApadrinhamento('integral', 20500, 'Apadrinhamento Integral')"),
+        "CTA dispara abrirModalApadrinhamento('integral', 20500, 'Apadrinhamento Integral')"
     );
     assertCondition(str_contains($topBarContent, 'bg-primary hover:bg-primary-dark text-white font-bold'), "CTA com estilo Stitch (bg-primary hover:bg-primary-dark)");
     assertCondition(str_contains($topBarContent, 'gap-1 lg:gap-3'), "Menu desktop usa gap responsivo (gap-1 lg:gap-3) para caber em 768px-1024px");
@@ -220,7 +220,7 @@ assertCondition(str_contains($htmlHome, 'max-w-7xl'), "HTML renderizado utiliza 
 assertCondition(str_contains($htmlHome, 'pb-24 md:pb-0'), "HTML renderizado aplica pb-24 md:pb-0 no body");
 assertCondition(substr_count($htmlHome, 'href="/galeria"') >= 1, "HTML renderizado expõe a rota /galeria na navegação");
 assertCondition(substr_count($htmlHome, 'href="/voluntariado"') >= 1, "HTML renderizado expõe a rota /voluntariado na navegação");
-assertCondition(str_contains($htmlHome, "abrirModalApadrinhamento('integral', 40000, 'Apadrinhamento Integral')"), "HTML renderizado expõe o CTA de apadrinhamento integral");
+assertCondition(str_contains($htmlHome, "abrirModalApadrinhamento('integral', 20500, 'Apadrinhamento Integral')"), "HTML renderizado expõe o CTA de apadrinhamento integral");
 assertCondition(!str_contains($htmlHome, 'não encontrada'), "Nenhum partial retorna o aviso de graceful fallback do View::partial()");
 
 // Rota ativa: exatamente um link de menu desktop ativo por rota canônica

@@ -147,10 +147,10 @@ assertTest(str_contains($termometroContent, 'Cobertura'), "Termômetro deve cont
 
 // Planos de Apoio
 $planosContent = file_get_contents($filePartialPlanos);
-assertTest(str_contains($planosContent, '12.500 Kz') || str_contains($planosContent, '12500'), "Planos devem conter Cota Nutricional de 12.500 Kz");
-assertTest(str_contains($planosContent, '8.500 Kz') || str_contains($planosContent, '8500'), "Planos devem conter Cota Didática de 8.500 Kz");
-assertTest(str_contains($planosContent, '25.000 Kz') || str_contains($planosContent, '25000'), "Planos devem conter Apoio Educador de 25.000 Kz");
-assertTest(str_contains($planosContent, '40.000 Kz') || str_contains($planosContent, '40000'), "Planos devem conter Apadrinhamento Integral de 40.000 Kz em destaque");
+assertTest(str_contains($planosContent, '3.000 Kz') || str_contains($planosContent, '3000'), "Planos devem conter Cota Nutricional de 3.000 Kz");
+assertTest(str_contains($planosContent, '4.500 Kz') || str_contains($planosContent, '4500'), "Planos devem conter Cota Didática de 4.500 Kz");
+assertTest(str_contains($planosContent, '9.500 Kz') || str_contains($planosContent, '9500'), "Planos devem conter Apoio Educador de 9.500 Kz");
+assertTest(str_contains($planosContent, '20.500 Kz') || str_contains($planosContent, '20500'), "Planos devem conter Apadrinhamento Integral de 20.500 Kz em destaque");
 assertTest(str_contains($planosContent, '50.000 Kz') || str_contains($planosContent, '50000'), "Planos devem conter Fundo de Obras de 50.000 Kz");
 
 // Canais Oficiais de Doação

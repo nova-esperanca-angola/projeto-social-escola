@@ -22,7 +22,7 @@
           <p class="text-xs text-on-surface-variant" id="cota-desc">Merenda escolar diária balanceada para 1 aluno</p>
         </div>
         <div class="text-right">
-          <div class="text-xl font-extrabold text-primary font-headline-md" id="cota-valor-display">12.500 Kz</div>
+          <div class="text-xl font-extrabold text-primary font-headline-md" id="cota-valor-display">3.000 Kz</div>
           <span class="text-xs text-on-surface-variant" id="cota-freq-display">/ mês</span>
         </div>
       </div>
@@ -40,7 +40,7 @@
         </label>
         <label for="input-valor" class="block space-y-1">
           <span class="text-on-surface-variant">Valor em Kwanzas (AOA):</span>
-          <input type="number" id="input-valor" name="valor_aoa" min="1000" step="500" value="12500" class="w-full rounded-lg border border-outline-variant/50 p-2 bg-surface-container-lowest text-on-background text-xs font-bold min-h-[48px]">
+          <input type="number" id="input-valor" name="valor_aoa" min="1000" step="500" value="3000" class="w-full rounded-lg border border-outline-variant/50 p-2 bg-surface-container-lowest text-on-background text-xs font-bold min-h-[48px]">
         </label>
       </div>
 
@@ -53,15 +53,15 @@
         <div class="grid grid-cols-3 gap-2 text-center">
           <div class="rounded-lg bg-surface-container-lowest border border-outline-variant/25 px-2 py-1.5">
             <div class="text-[10px] font-semibold text-on-surface-variant uppercase">USD</div>
-            <div class="text-sm font-extrabold text-on-background font-mono" id="cota-valor-usd">$15</div>
+            <div class="text-sm font-extrabold text-on-background font-mono" id="cota-valor-usd">$4</div>
           </div>
           <div class="rounded-lg bg-surface-container-lowest border border-outline-variant/25 px-2 py-1.5">
             <div class="text-[10px] font-semibold text-on-surface-variant uppercase">EUR</div>
-            <div class="text-sm font-extrabold text-on-background font-mono" id="cota-valor-eur">€14</div>
+            <div class="text-sm font-extrabold text-on-background font-mono" id="cota-valor-eur">€3</div>
           </div>
           <div class="rounded-lg bg-surface-container-lowest border border-outline-variant/25 px-2 py-1.5">
             <div class="text-[10px] font-semibold text-on-surface-variant uppercase">BRL</div>
-            <div class="text-sm font-extrabold text-on-background font-mono" id="cota-valor-brl">R$ 80</div>
+            <div class="text-sm font-extrabold text-on-background font-mono" id="cota-valor-brl">R$ 20</div>
           </div>
         </div>
         <p class="text-[10px] text-on-surface-variant leading-snug">

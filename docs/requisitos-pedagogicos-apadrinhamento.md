@@ -87,13 +87,13 @@ A escola é sustentada por uma equipe engajada de 10 colaboradores:
 Para manter o funcionamento e viabilizar o plano de expansão, foram formuladas 5 modalidades de contribuição:
 
 ### 6.1 Cotas de Apadrinhamento
-1. **Cota Nutricional (Merenda Diária):** `12.500 AOA/mês (~15 USD)`  
+1. **Cota Nutricional (Merenda Diária):** `3.000 AOA/mês (~4 USD)`  
    Garante insumos alimentares (pão, leite, manteiga, feijão, arroz, legumes e gás) para 1 criança.
-2. **Cota Didática & Uniforme:** `8.500 AOA/mês (~10 USD)`  
+2. **Cota Didática & Uniforme:** `4.500 AOA/mês (~5 USD)`  
    Financia cadernos, lápis, borrachas, uniformes escolares e material de apoio pedagógico.
-3. **Apoio ao Educador & Equipe:** `25.000 AOA/mês (~30 USD)`  
+3. **Apoio ao Educador & Equipe:** `9.500 AOA/mês (~11 USD)`  
    Contribuição para ajuda de custo e capacitação das 5 educadoras, merendeira e equipe de limpeza.
-4. **Apadrinhamento Integral (Criança Completa):** `40.000 AOA/mês (~50 USD)`  
+4. **Apadrinhamento Integral (Criança Completa):** `20.500 AOA/mês (~25 USD)`  
    Cobre alimentação diária, material escolar, assistência pedagógica e acompanhamento social.
 5. **Fundo de Ampliação Predial (8 Novas Salas Necessárias):** `50.000 AOA (~60 USD)` *(Pontual ou Recorrente)*  
    Aquisição de cimento, blocos, telhas, janelas e carteiras para construção das 8 salas que precisamos e viabilização do turno da tarde.

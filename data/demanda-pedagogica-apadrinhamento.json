@@ -194,8 +194,8 @@
         "id": "cota-nutricional",
         "nome": "Apadrinhamento Nutricional (Merenda Diária)",
         "tipo": "recorrente_mensal",
-        "valor_sugerido_aoa": 12500,
-        "equivalente_estimado_usd": 15,
+        "valor_sugerido_aoa": 3000,
+        "equivalente_estimado_usd": 4,
         "descricao": "Custeia a merenda diária balanceada (sopa de feijão, papa de milho com soja, arroz com feijão, massa com salsicha) para 1 criança durante o mês letivo.",
         "itens_cobertos": ["Feijão e arroz", "Fuba, soja e leite em pó", "Salsicha e mocotó", "Massa, tomate e cenoura", "Óleo alimentar"]
       },
@@ -203,8 +203,8 @@
         "id": "cota-didatica",
         "nome": "Apadrinhamento Didático & Uniforme",
         "tipo": "recorrente_mensal",
-        "valor_sugerido_aoa": 8500,
-        "equivalente_estimado_usd": 10,
+        "valor_sugerido_aoa": 4500,
+        "equivalente_estimado_usd": 5,
         "descricao": "Garante cadernos pedagógicos, lápis, estojo, bata/uniforme escolar e material de apoio às atividades de sala.",
         "itens_cobertos": ["Cadernos pautados e de desenho", "Lápis e borracha", "Uniforme/bata escolar", "Papelaria coletiva"]
       },
@@ -212,8 +212,8 @@
         "id": "cota-educador",
         "nome": "Apoio ao Educador & Equipe Comunitária",
         "tipo": "recorrente_mensal",
-        "valor_sugerido_aoa": 25000,
-        "equivalente_estimado_usd": 30,
+        "valor_sugerido_aoa": 9500,
+        "equivalente_estimado_usd": 11,
         "descricao": "Contribui para a ajuda de custo e capacitação continuada das educadoras, merendeira e equipe de apoio operacional.",
         "itens_cobertos": ["Ajuda de custo das 5 educadoras", "Capacitação pedagógica", "Apoio operacional à equipe de apoio"]
       },
@@ -221,8 +221,8 @@
         "id": "cota-integral",
         "nome": "Apadrinhamento Integral da Criança",
         "tipo": "recorrente_mensal",
-        "valor_sugerido_aoa": 40000,
-        "equivalente_estimado_usd": 50,
+        "valor_sugerido_aoa": 20500,
+        "equivalente_estimado_usd": 25,
         "descricao": "Cobertura 360º para 1 aluno: alimentação completa, materiais de estudo, acompanhamento pedagógico e assistência pastoral familiar.",
         "itens_cobertos": ["Alimentação diária", "Kit escolar e uniforme", "Custeio pedagógico", "Acompanhamento social e saúde"]
       },

@@ -42,7 +42,7 @@ $navLinks = [
 
     <!-- CTA DE AÇÃO PRIMÁRIA DESKTOP (>= 768px) -->
     <button type="button"
-            onclick="abrirModalApadrinhamento('integral', 40000, 'Apadrinhamento Integral')"
+            onclick="abrirModalApadrinhamento('integral', 20500, 'Apadrinhamento Integral')"
             aria-label="Apadrinhar Agora"
             class="hidden md:inline-flex items-center justify-center gap-1.5 shrink-0 bg-primary hover:bg-primary-dark text-white font-bold px-3 py-2 rounded-lg shadow-sm active:scale-95 transition-all text-xs lg:text-sm whitespace-nowrap focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none focus:outline-none">
       <span class="material-symbols-outlined text-sm" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>

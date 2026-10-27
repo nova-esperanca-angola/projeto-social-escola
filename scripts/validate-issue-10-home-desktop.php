@@ -86,8 +86,8 @@ if ($heroContent !== '') {
 
     // CTAs de conversao
     assertCondition(
-        str_contains($heroContent, "abrirModalApadrinhamento('integral', 40000, 'Apadrinhamento Integral')"),
-        "Hero: CTA primario dispara abrirModalApadrinhamento('integral', 40000, 'Apadrinhamento Integral')"
+        str_contains($heroContent, "abrirModalApadrinhamento('integral', 20500, 'Apadrinhamento Integral')"),
+        "Hero: CTA primario dispara abrirModalApadrinhamento('integral', 20500, 'Apadrinhamento Integral')"
     );
     assertCondition(str_contains($heroContent, 'Apadrinhe uma Criança'), "Hero: CTA primario rotulado 'Apadrinhe uma crianca'");
     assertCondition(

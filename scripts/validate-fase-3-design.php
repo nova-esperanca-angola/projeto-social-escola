@@ -92,10 +92,10 @@ assertTest(str_contains($previewHtml, 'Integral'), "Preview deve conter Card de 
 assertTest(str_contains($previewHtml, 'Salas') || str_contains($previewHtml, 'Predial'), "Preview deve conter Card do Fundo de Salas");
 
 // Verificação dos Valores em Kwanza (AOA)
-assertTest(str_contains($previewHtml, '12.500') || str_contains($previewHtml, '12500'), "Preview deve exibir cota de 12.500 AOA");
-assertTest(str_contains($previewHtml, '8.500') || str_contains($previewHtml, '8500'), "Preview deve exibir cota de 8.500 AOA");
-assertTest(str_contains($previewHtml, '25.000') || str_contains($previewHtml, '25000'), "Preview deve exibir cota de 25.000 AOA");
-assertTest(str_contains($previewHtml, '40.000') || str_contains($previewHtml, '40000'), "Preview deve exibir cota de 40.000 AOA");
+assertTest(str_contains($previewHtml, '3.000') || str_contains($previewHtml, '3000'), "Preview deve exibir cota de 3.000 AOA");
+assertTest(str_contains($previewHtml, '4.500') || str_contains($previewHtml, '4500'), "Preview deve exibir cota de 4.500 AOA");
+assertTest(str_contains($previewHtml, '9.500') || str_contains($previewHtml, '9500'), "Preview deve exibir cota de 9.500 AOA");
+assertTest(str_contains($previewHtml, '20.500') || str_contains($previewHtml, '20500'), "Preview deve exibir cota de 20.500 AOA");
 assertTest(str_contains($previewHtml, '50.000') || str_contains($previewHtml, '50000'), "Preview deve exibir cota de 50.000 AOA");
 
 // Verificação do Termômetro do Fundo de Novas Salas
