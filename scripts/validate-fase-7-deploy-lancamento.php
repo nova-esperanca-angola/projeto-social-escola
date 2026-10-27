@@ -148,7 +148,7 @@ $docFile = $rootDir . DIRECTORY_SEPARATOR . 'docs' . DIRECTORY_SEPARATOR . 'guia
 assertCondition(file_exists($docFile), "docs/guia-deploy-backup-hostinger.md existe");
 if (file_exists($docFile)) {
     $content = file_get_contents($docFile);
-    assertCondition(str_contains($content, 'orange-dogfish-319640.hostingersite.com'), "Guia referencia o subdomínio da Hostinger");
+    assertCondition(str_contains($content, 'social.imne.ao'), "Guia referencia o domínio de produção social.imne.ao");
     assertCondition(str_contains($content, 'Git') || str_contains($content, 'GitHub'), "Guia documenta deploy via Git / Webhook do GitHub");
     assertCondition(str_contains($content, 'SSL') || str_contains($content, "Let's Encrypt"), "Guia documenta ativação do certificado SSL no hPanel");
     assertCondition(str_contains($content, 'Backup') || str_contains($content, 'backup'), "Guia documenta procedimentos de rotina de backup");
@@ -159,7 +159,7 @@ if (file_exists($docFile)) {
 // -------------------------------------------------------------
 echo "\n6. Auditando Conectividade SSL e Resposta do Ambiente Hostinger...\n";
 
-$prodUrl = 'https://orange-dogfish-319640.hostingersite.com/';
+$prodUrl = 'https://social.imne.ao/';
 $ch = curl_init($prodUrl);
 curl_setopt_array($ch, [
     CURLOPT_RETURNTRANSFER => true,

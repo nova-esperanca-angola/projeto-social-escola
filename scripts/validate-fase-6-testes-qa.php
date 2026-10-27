@@ -162,7 +162,7 @@ if (file_exists($rootDir . '/storage/logs/test-qa.log')) {
 }
 
 // 6. Auditoria de Tempo de Resposta (TTFB) no Domínio da Hostinger
-$hostingerUrl = 'https://orange-dogfish-319640.hostingersite.com/';
+$hostingerUrl = 'https://social.imne.ao/';
 echo PHP_EOL . "--- Auditoria de TTFB na Hostinger ({$hostingerUrl}) ---" . PHP_EOL;
 
 $ch = curl_init();
